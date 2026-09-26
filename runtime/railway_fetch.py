@@ -471,7 +471,48 @@ def main() -> int:
     payload = json.dumps(receipt, sort_keys=True, indent=2)
     with open("/tmp/receipt.json", "w", encoding="utf-8") as handle:
         handle.write(payload + "\n")
-    print("PBH_CMB_RECEIPT=" + json.dumps(receipt, sort_keys=True, separators=(",", ":")), flush=True)
+
+    compact = {
+        "schema": receipt["schema"],
+        "status": receipt["status"],
+        "successful_maps": receipt["successful_maps"],
+        "gremlin_hologram_all_common_beam": receipt[
+            "gremlin_hologram_all_common_beam"
+        ],
+        "gremlin_hologram_frequency_common_beam": receipt[
+            "gremlin_hologram_frequency_common_beam"
+        ],
+        "gremlin_phase36_pairwise_common_beam": receipt[
+            "gremlin_phase36_pairwise_common_beam"
+        ],
+        "map_summary": {
+            name: {
+                "global_sector_coherence_common": row[
+                    "gremlin_phase36_central4deg_common_beam"
+                ]["global_sector_coherence"],
+                "global_sector_coherence_raw": row[
+                    "gremlin_phase36_central4deg_raw"
+                ]["global_sector_coherence"],
+                "center_robust_z_common": row[
+                    "center_stats_common_beam"
+                ]["center_robust_z"],
+                "phase_coherence_common": row[
+                    "phase_markers_central4deg_common_beam"
+                ]["phase_coherence"],
+                "phase_entropy_common": row[
+                    "phase_markers_central4deg_common_beam"
+                ]["phase_entropy"],
+                "sha256": row["sha256"],
+            }
+            for name, row in receipt["maps"].items()
+            if "error" not in row
+        },
+    }
+    print(
+        "PBH_CMB_T36_SUMMARY="
+        + json.dumps(compact, sort_keys=True, separators=(",", ":")),
+        flush=True,
+    )
     return 0
 
 
