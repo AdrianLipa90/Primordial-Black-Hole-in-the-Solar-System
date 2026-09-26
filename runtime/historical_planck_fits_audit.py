@@ -15,6 +15,8 @@ from astropy.wcs import WCS
 
 TARGET_RA_DEG = 107.57664605896267
 TARGET_DEC_DEG = -25.907578906023748
+TARGET_GAL_L_DEG = 238.1709218507047
+TARGET_GAL_B_DEG = -7.665782897020605
 SOURCE_REPO = "AdrianLipa90/Metatime"
 SOURCE_COMMIT = "aa9fe46d2ca0a93e804e78ea843bbc296aeb591d"
 
@@ -110,9 +112,20 @@ def moire(a,b):
     return float(abs(z))
 
 
+def target_world_for_header(header):
+    ctype1=str(header.get("CTYPE1","")).upper()
+    ctype2=str(header.get("CTYPE2","")).upper()
+    if ctype1.startswith("GLON") and ctype2.startswith("GLAT"):
+        return TARGET_GAL_L_DEG,TARGET_GAL_B_DEG,"GALACTIC"
+    if ctype1.startswith("RA") and ctype2.startswith("DEC"):
+        return TARGET_RA_DEG,TARGET_DEC_DEG,"ICRS"
+    raise RuntimeError(f"unsupported celestial WCS axes: {ctype1}, {ctype2}")
+
+
 def target_patch(data, header, size_deg=4.0):
     w=WCS(header)
-    px,py=w.all_world2pix(TARGET_RA_DEG,TARGET_DEC_DEG,0)
+    lon,lat,frame=target_world_for_header(header)
+    px,py=w.all_world2pix(lon,lat,0)
     ix=int(round(float(px))); iy=int(round(float(py)))
     cd1=abs(float(header.get("CDELT1",0.0)))
     cd2=abs(float(header.get("CDELT2",0.0)))
@@ -125,12 +138,13 @@ def target_patch(data, header, size_deg=4.0):
     patch=data[y0:y1,x0:x1]
     if min(patch.shape)<32:
         raise RuntimeError(f"target patch too small {patch.shape}")
-    return patch,(float(px),float(py)),(x0,x1,y0,y1),pixscale
+    return patch,(float(px),float(py)),(x0,x1,y0,y1),pixscale,frame
 
 
 def center_stats(data, header):
     w=WCS(header)
-    px,py=w.all_world2pix(TARGET_RA_DEG,TARGET_DEC_DEG,0)
+    lon,lat,frame=target_world_for_header(header)
+    px,py=w.all_world2pix(lon,lat,0)
     yy,xx=np.indices(data.shape)
     pixscale=max(abs(float(header["CDELT1"])),abs(float(header["CDELT2"])))
     rdeg=np.hypot(xx-px,yy-py)*pixscale
@@ -148,7 +162,7 @@ def main():
       "schema":"PBH_HISTORICAL_PLANCK_FITS_AUDIT_V0_1",
       "status":"PARTIAL",
       "source":{"repository":SOURCE_REPO,"commit":SOURCE_COMMIT},
-      "target":{"ra_deg":TARGET_RA_DEG,"dec_deg":TARGET_DEC_DEG},
+      "target":{"ra_deg":TARGET_RA_DEG,"dec_deg":TARGET_DEC_DEG,"gal_l_deg":TARGET_GAL_L_DEG,"gal_b_deg":TARGET_GAL_B_DEG},
       "maps":{},"pairwise_image_correlations":{},"pairwise_t36_moire":{},
       "interpretation":"SOURCE_RECONSTRUCTION_ONLY_NOT_PBH_DETECTION",
       "authority":"CANDIDATE_ONLY","canon_allowed":False
@@ -176,9 +190,10 @@ def main():
               "CD1_1","CD1_2","CD2_1","CD2_2","RADESYS","RADECSYS","EQUINOX",
               "NAXIS1","NAXIS2"
             ) if k in h}
-            patch,pix,bounds,pixscale=target_patch(data,h)
+            patch,pix,bounds,pixscale,wcs_frame=target_patch(data,h)
             entry.update({
               "target_pixel":[pix[0],pix[1]],"target_patch_bounds":list(bounds),"pixel_scale_deg":pixscale,
+              "wcs_target_frame_used":wcs_frame,
               "center_stats":center_stats(data,h),
               "phase_markers_target_4deg":phase_markers(patch),
               "t36_target_4deg":phase36(patch)
