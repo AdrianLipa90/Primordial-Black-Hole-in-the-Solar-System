@@ -1,0 +1,200 @@
+{
+  "schema": "PBH_CMB_GREMLIN_T36_NULL_SUMMARY_V0_1",
+  "status": "ANALYZED_CANDIDATE_ONLY",
+  "source_schema": "PBH_CMB_GREMLIN_T36_MATCHED_LATITUDE_PILOT_NULL_V0_1",
+  "source_deployment": "1d828ba9-c5db-4436-8297-46813ba0e0b5",
+  "target": {
+    "all_hologram_global_coherence": 0.8201877317640702,
+    "b_deg": -7.665782897020605,
+    "center_z": {
+      "planck_100": -0.8138105059692331,
+      "planck_143": -0.6274043317109661,
+      "planck_217": 0.014088585641862668,
+      "planck_smica": -1.1574638282688676,
+      "wmap_V": -0.8208570359549574,
+      "wmap_W": -0.8504759535491485
+    },
+    "dec_deg": -25.90757413998477,
+    "frequency_hologram_global_coherence": 0.8797559912026116,
+    "global_sector_coherence": {
+      "planck_100": 0.158418338309133,
+      "planck_143": 0.18298569510822876,
+      "planck_217": 0.243990590357599,
+      "planck_smica": 0.19113928558816287,
+      "wmap_V": 0.16758244408533893,
+      "wmap_W": 0.1647487777482567
+    },
+    "hashes": {
+      "planck_100": "1644973abed301dd94cf40239c17194628ee1b8894d5bb5177cf88a2becfba17",
+      "planck_143": "7085eaa798e39f460d4dfa20f37b3e3eb2680e920db145ce4e203c66a45a8d58",
+      "planck_217": "984156f01b411cd5d15cf7633fd5f9d7ab808f3a281b532371963f5bef2a023f",
+      "planck_smica": "f880f4a092d00bc9748f3a89e03f54bbe308f7029d07e5887f01066c7e2dec7e",
+      "wmap_V": "f4a62d983555e44c94f48285fd65a557b5314babc0fbbeb8cc37cb0b9a1cd90c",
+      "wmap_W": "07ea1caf1cc16bd50424c6dc0c0357fc6bdcae6017b9520ff70fda2e08f4b363"
+    },
+    "l_deg": 238.1709218507047,
+    "pairwise": {
+      "planck_100__planck_143": {
+        "moire_overlap": 0.754774623176806,
+        "phase_rms_distance_rad": 0.8213458509970266
+      },
+      "planck_100__planck_217": {
+        "moire_overlap": 0.6434156149355731,
+        "phase_rms_distance_rad": 0.9935498804939715
+      },
+      "planck_100__planck_smica": {
+        "moire_overlap": 0.720533691252603,
+        "phase_rms_distance_rad": 0.884085232943663
+      },
+      "planck_100__wmap_V": {
+        "moire_overlap": 0.8269024834317741,
+        "phase_rms_distance_rad": 0.6984827970628656
+      },
+      "planck_100__wmap_W": {
+        "moire_overlap": 0.8885973209582978,
+        "phase_rms_distance_rad": 0.5128607162072335
+      },
+      "planck_143__planck_217": {
+        "moire_overlap": 0.9540584280171206,
+        "phase_rms_distance_rad": 0.307843508258843
+      },
+      "planck_143__planck_smica": {
+        "moire_overlap": 0.39787730572088637,
+        "phase_rms_distance_rad": 1.5004757985932025
+      },
+      "planck_143__wmap_V": {
+        "moire_overlap": 0.883391145383753,
+        "phase_rms_distance_rad": 0.5413770026384507
+      },
+      "planck_143__wmap_W": {
+        "moire_overlap": 0.6037661609284362,
+        "phase_rms_distance_rad": 1.1217394766918818
+      },
+      "planck_217__planck_smica": {
+        "moire_overlap": 0.28808368720987104,
+        "phase_rms_distance_rad": 1.689577810697942
+      },
+      "planck_217__wmap_V": {
+        "moire_overlap": 0.8148652407981432,
+        "phase_rms_distance_rad": 0.6556550597379118
+      },
+      "planck_217__wmap_W": {
+        "moire_overlap": 0.504628317226914,
+        "phase_rms_distance_rad": 1.2550139482184248
+      },
+      "planck_smica__wmap_V": {
+        "moire_overlap": 0.5016568891854554,
+        "phase_rms_distance_rad": 1.2690345726949448
+      },
+      "planck_smica__wmap_W": {
+        "moire_overlap": 0.7198390848454271,
+        "phase_rms_distance_rad": 0.8804321579616307
+      },
+      "wmap_V__wmap_W": {
+        "moire_overlap": 0.7260639242292846,
+        "phase_rms_distance_rad": 0.8613586953977563
+      }
+    },
+    "ra_deg": 107.57664248062203,
+    "smica_wmapV_moire": 0.5016568891854554,
+    "smica_wmapW_moire": 0.7198390848454271,
+    "wmapVW_moire": 0.7260639242292846
+  },
+  "empirical": {
+    "abs_smica_center_z": 0.375,
+    "all_hologram_coherence_upper": 0.5,
+    "frequency_hologram_coherence_upper": 0.5,
+    "smica_wmapV_moire_upper": 1,
+    "smica_wmapW_moire_upper": 0.75
+  },
+  "controls": [
+    {
+      "all_hologram_global_coherence": 0.8173848830479478,
+      "dec_deg": -32.706563848959156,
+      "frequency_hologram_global_coherence": 0.912977525378747,
+      "l_deg": 0,
+      "ra_deg": 274.18158782641365,
+      "smica_center_z": 0.6148807068726923,
+      "smica_wmapV_moire": 0.5826221503239221,
+      "smica_wmapW_moire": 0.42759991990002333,
+      "wmapVW_moire": 0.8793257132639878
+    },
+    {
+      "all_hologram_global_coherence": 0.8425390252761907,
+      "dec_deg": 7.0990207092194115,
+      "frequency_hologram_global_coherence": 0.827929873843193,
+      "l_deg": 45,
+      "ra_deg": 295.26612441518625,
+      "smica_center_z": 0.023436768988938077,
+      "smica_wmapV_moire": 0.7687286354919576,
+      "smica_wmapW_moire": 0.8595506641248117,
+      "wmapVW_moire": 0.7495705975000493
+    },
+    {
+      "all_hologram_global_coherence": 0.8171944104000277,
+      "dec_deg": 42.80308201471466,
+      "frequency_hologram_global_coherence": 0.85059463157991,
+      "l_deg": 90,
+      "ra_deg": 325.6076167677638,
+      "smica_center_z": 0.23268204456375818,
+      "smica_wmapV_moire": 0.8115720543577395,
+      "smica_wmapW_moire": 0.8294951435770334,
+      "wmapVW_moire": 0.849822507232675
+    },
+    {
+      "all_hologram_global_coherence": 0.9500542377965703,
+      "dec_deg": 53.294239826820345,
+      "frequency_hologram_global_coherence": 0.9466347546248,
+      "l_deg": 135,
+      "ra_deg": 33.14310422403707,
+      "smica_center_z": 0.835376003974139,
+      "smica_wmapV_moire": 0.8714597394029141,
+      "smica_wmapW_moire": 0.8729543623790152,
+      "wmapVW_moire": 0.8170215047560709
+    },
+    {
+      "all_hologram_global_coherence": 0.7366361574250909,
+      "dec_deg": 24.75161886196295,
+      "frequency_hologram_global_coherence": 0.8266430256615841,
+      "l_deg": 180,
+      "ra_deg": 79.20255971009804,
+      "smica_center_z": 3.665190127955314,
+      "smica_wmapV_moire": 0.69554465087041,
+      "smica_wmapW_moire": 0.4004078428468117,
+      "wmapVW_moire": 0.552591657319357
+    },
+    {
+      "all_hologram_global_coherence": 0.7972876686827788,
+      "dec_deg": -53.238345967243895,
+      "frequency_hologram_global_coherence": 0.7785636501429692,
+      "l_deg": 270,
+      "ra_deg": 128.66957116897316,
+      "smica_center_z": 2.7269855148778763,
+      "smica_wmapV_moire": 0.8491290064996985,
+      "smica_wmapW_moire": 0.9565660383275232,
+      "wmapVW_moire": 0.8637585841356094
+    },
+    {
+      "all_hologram_global_coherence": 0.9447386300521523,
+      "dec_deg": -67.42336927251765,
+      "frequency_hologram_global_coherence": 0.9448229025492485,
+      "l_deg": 315,
+      "ra_deg": 225.52345572756275,
+      "smica_center_z": 0.6618657899585056,
+      "smica_wmapV_moire": 0.9722356138793808,
+      "smica_wmapW_moire": 0.9256812363440439,
+      "wmapVW_moire": 0.9227021202385903
+    }
+  ],
+  "interpretation": {
+    "localized_center_amplitude_is_extreme": false,
+    "frequency_hologram_is_extreme": false,
+    "all_source_hologram_is_extreme": false,
+    "smica_wmapV_moire_is_extreme": false,
+    "smica_wmapW_moire_is_extreme": false,
+    "pbh_cmb_marker_supported_by_pilot_null": false,
+    "note": "Matched-Galactic-latitude pilot null; empirical fractions are coarse and not formal survey p-values."
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
