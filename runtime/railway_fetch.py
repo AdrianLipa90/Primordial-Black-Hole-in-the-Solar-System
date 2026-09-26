@@ -12,7 +12,6 @@ from urllib.parse import urlencode
 import numpy as np
 import requests
 from astropy.io import fits
-from scipy.ndimage import gaussian_filter
 
 TARGET = {
     "ra_deg": 107.576646,
@@ -155,7 +154,13 @@ def common_beam(image: np.ndarray, native_fwhm_arcmin: float) -> np.ndarray:
         COMMON_FWHM_ARCMIN**2 - native_fwhm_arcmin**2
     )
     sigma_pix = extra_fwhm / (2.354820045 * PIX_ARCMIN)
-    return gaussian_filter(finite_image(image), sigma=sigma_pix, mode="nearest")
+    a = finite_image(image)
+    ny, nx = a.shape
+    fy = np.fft.fftfreq(ny)
+    fx = np.fft.fftfreq(nx)
+    ky, kx = np.meshgrid(fy, fx, indexing="ij")
+    transfer = np.exp(-2.0 * (math.pi**2) * (sigma_pix**2) * (kx*kx + ky*ky))
+    return np.fft.ifft2(np.fft.fft2(a) * transfer).real
 
 
 def corr(a: np.ndarray, b: np.ndarray) -> float | None:
