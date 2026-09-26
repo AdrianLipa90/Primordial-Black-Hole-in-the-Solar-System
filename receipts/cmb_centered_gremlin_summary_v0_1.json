@@ -1,0 +1,136 @@
+{
+  "schema": "PBH_CMB_CENTERED_GREMLIN_SUMMARY_V0_1",
+  "status": "ANALYZED_CANDIDATE_ONLY",
+  "source_receipt_schema": "PBH_CMB_CENTERED_PHASE_RECEIPT_V0_2",
+  "source_deployment": "cbc361f3-ab97-444b-a657-aef5ec46eb0d",
+  "target": {
+    "ra_deg": 107.576646,
+    "dec_deg": -25.907579,
+    "gal_l_deg": 238.1709218507047,
+    "gal_b_deg": -7.665782897020605
+  },
+  "common_beam_fwhm_arcmin": 40,
+  "center_robust_z_common_beam": {
+    "planck_100": -0.8137977922034588,
+    "planck_143": -0.627391908102218,
+    "planck_217": 0.014096989002421368,
+    "planck_smica": -1.157459785505424,
+    "wmap_V": -0.8208296023820887,
+    "wmap_W": -0.8504570390293021
+  },
+  "central4deg_common_beam_markers": {
+    "planck_100": {
+      "phase_coherence": 0.19203940968394428,
+      "phase_entropy": 0.9100802566459969,
+      "A1": 0.6723818237666549,
+      "A2": 0.32604877017387196,
+      "A3": 0.280236134434297,
+      "A6": 0.2668222410331654
+    },
+    "planck_143": {
+      "phase_coherence": 0.19065959087260204,
+      "phase_entropy": 0.8840230147743343,
+      "A1": 0.6636267204400093,
+      "A2": 0.3273038087918295,
+      "A3": 0.26207836887656133,
+      "A6": 0.21994046380677573
+    },
+    "planck_217": {
+      "phase_coherence": 0.17212851433072698,
+      "phase_entropy": 0.922329304508839,
+      "A1": 0.6199828467442647,
+      "A2": 0.32090788039480506,
+      "A3": 0.21339156118318542,
+      "A6": 0.02285180443557414
+    },
+    "planck_smica": {
+      "phase_coherence": 0.1840563167498009,
+      "phase_entropy": 0.8835170000532578,
+      "A1": 0.6756795485000628,
+      "A2": 0.32196090930953686,
+      "A3": 0.294015461227757,
+      "A6": 0.30178123205095136
+    },
+    "wmap_V": {
+      "phase_coherence": 0.18471898487908664,
+      "phase_entropy": 0.898269485060756,
+      "A1": 0.6805848981152591,
+      "A2": 0.331459514419044,
+      "A3": 0.3032394771315267,
+      "A6": 0.30023511094215216
+    },
+    "wmap_W": {
+      "phase_coherence": 0.20928934417636222,
+      "phase_entropy": 0.8773071007130279,
+      "A1": 0.654679855267592,
+      "A2": 0.2806232702156496,
+      "A3": 0.260820961180194,
+      "A6": 0.2977655673559765
+    }
+  },
+  "common_beam_pairwise_correlations": {
+    "planck_100__planck_143": 0.9787400828680046,
+    "planck_100__planck_217": 0.8943540461312965,
+    "planck_100__planck_smica": 0.4557500800072717,
+    "planck_100__wmap_V": 0.9651111831577094,
+    "planck_100__wmap_W": 0.9814410257417657,
+    "planck_143__planck_217": 0.9585757190151675,
+    "planck_143__planck_smica": 0.3037868027043275,
+    "planck_143__wmap_V": 0.923982434271962,
+    "planck_143__wmap_W": 0.9491568017284696,
+    "planck_217__planck_smica": 0.023797115368464586,
+    "planck_217__wmap_V": 0.7980335575462775,
+    "planck_217__wmap_W": 0.8266684533156193,
+    "planck_smica__wmap_V": 0.5557888503523708,
+    "planck_smica__wmap_W": 0.5608152422013701,
+    "wmap_V__wmap_W": 0.9847058332387735
+  },
+  "gremlin_t36_candidate_embedding": {
+    "rule": "theta=2pi*[phase_coherence,phase_entropy,A1,A2,A3,A6], repeated six times to 36D",
+    "canonical": false,
+    "semantic_axis_assignment": false,
+    "pairwise_coherence": {
+      "planck_smica__wmap_V": 0.9993898507351758,
+      "planck_100__wmap_V": 0.9950610460548989,
+      "planck_100__planck_143": 0.9946785474073309,
+      "planck_100__planck_smica": 0.9928515780955155,
+      "planck_smica__wmap_W": 0.9906157152465773,
+      "wmap_V__wmap_W": 0.9876117388625313,
+      "planck_100__wmap_W": 0.985806673730294,
+      "planck_143__wmap_V": 0.984023580461237,
+      "planck_143__planck_smica": 0.981121672705008,
+      "planck_143__wmap_W": 0.9723150221630704,
+      "planck_143__planck_217": 0.9000606753410726,
+      "planck_100__planck_217": 0.8684383869301425,
+      "planck_217__wmap_V": 0.8263701577779493,
+      "planck_217__planck_smica": 0.8146817601005412,
+      "planck_217__wmap_W": 0.8048265420390376
+    },
+    "aggregate_mean_torus_disagreement": 1.2870799932466679,
+    "aggregate_coherence": {
+      "planck_100": 0.9993801214336889,
+      "planck_143": 0.9974688659237453,
+      "planck_217": 0.8796875947325636,
+      "planck_smica": 0.9899319398654407,
+      "wmap_V": 0.9922724775075576,
+      "wmap_W": 0.9835532395268016
+    }
+  },
+  "source_hashes": {
+    "planck_100": "8ab2c67e941f4636406dd64252186de4e2f5450dbce442f57e37dcd5db0788d9",
+    "planck_143": "29a59c3d7bee24c9d4154c79ebb847554e1d2b50f0fcd627a9c09b489bf4e9ec",
+    "planck_217": "58a3087948f5b9372e0a54b9841c62f1e06aaff4d5ced21137fbfc356050d219",
+    "planck_smica": "fca2c335c04f65c922e37ddc0e197fa37ce3aa0872ca6851148885ca36465644",
+    "wmap_V": "c7596cd24e22695c98fa35e7ac076b47b8c199e032593cab5c9222bc750f58fb",
+    "wmap_W": "1653ffdac7a006ff53f516bb2cccf2064bf3a137a4607acecfa5cadeffc99a59"
+  },
+  "verdict": {
+    "localized_center_amplitude_anomaly": false,
+    "cross_mission_phase_marker_similarity": "HIGH_AFTER_COMMON_BEAM",
+    "frequency_map_foreground_risk": "HIGH_NEAR_GALACTIC_PLANE",
+    "planck_217_marker_outlier": true,
+    "pbh_detection_claim": false,
+    "next_required_test": "matched-Galactic-latitude null distribution plus IRAS/dust cross-correlation and Planck half-mission split"
+  },
+  "canon_allowed": false
+}
