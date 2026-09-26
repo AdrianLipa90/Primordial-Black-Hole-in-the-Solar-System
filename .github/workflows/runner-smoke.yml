@@ -1,0 +1,17 @@
+name: Runner smoke test
+
+on:
+  push:
+    branches: [fits-proxy-cmb-pbh]
+    paths:
+      - ".github/workflows/runner-smoke.yml"
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke
+        run: |
+          echo RUNNER_OK
+          python --version
