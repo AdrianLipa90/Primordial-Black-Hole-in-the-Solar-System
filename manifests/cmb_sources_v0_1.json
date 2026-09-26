@@ -1,0 +1,24 @@
+{
+  "schema": "PBH_CMB_SOURCE_MANIFEST_V0_1",
+  "status": "PREREGISTERED",
+  "target": {"frame": "ICRS_J2000", "ra_deg": 107.576646, "dec_deg": -25.907579},
+  "cutout": {"size_pixels": 120, "pixel_size_arcmin": 6.0, "field_size_deg": 12.0},
+  "heal2tan_endpoint": "https://irsa.ipac.caltech.edu/cgi-bin/Heal2Tan/nph-heal2tan",
+  "official_sources": [
+    {"id":"planck_pr3_100","provider":"NASA/IPAC IRSA","kind":"CMB_FREQUENCY","mission":"planck","version":"release3","frequency":"100","source_page":"https://irsa.ipac.caltech.edu/Missions/planck.html"},
+    {"id":"planck_pr3_143","provider":"NASA/IPAC IRSA","kind":"CMB_FREQUENCY","mission":"planck","version":"release3","frequency":"143","source_page":"https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/previews/HFI_SkyMap_143_2048_R3.01_full/index.html"},
+    {"id":"planck_pr3_217","provider":"NASA/IPAC IRSA","kind":"CMB_FREQUENCY","mission":"planck","version":"release3","frequency":"217","source_page":"https://irsa.ipac.caltech.edu/Missions/planck.html"},
+    {"id":"wmap9_v","provider":"NASA LAMBDA / IRSA cutout","kind":"CMB_FREQUENCY","mission":"wmap","version":"release3","frequency":"V","source_page":"https://lambda.gsfc.nasa.gov/product/wmap/dr5/maps_forered_da_r9_i_9yr_get.html"},
+    {"id":"wmap9_w","provider":"NASA LAMBDA / IRSA cutout","kind":"CMB_FREQUENCY","mission":"wmap","version":"release3","frequency":"W","source_page":"https://lambda.gsfc.nasa.gov/product/wmap/dr5/maps_forered_da_r9_i_9yr_get.html"}
+  ],
+  "component_map_followup": [
+    "https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/COM_CMB_IQU-smica-nosz_2048_R3.00_hm1.fits",
+    "https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/COM_CMB_IQU-smica-nosz_2048_R3.00_hm2.fits"
+  ],
+  "controls_already_recovered": [
+    {"file":"skv9235549985919.fits","classification":"IRAS_100_MICRON_FOREGROUND_CONTROL","sha256":"6762667fb175d515b11db1080344ea4947ef35ec9df1282c2cd8433cc990815a","bytes":371520},
+    {"file":"skv9235134611008.fits","classification":"HEAO1_A2_XRAY_CONTROL_OFF_TARGET","sha256":"e9abb91108e1bf25107166b7f19a04edf396554f06b8b9c3f8137d91b49c0b5f","bytes":731520}
+  ],
+  "authority": "PROVENANCE_AND_ANALYSIS_ONLY",
+  "canon_allowed": false
+}
