@@ -302,12 +302,11 @@ def main() -> int:
     receipt["successful_maps"] = ok
     receipt["status"] = "ANALYZED" if len(ok) == len(SOURCES) else "PARTIAL"
 
-    print(
-        "PBH_CMB_RECEIPT="
-        + json.dumps(receipt, sort_keys=True, separators=(",", ":")),
-        flush=True,
-    )
-    return 0 if ok else 2
+    payload = json.dumps(receipt, sort_keys=True, indent=2)
+    with open("/tmp/receipt.json", "w", encoding="utf-8") as handle:
+        handle.write(payload + "\n")
+    print("PBH_CMB_RECEIPT=" + json.dumps(receipt, sort_keys=True, separators=(",", ":")), flush=True)
+    return 0
 
 
 if __name__ == "__main__":
