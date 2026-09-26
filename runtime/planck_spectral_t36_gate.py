@@ -23,9 +23,9 @@ HIPS2FITS = "https://alasky.cds.unistra.fr/hips-image-services/hips2fits"
 
 SOURCES = {
     "smica": {"hips":"CDS/P/PLANCK/R3/CMB","freq_ghz":None,"fwhm":5.0,"class":"CMB_COMPONENT"},
-    "030": {"hips":"CDS/P/PLANCK/R3/LFI030","freq_ghz":30.0,"fwhm":32.29,"class":"PLANCK_FREQUENCY"},
-    "044": {"hips":"CDS/P/PLANCK/R3/LFI044","freq_ghz":44.0,"fwhm":27.0,"class":"PLANCK_FREQUENCY"},
-    "070": {"hips":"CDS/P/PLANCK/R3/LFI070","freq_ghz":70.0,"fwhm":13.21,"class":"PLANCK_FREQUENCY"},
+    "030": {"hips":"CDS/P/PLANCK/R3/LFI30","freq_ghz":30.0,"fwhm":32.29,"class":"PLANCK_FREQUENCY"},
+    "044": {"hips":"CDS/P/PLANCK/R3/LFI44","freq_ghz":44.0,"fwhm":27.0,"class":"PLANCK_FREQUENCY"},
+    "070": {"hips":"CDS/P/PLANCK/R3/LFI70","freq_ghz":70.0,"fwhm":13.21,"class":"PLANCK_FREQUENCY"},
     "100": {"hips":"CDS/P/PLANCK/R3/HFI100","freq_ghz":100.0,"fwhm":9.66,"class":"PLANCK_FREQUENCY"},
     "143": {"hips":"CDS/P/PLANCK/R3/HFI143","freq_ghz":143.0,"fwhm":7.27,"class":"PLANCK_FREQUENCY"},
     "217": {"hips":"CDS/P/PLANCK/R3/HFI217","freq_ghz":217.0,"fwhm":5.01,"class":"PLANCK_FREQUENCY"},
