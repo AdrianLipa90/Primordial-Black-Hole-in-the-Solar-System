@@ -1,0 +1,172 @@
+{
+  "canon_allowed": false,
+  "control_definition": {
+    "exclusion_from_target_deg": 30,
+    "gal_b_deg": -7.665782897020605,
+    "longitude_grid_deg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      270,
+      315
+    ]
+  },
+  "controls_summary": [
+    {
+      "dec_deg": -32.706563848959156,
+      "gremlin_core_mean_pairwise_coherence": 0.9413792687103838,
+      "l_deg": 0,
+      "ra_deg": 274.18158782641365,
+      "smica_center_z": 0.6229990518674684,
+      "smica_wmapV_image_corr": 0.7800728983420337,
+      "smica_wmapW_image_corr": 0.8206986136973058
+    },
+    {
+      "dec_deg": 7.0990207092194115,
+      "gremlin_core_mean_pairwise_coherence": 0.9685195066298707,
+      "l_deg": 45,
+      "ra_deg": 295.26612441518625,
+      "smica_center_z": 0.05102020393198507,
+      "smica_wmapV_image_corr": 0.8865648203868234,
+      "smica_wmapW_image_corr": 0.7932063013858656
+    },
+    {
+      "dec_deg": 42.80308201471466,
+      "gremlin_core_mean_pairwise_coherence": 0.8623835871919422,
+      "l_deg": 90,
+      "ra_deg": 325.6076167677638,
+      "smica_center_z": 0.22185716000273872,
+      "smica_wmapV_image_corr": 0.7683999984983151,
+      "smica_wmapW_image_corr": 0.8619137789689524
+    },
+    {
+      "dec_deg": 53.294239826820345,
+      "gremlin_core_mean_pairwise_coherence": 0.9923866541905755,
+      "l_deg": 135,
+      "ra_deg": 33.14310422403707,
+      "smica_center_z": 0.8643300226098466,
+      "smica_wmapV_image_corr": 0.9605779476965859,
+      "smica_wmapW_image_corr": 0.9417798698173594
+    },
+    {
+      "dec_deg": 24.75161886196295,
+      "gremlin_core_mean_pairwise_coherence": 0.9365448322355855,
+      "l_deg": 180,
+      "ra_deg": 79.20255971009804,
+      "smica_center_z": 3.765302060478712,
+      "smica_wmapV_image_corr": 0.23724709689126044,
+      "smica_wmapW_image_corr": 0.5975925818193633
+    },
+    {
+      "dec_deg": -53.238345967243895,
+      "gremlin_core_mean_pairwise_coherence": 0.9683580989357627,
+      "l_deg": 270,
+      "ra_deg": 128.66957116897316,
+      "smica_center_z": 2.649208908492783,
+      "smica_wmapV_image_corr": 0.3672974071559921,
+      "smica_wmapW_image_corr": 0.3369244497575879
+    },
+    {
+      "dec_deg": -67.42336927251765,
+      "gremlin_core_mean_pairwise_coherence": 0.9743831477206706,
+      "l_deg": 315,
+      "ra_deg": 225.52345572756275,
+      "smica_center_z": 0.6622530772277546,
+      "smica_wmapV_image_corr": 0.8221737089515179,
+      "smica_wmapW_image_corr": 0.7969831773544148
+    }
+  ],
+  "empirical": {
+    "abs_smica_center_z": 0.375,
+    "gremlin_core_mean_pairwise_coherence_upper": 0.25,
+    "smica_wmapV_image_corr_upper": 0.75,
+    "smica_wmapW_image_corr_upper": 0.875
+  },
+  "interpretation": "PILOT_EMPIRICAL_MATCHED_LATITUDE_CONTROL_ONLY_NOT_FORMAL_SURVEY_PVALUE",
+  "n_controls": 7,
+  "schema": "PBH_CMB_MATCHED_LATITUDE_PILOT_NULL_V0_1",
+  "status": "ANALYZED",
+  "target": {
+    "b_deg": -7.665782897020605,
+    "center_z": {
+      "planck_100": -0.8737556451330215,
+      "planck_143": -0.6804581168514495,
+      "planck_217": -0.024206743378889423,
+      "planck_smica": -1.2418834634501676,
+      "wmap_V": -0.878281136319961,
+      "wmap_W": -0.908944559757335
+    },
+    "dec_deg": -25.90757413998477,
+    "gremlin_core_mean_pairwise_coherence": 0.9843575789096954,
+    "hashes": {
+      "planck_100": "f2b627272b7f023e7c29cbf4a218fc90e0f326590f68ab3dac9679e2cdb27137",
+      "planck_143": "78547e3341975dfeebf553a32f4fc8fe48c4481f18acb390785e2f0529f1920e",
+      "planck_217": "85be3124f8b8b7e761576b235158c0e957d4234fab3ca221fc6985a3c6b762f9",
+      "planck_smica": "5a6550cd469cf2dec0dbcfe612e6b692393840d46347a21de5e25518a7d26555",
+      "wmap_V": "2c9c414ff61096623a62031a837e370ec9ae60230c0590652c57d6bc91a7205c",
+      "wmap_W": "8a7cb37cf5e6b2b5a603a3901568bd98a63f8b9becd797d0167b3dd176763989"
+    },
+    "l_deg": 238.1709218507047,
+    "marker": {
+      "planck_100": {
+        "A1": 0.4304496221472501,
+        "A2": 0.10559937557939728,
+        "A3": 0.1353418524774158,
+        "A6": 0.0783923131937303,
+        "phase_coherence": 0.09967418855956975,
+        "phase_entropy": 0.8578211376348011
+      },
+      "planck_143": {
+        "A1": 0.45597442171306934,
+        "A2": 0.09511704695826036,
+        "A3": 0.154709619802575,
+        "A6": 0.04685002500683301,
+        "phase_coherence": 0.10162425366593215,
+        "phase_entropy": 0.884679107381187
+      },
+      "planck_217": {
+        "A1": 0.5483266400882688,
+        "A2": 0.22933787267793102,
+        "A3": 0.28695001770820977,
+        "A6": 0.08566088094521454,
+        "phase_coherence": 0.12950774125190306,
+        "phase_entropy": 0.9121571233066927
+      },
+      "planck_smica": {
+        "A1": 0.39995704262642445,
+        "A2": 0.14267493030382825,
+        "A3": 0.15278514415596783,
+        "A6": 0.10983733963877104,
+        "phase_coherence": 0.1057712832411483,
+        "phase_entropy": 0.9003134529047143
+      },
+      "wmap_V": {
+        "A1": 0.4280193257947509,
+        "A2": 0.1078362267157463,
+        "A3": 0.12774606935496377,
+        "A6": 0.09957469147287804,
+        "phase_coherence": 0.10010380458765837,
+        "phase_entropy": 0.8795703744231167
+      },
+      "wmap_W": {
+        "A1": 0.4194218506574998,
+        "A2": 0.16740821519758162,
+        "A3": 0.17197264829791772,
+        "A6": 0.08261205430936325,
+        "phase_coherence": 0.1093776953330862,
+        "phase_entropy": 0.8454985013528393
+      }
+    },
+    "ra_deg": 107.57664248062203,
+    "smica_wmapV_image_corr": 0.5564774579118332,
+    "smica_wmapW_image_corr": 0.5621108293255114,
+    "wmapVW_image_corr": 0.9848328864865816
+  },
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "3ef26d43-ed94-4e6a-b61d-62b8db704d71"
+  }
+}
