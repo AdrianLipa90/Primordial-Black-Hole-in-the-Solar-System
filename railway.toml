@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "python runtime/railway_fetch.py"
+restartPolicyType = "NEVER"
