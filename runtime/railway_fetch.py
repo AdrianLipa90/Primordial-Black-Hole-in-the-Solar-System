@@ -252,7 +252,11 @@ def main() -> int:
             entry.update(
                 {
                     "header": {
-                        key: header.get(key)
+                        key: (
+                            list(header.get(key))
+                            if key in ("HISTORY", "COMMENT")
+                            else header.get(key)
+                        )
                         for key in (
                             "BUNIT",
                             "CTYPE1",
@@ -263,10 +267,10 @@ def main() -> int:
                             "CDELT2",
                             "NAXIS1",
                             "NAXIS2",
-                            "HISTORY",
                         )
                         if key in header
                     },
+                    "history": [str(v) for v in header.get("HISTORY", [])],
                     "center_stats_raw": center_stats(data),
                     "center_stats_common_beam": center_stats(smoothed),
                     "phase_markers_full_raw": phase_markers(data),
