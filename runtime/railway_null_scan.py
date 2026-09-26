@@ -138,7 +138,7 @@ def empirical_abs(target,controls):
 
 
 def main():
-    longitudes=[float(x) for x in range(0,360,15) if abs(((x-TARGET_L+180)%360)-180)>=30]
+    longitudes=[float(x) for x in range(0,360,45) if abs(((x-TARGET_L+180)%360)-180)>=30]
     target=analyze_position(TARGET_L,TARGET_B)
     controls=[]
     for i,l in enumerate(longitudes):
@@ -146,7 +146,7 @@ def main():
         print(f"CONTROL {i+1}/{len(longitudes)} l={l}",flush=True)
         time.sleep(0.05)
     out={
-      "schema":"PBH_CMB_MATCHED_LATITUDE_NULL_V0_1",
+      "schema":"PBH_CMB_MATCHED_LATITUDE_PILOT_NULL_V0_1",
       "status":"ANALYZED",
       "target":target,
       "control_definition":{"gal_b_deg":TARGET_B,"longitude_grid_deg":longitudes,"exclusion_from_target_deg":30.0},
@@ -165,7 +165,7 @@ def main():
          "smica_wmapW_image_corr":c["smica_wmapW_image_corr"]}
         for c in controls
       ],
-      "interpretation":"EMPIRICAL_MATCHED_LATITUDE_CONTROL_ONLY_NOT_FORMAL_SURVEY_PVALUE",
+      "interpretation":"PILOT_EMPIRICAL_MATCHED_LATITUDE_CONTROL_ONLY_NOT_FORMAL_SURVEY_PVALUE",
       "canon_allowed":False,
     }
     with open("/tmp/null_receipt.json","w") as f: json.dump(out,f,sort_keys=True,indent=2)
