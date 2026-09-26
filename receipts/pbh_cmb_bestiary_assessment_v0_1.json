@@ -1,0 +1,93 @@
+{
+  "schema": "PBH_CMB_BESTIARY_ASSESSMENT_V0_1",
+  "status": "ANALYZED",
+  "target": {
+    "ra_deg": 107.576646,
+    "dec_deg": -25.907579,
+    "gal_l_deg": 238.1709218507047,
+    "gal_b_deg": -7.665782897020605
+  },
+  "inputs": {
+    "centered_t36_receipt": "receipts/pbh_cmb_centered_gremlin_t36_v0_3.json",
+    "matched_latitude_null": "receipts/pbh_cmb_t36_matched_latitude_null_v0_1.json",
+    "control_phase_receipt": "receipts/control_phase_markers_v0_1.json",
+    "gremlin_commit": "9fdc42e507d5fe54c13dda975c297173ba0e4eb6",
+    "proxy_branch_head": "060d629da8fdc4b4d42418c5258fae71431d5f94"
+  },
+  "handoff_order": [
+    "FERRET",
+    "HUMMINGBIRD",
+    "BAT",
+    "HOUND",
+    "OWL",
+    "SPIDER",
+    "BELZEBUB",
+    "GREMLIN"
+  ],
+  "roles": {
+    "FERRET": {
+      "result": "PASS_SOURCE_ACQUISITION",
+      "evidence": "Fixed-coordinate Planck R3/WMAP9 HiPS2FITS products retrieved read-only with SHA-256 receipts."
+    },
+    "HUMMINGBIRD": {
+      "result": "PASS_CAPTURE",
+      "evidence": "Target coordinate, map identities, hashes, 40 arcmin common beam and fixed T36 layout are recorded."
+    },
+    "BAT": {
+      "result": "NO_DISTINCTIVE_PHASE_MARKER",
+      "evidence": {
+        "primary_statistic": "median_pairwise_moire_frequency_maps_common_beam",
+        "target": 0.7848278971834104,
+        "controls_ge_target": 14,
+        "controls_total": 20,
+        "descriptive_upper_rank": 0.7142857142857143
+      }
+    },
+    "HOUND": {
+      "result": "NO_TARGET_ANOMALY_IN_MATCHED_LATITUDE_NULL",
+      "evidence": {
+        "target_mean_pairwise_moire": 0.7600473809141579,
+        "target_min_pairwise_moire": 0.5046256614980804,
+        "mean_upper_rank": 0.7142857142857143,
+        "min_upper_rank": 0.7142857142857143
+      }
+    },
+    "OWL": {
+      "result": "PASS_PROVENANCE_WITH_INTERPRETATION_CAUTION",
+      "evidence": [
+        "Target was fixed before the CMB null scan.",
+        "Controls use the same Galactic latitude and exclude +/-30 degrees around the target longitude.",
+        "Target lies close to the Galactic plane, so foreground structure remains a major confounder."
+      ]
+    },
+    "SPIDER": {
+      "result": "FOREGROUND_RELATION_CAUTION",
+      "evidence": {
+        "frequency_and_cross_mission_correlations_high": true,
+        "smica_relations_weaker": true,
+        "interpretation": "Shared morphology in frequency maps does not by itself identify a PBH and is compatible with foreground-dominated structure near the Galactic plane."
+      }
+    },
+    "BELZEBUB": {
+      "result": "FAIL_DISTINCTIVE_CMB_PHASE_SIGNATURE_CLAIM",
+      "evidence": "Matched-latitude controls frequently equal or exceed the target T36 Moire statistic."
+    },
+    "GREMLIN": {
+      "result": "NO_DISTINCTIVE_CMB_PHASE_MARKER_AT_CURRENT_RESOLUTION",
+      "scope": "This rejects only the present degree-scale Planck/WMAP phase-marker candidate. It does not reject the independent orbital PBH hypothesis.",
+      "canon_allowed": false
+    }
+  },
+  "statistical_scope": {
+    "control_count": 20,
+    "primary_rank": 0.7142857142857143,
+    "formal_p_value": false,
+    "posthoc_exploratory": true
+  },
+  "next_gate": {
+    "name": "INDEPENDENT_SMALL_SCALE_LENSING_OR_ASTROMETRIC_TEST",
+    "reason": "A Solar-System PBH of the historical mass scale would have a milliarcsecond-scale Einstein angle, far below Planck/WMAP beam scales; a direct test requires appropriate high-resolution astrometric/lensing data rather than degree-scale CMB morphology."
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
