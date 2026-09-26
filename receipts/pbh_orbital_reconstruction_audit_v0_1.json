@@ -1,0 +1,160 @@
+{
+  "schema": "PBH_ORBITAL_RECONSTRUCTION_AUDIT_V0_1",
+  "status": "ANALYZED",
+  "source_model": {
+    "position_AU": [
+      -158.399,
+      500.044,
+      -254.785
+    ],
+    "reported_distance_AU": 576,
+    "mass_Msun": 0.00005,
+    "a_AU": 430,
+    "e": 0.78,
+    "i_deg": 27,
+    "reported_integration_years": 100000
+  },
+  "direct_checks": {
+    "cartesian_norm_AU": 583.1377550476387,
+    "distance_report_error_AU": 7.137755047638734,
+    "distance_report_error_fraction": 0.012391935846594926,
+    "ra_deg_from_cartesian": 107.57664605896267,
+    "dec_deg_from_cartesian": -25.907578906023748,
+    "mass_Earth_from_5e_5_Msun": 16.647302435,
+    "perihelion_AU": 94.6,
+    "aphelion_AU": 765.4,
+    "semilatus_rectum_AU": 168.38799999999998,
+    "two_body_period_yr": 8916.615275609633,
+    "cycles_in_100kyr": 11.215017908593456,
+    "vis_viva_speed_AU_yr": 0.20878273532412084,
+    "vis_viva_speed_km_s": 0.9897283900996955,
+    "max_annual_parallax_arcmin": 5.8952596122511505
+  },
+  "historical_code_variant_checks": {
+    "state_x576_vy0p001_AUyr": {
+      "a_AU": 288.00210098570466,
+      "e": 0.9999854099279312,
+      "i_deg": 0,
+      "speed_AU_yr": 0.001
+    },
+    "state_x576_vy1_AUyr": {
+      "a_AU": -45.750333822625976,
+      "e": 13.590072068832367,
+      "i_deg": 0,
+      "speed_AU_yr": 1
+    },
+    "conclusion": "Neither recovered historical velocity variant reproduces a=430 AU, e=0.78, i=27 deg under explicit AU/yr/Msun units."
+  },
+  "kepler_consistent_state_branches": [
+    {
+      "branch": "A_OUTBOUND",
+      "Omega_deg": 179.9998978674306,
+      "omega_deg": 130.00012146648328,
+      "true_anomaly_deg": 155.76138579138737,
+      "argument_of_latitude_deg": 285.7615072578706,
+      "position_AU": [
+        -158.399,
+        500.044,
+        -254.785
+      ],
+      "velocity_AU_yr": [
+        -0.1766790385976647,
+        0.09911727381056191,
+        -0.050502613021396095
+      ],
+      "speed_AU_yr": 0.2087827353241208,
+      "speed_km_s": 0.9897283900996954,
+      "radial_velocity_AU_yr": 0.15505099537146258
+    },
+    {
+      "branch": "A_INBOUND",
+      "Omega_deg": 179.9998978674306,
+      "omega_deg": 81.522893049258,
+      "true_anomaly_deg": 204.23861420861263,
+      "argument_of_latitude_deg": 285.7615072578706,
+      "position_AU": [
+        -158.399,
+        500.044,
+        -254.785
+      ],
+      "velocity_AU_yr": [
+        -0.09244534800482046,
+        -0.1667969780395646,
+        0.08498738917367973
+      ],
+      "speed_AU_yr": 0.20878273532412073,
+      "speed_km_s": 0.9897283900996949,
+      "radial_velocity_AU_yr": -0.1550509953714625
+    },
+    {
+      "branch": "B_OUTBOUND",
+      "Omega_deg": 215.15339425049476,
+      "omega_deg": 98.477106950742,
+      "true_anomaly_deg": 155.76138579138737,
+      "argument_of_latitude_deg": 254.23849274212935,
+      "position_AU": [
+        -158.399,
+        500.044,
+        -254.785
+      ],
+      "velocity_AU_yr": [
+        -0.1716206865269884,
+        0.08314874747624625,
+        -0.08498738917367979
+      ],
+      "speed_AU_yr": 0.2087827353241208,
+      "speed_km_s": 0.9897283900996954,
+      "radial_velocity_AU_yr": 0.15505099537146258
+    },
+    {
+      "branch": "B_INBOUND",
+      "Omega_deg": 215.15339425049476,
+      "omega_deg": 49.99987853351672,
+      "true_anomaly_deg": 204.23861420861263,
+      "argument_of_latitude_deg": 254.23849274212935,
+      "position_AU": [
+        -158.399,
+        500.044,
+        -254.785
+      ],
+      "velocity_AU_yr": [
+        -0.08738699593414413,
+        -0.18276550437388026,
+        0.05050261302139604
+      ],
+      "speed_AU_yr": 0.20878273532412073,
+      "speed_km_s": 0.9897283900996949,
+      "radial_velocity_AU_yr": -0.15505099537146252
+    }
+  ],
+  "geometric_clue": {
+    "inference_only": "A_OUTBOUND lands within about 1e-4 deg of Omega=180 deg and omega=130 deg. These angles are not in the recovered source and are not promoted to provenance."
+  },
+  "reproducibility_gaps": [
+    "No canonical epoch is specified for the phrase current position.",
+    "The methodology omits Omega, omega, and mean/true anomaly at a stated epoch.",
+    "Recovered historical code contains mutually inconsistent PBH velocities vy=1.0 and vy=0.001 and inconsistent unit setup.",
+    "Earth position/epoch is not reported even though Earth-relative coordinates are claimed; annual parallax at about 583 AU can approach 5.9 arcmin.",
+    "The stated 576 AU distance differs from the norm of the published Cartesian vector by about 7.14 AU.",
+    "5e-5 solar masses is about 16.65 Earth masses, not about 10."
+  ],
+  "bestiary": {
+    "OWL": "The reported position and a,e,i are geometrically compatible, but provenance is insufficient for a unique time-anchored orbit.",
+    "HOUND": "Distance, mass-label, epoch, and historical-velocity inconsistencies are flagged.",
+    "SPIDER": "All four exact Kepler-consistent state branches are retained rather than silently selecting missing orientation/phase.",
+    "BELZEBUB": "No reconstructed branch is promoted to canonical current state without recovered source code or independently justified epoch/state.",
+    "GREMLIN": "ORBITAL_STATE_UNDERDETERMINED_BUT_FOUR_EXACT_KEPLER_BRANCHES_RECOVERED"
+  },
+  "next_gate": {
+    "name": "CANONICAL_EPOCH_AND_STATE_RECOVERY",
+    "required": [
+      "recover original REBOUND source/seed if it exists",
+      "recover or choose a reference epoch",
+      "bind heliocentric/barycentric and equatorial/ecliptic frame explicitly",
+      "select a branch only with provenance",
+      "propagate with real planetary ephemerides and covariance"
+    ]
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
