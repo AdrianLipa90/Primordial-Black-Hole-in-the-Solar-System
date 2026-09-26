@@ -331,3 +331,33 @@ This validation is stronger than the original post-hoc rank because the scalar a
 ## Source identity check
 
 The CDS HiPS product used as the CMB component map, `CDS/P/PLANCK/R3/CMB`, is generated from the Planck R3 SMICA file `COM_CMB_IQU-smica_2048_R3.00_full.fits`. Therefore the internal label `planck_smica` is provenance-consistent and is retained.
+
+
+## Local morphology gate
+
+The frozen scalar `S = high(353,545,857) - mid(100,143,217)` was evaluated on a preregistered 3x3 Galactic-coordinate grid centered on the target, using offsets `[-6, 0, +6] deg` in both longitude and latitude.
+
+Result:
+
+```text
+center S                    = +0.0880842455
+center rank among 9 cells   = 3 / 9 (descending)
+grid mean                   = -0.1569961886
+grid median                 = -0.0797454429
+grid min                    = -0.4936657021
+grid max                    = +0.1947391025
+```
+
+The target cell is locally elevated relative to most neighbors, but it is not the local maximum. Therefore the present phase contrast is not centered tightly enough on the predicted coordinate to behave like a compact, uniquely localized CMB marker.
+
+Current morphology verdict:
+
+```text
+local elevation             OBSERVED
+center is local maximum     NO
+compact centered marker     NOT ESTABLISHED
+broad/background structure  REMAINS PLAUSIBLE
+PBH localization evidence   NOT ESTABLISHED
+```
+
+This does not test whether a compact dark object exists at the orbital coordinate; it tests only whether the current CMB-derived T36 statistic provides a centered spatial marker there.
