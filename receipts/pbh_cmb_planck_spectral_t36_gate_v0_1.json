@@ -1,0 +1,100 @@
+{
+  "authority": "CANDIDATE_ONLY",
+  "band_summary": {
+    "high_353_857_image_corr_mean": -0.08752861926504067,
+    "high_353_857_t36_mean": 0.3943745598044039,
+    "low_30_70_image_corr_mean": 0.3025171873512722,
+    "low_30_70_t36_mean": 0.35608131732608084,
+    "mid_100_217_image_corr_mean": 0.2098465781089218,
+    "mid_100_217_t36_mean": 0.3062925981441151
+  },
+  "canon_allowed": false,
+  "common_beam_fwhm_arcmin": 60,
+  "interpretation": "FOREGROUND_SPECTRAL_DIAGNOSTIC_ONLY_NOT_PBH_DETECTION",
+  "rows": [
+    {
+      "bunit": null,
+      "freq_ghz": 30,
+      "id": "030",
+      "sha256": "595241087f238ca42879dc1a6ae19d438e2f848592fcbf1f7bafac4b72677101",
+      "smica_image_corr_common60": 0.06433904019410057,
+      "smica_t36_moire_common60": 0.27772952531123
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 44,
+      "id": "044",
+      "sha256": "ef59628aac6916c9ada32377b51077f13dd1341350bd3635be4a75fce22abbac",
+      "smica_image_corr_common60": 0.2909007218333819,
+      "smica_t36_moire_common60": 0.26334085049296024
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 70,
+      "id": "070",
+      "sha256": "7aac23e1de81f6f42c1b1df15a6b522bfda8d9ab8b4cd242a45c1842eacc3e63",
+      "smica_image_corr_common60": 0.5523118000263342,
+      "smica_t36_moire_common60": 0.5271735761740522
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 100,
+      "id": "100",
+      "sha256": "8ab2c67e941f4636406dd64252186de4e2f5450dbce442f57e37dcd5db0788d9",
+      "smica_image_corr_common60": 0.3807068987886411,
+      "smica_t36_moire_common60": 0.41870713807825993
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 143,
+      "id": "143",
+      "sha256": "29a59c3d7bee24c9d4154c79ebb847554e1d2b50f0fcd627a9c09b489bf4e9ec",
+      "smica_image_corr_common60": 0.24185988432946842,
+      "smica_t36_moire_common60": 0.27790330810423913
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 217,
+      "id": "217",
+      "sha256": "58a3087948f5b9372e0a54b9841c62f1e06aaff4d5ced21137fbfc356050d219",
+      "smica_image_corr_common60": 0.006972951208655789,
+      "smica_t36_moire_common60": 0.22226734824984618
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 353,
+      "id": "353",
+      "sha256": "8d1ba36ef7b91b62d582e1476bac18013d4dca98f3f8b32ad85e18034b3f2cc6",
+      "smica_image_corr_common60": -0.0780199372494497,
+      "smica_t36_moire_common60": 0.35763681713286877
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 545,
+      "id": "545",
+      "sha256": "aee12ab7c1c700bca1b2bee47b1d98a7814e3339db8931afd315b4bb8afc5576",
+      "smica_image_corr_common60": -0.09185542435109645,
+      "smica_t36_moire_common60": 0.4056097925556178
+    },
+    {
+      "bunit": null,
+      "freq_ghz": 857,
+      "id": "857",
+      "sha256": "ff3492bb2473d54d014aa68e6c21b79062b8eac4a85adcc82ac6d407e9e61356",
+      "smica_image_corr_common60": -0.09271049619457583,
+      "smica_t36_moire_common60": 0.419877069724725
+    }
+  ],
+  "schema": "PBH_CMB_PLANCK_SPECTRAL_T36_GATE_V0_1",
+  "status": "ANALYZED",
+  "target": {
+    "dec_deg": -25.907579,
+    "ra_deg": 107.576646
+  },
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "b1bf7a87-0387-4960-9415-7ce0f0a8e8c7",
+    "runtime_script_commit": "3488009ee917ebc447667b39117761ff11fd9e7f"
+  }
+}
