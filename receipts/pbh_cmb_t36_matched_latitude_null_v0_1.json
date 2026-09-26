@@ -1,0 +1,307 @@
+{
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false,
+  "control_definition": {
+    "common_beam_fwhm_arcmin": 40,
+    "control_longitudes_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345
+    ],
+    "maps": [
+      "planck_100",
+      "planck_143",
+      "planck_217",
+      "wmap_V",
+      "wmap_W"
+    ],
+    "same_galactic_latitude_deg": -7.665782897020605,
+    "t36_layout": "RADIAL6_X_ANGULAR6_ROW_MAJOR",
+    "target_exclusion_deg": 30
+  },
+  "controls": [
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -32.706563848959156,
+      "l_deg": 0,
+      "max_pairwise_moire": 0.970132252572066,
+      "mean_pairwise_moire": 0.8369904082719746,
+      "median_pairwise_moire": 0.866114517387337,
+      "min_pairwise_moire": 0.6632930559590994,
+      "ra_deg": 274.18158782641365,
+      "std_pairwise_moire": 0.09028475412455979
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -19.41404731900735,
+      "l_deg": 15,
+      "max_pairwise_moire": 0.8756623028712464,
+      "mean_pairwise_moire": 0.5188886179866745,
+      "median_pairwise_moire": 0.47874897666513244,
+      "min_pairwise_moire": 0.151363332179952,
+      "ra_deg": 281.61902808741206,
+      "std_pairwise_moire": 0.25884511152646117
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -6.0813960282806905,
+      "l_deg": 30,
+      "max_pairwise_moire": 0.894707216906564,
+      "mean_pairwise_moire": 0.7758563219192515,
+      "median_pairwise_moire": 0.7927435289068768,
+      "min_pairwise_moire": 0.5721186489631164,
+      "ra_deg": 288.3767362800083,
+      "std_pairwise_moire": 0.09956105086699792
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 7.0990207092194115,
+      "l_deg": 45,
+      "max_pairwise_moire": 0.9737304128720817,
+      "mean_pairwise_moire": 0.634875312919339,
+      "median_pairwise_moire": 0.7618256641818852,
+      "min_pairwise_moire": 0.23235556378606337,
+      "ra_deg": 295.26612441518625,
+      "std_pairwise_moire": 0.2613731707674021
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 19.90995919362978,
+      "l_deg": 60,
+      "max_pairwise_moire": 0.9833973138102603,
+      "mean_pairwise_moire": 0.8463272284942104,
+      "median_pairwise_moire": 0.8961360898437798,
+      "min_pairwise_moire": 0.6363758920114573,
+      "ra_deg": 303.04003403728365,
+      "std_pairwise_moire": 0.11235360165545291
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 32.01551238378711,
+      "l_deg": 75,
+      "max_pairwise_moire": 0.9929576072789773,
+      "mean_pairwise_moire": 0.7741589435790278,
+      "median_pairwise_moire": 0.8098292481517677,
+      "min_pairwise_moire": 0.6030870499559624,
+      "ra_deg": 312.66863718473945,
+      "std_pairwise_moire": 0.1046961906803371
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 42.80308201471466,
+      "l_deg": 90,
+      "max_pairwise_moire": 0.9858853097469824,
+      "mean_pairwise_moire": 0.6898040775250285,
+      "median_pairwise_moire": 0.7593455404636597,
+      "min_pairwise_moire": 0.2419411069482626,
+      "ra_deg": 325.6076167677638,
+      "std_pairwise_moire": 0.21115455473089081
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 51.110848636973,
+      "l_deg": 105,
+      "max_pairwise_moire": 0.995368485589627,
+      "mean_pairwise_moire": 0.8945116397405435,
+      "median_pairwise_moire": 0.9125166817804783,
+      "min_pairwise_moire": 0.7885684569232485,
+      "ra_deg": 343.7797129108635,
+      "std_pairwise_moire": 0.05679793781766566
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 55.09020426970179,
+      "l_deg": 120,
+      "max_pairwise_moire": 0.9885946737266911,
+      "mean_pairwise_moire": 0.8212963854040835,
+      "median_pairwise_moire": 0.8614132459237946,
+      "min_pairwise_moire": 0.5705575628648868,
+      "ra_deg": 7.777637737496034,
+      "std_pairwise_moire": 0.1144507336401673
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 53.294239826820345,
+      "l_deg": 135,
+      "max_pairwise_moire": 0.9980891019245242,
+      "mean_pairwise_moire": 0.8875553896344126,
+      "median_pairwise_moire": 0.8716516088959126,
+      "min_pairwise_moire": 0.8170215047531608,
+      "ra_deg": 33.14310422403707,
+      "std_pairwise_moire": 0.05515266557937278
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 46.43527618200146,
+      "l_deg": 150,
+      "max_pairwise_moire": 0.9915174059543092,
+      "mean_pairwise_moire": 0.6346252570142775,
+      "median_pairwise_moire": 0.8128401981667613,
+      "min_pairwise_moire": 0.16887659848581824,
+      "ra_deg": 53.732206295748576,
+      "std_pairwise_moire": 0.296301518677441
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 36.437948424805796,
+      "l_deg": 165,
+      "max_pairwise_moire": 0.988858135021275,
+      "mean_pairwise_moire": 0.8976330228486697,
+      "median_pairwise_moire": 0.9229753575675462,
+      "min_pairwise_moire": 0.7468025271517355,
+      "ra_deg": 68.48733584035033,
+      "std_pairwise_moire": 0.07060197041780754
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 24.75161886196295,
+      "l_deg": 180,
+      "max_pairwise_moire": 0.968249322304766,
+      "mean_pairwise_moire": 0.6688098935855061,
+      "median_pairwise_moire": 0.661444392696306,
+      "min_pairwise_moire": 0.1761482077518529,
+      "ra_deg": 79.20255971009804,
+      "std_pairwise_moire": 0.22900462208423872
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": 12.165783138355556,
+      "l_deg": 195,
+      "max_pairwise_moire": 0.9187042062011491,
+      "mean_pairwise_moire": 0.7604950144664928,
+      "median_pairwise_moire": 0.7771969826795565,
+      "min_pairwise_moire": 0.6004274658147857,
+      "ra_deg": 87.56499950669222,
+      "std_pairwise_moire": 0.1006199713102444
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -53.238345967243895,
+      "l_deg": 270,
+      "max_pairwise_moire": 0.960415613043417,
+      "mean_pairwise_moire": 0.6547920873891091,
+      "median_pairwise_moire": 0.6805030313099525,
+      "min_pairwise_moire": 0.31010820873361583,
+      "ra_deg": 128.66957116897316,
+      "std_pairwise_moire": 0.22297794294408224
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -64.1598234664686,
+      "l_deg": 285,
+      "max_pairwise_moire": 0.9896345399837705,
+      "mean_pairwise_moire": 0.8565608414013797,
+      "median_pairwise_moire": 0.88680035430546,
+      "min_pairwise_moire": 0.7382196001270377,
+      "ra_deg": 148.4266547158052,
+      "std_pairwise_moire": 0.07371320112706138
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -70.3399519297607,
+      "l_deg": 300,
+      "max_pairwise_moire": 0.9958983131694337,
+      "mean_pairwise_moire": 0.8108953285498023,
+      "median_pairwise_moire": 0.8252421181569285,
+      "min_pairwise_moire": 0.6001840044992177,
+      "ra_deg": 184.1935356861699,
+      "std_pairwise_moire": 0.10827799912012896
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -67.42336927251765,
+      "l_deg": 315,
+      "max_pairwise_moire": 0.9949625216676853,
+      "mean_pairwise_moire": 0.8805133231475143,
+      "median_pairwise_moire": 0.9274298382828691,
+      "min_pairwise_moire": 0.6932136446901498,
+      "ra_deg": 225.52345572756275,
+      "std_pairwise_moire": 0.09987772845182256
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -57.80585733274613,
+      "l_deg": 330,
+      "max_pairwise_moire": 0.9726839862974633,
+      "mean_pairwise_moire": 0.8917806559750641,
+      "median_pairwise_moire": 0.9148431318695182,
+      "min_pairwise_moire": 0.787254598341823,
+      "ra_deg": 250.6875394661236,
+      "std_pairwise_moire": 0.05799307878876082
+    },
+    {
+      "b_deg": -7.665782897020605,
+      "dec_deg": -45.69265396406309,
+      "l_deg": 345,
+      "max_pairwise_moire": 0.9535538567946855,
+      "mean_pairwise_moire": 0.7992441497676895,
+      "median_pairwise_moire": 0.7981909275006978,
+      "min_pairwise_moire": 0.7021503685449545,
+      "ra_deg": 264.78147726450686,
+      "std_pairwise_moire": 0.06881927498282187
+    }
+  ],
+  "empirical_descriptive_ranks": {
+    "mean_pairwise_moire_upper": 0.7142857142857143,
+    "median_pairwise_moire_upper": 0.7142857142857143,
+    "min_pairwise_moire_upper": 0.7142857142857143
+  },
+  "interpretation": "EXPLORATORY_POSTHOC_MATCHED_LATITUDE_NULL_ONLY_NOT_FORMAL_PVALUE",
+  "n_controls": 20,
+  "primary_statistic": "median_pairwise_moire_frequency_maps_common_beam",
+  "schema": "PBH_CMB_T36_MATCHED_LATITUDE_NULL_V0_1",
+  "status": "ANALYZED",
+  "target": {
+    "dec_deg": -25.907579,
+    "gal_b_deg": -7.665782897020605,
+    "gal_l_deg": 238.1709218507047,
+    "hashes": {
+      "planck_100": "8ab2c67e941f4636406dd64252186de4e2f5450dbce442f57e37dcd5db0788d9",
+      "planck_143": "29a59c3d7bee24c9d4154c79ebb847554e1d2b50f0fcd627a9c09b489bf4e9ec",
+      "planck_217": "58a3087948f5b9372e0a54b9841c62f1e06aaff4d5ced21137fbfc356050d219",
+      "wmap_V": "c7596cd24e22695c98fa35e7ac076b47b8c199e032593cab5c9222bc750f58fb",
+      "wmap_W": "1653ffdac7a006ff53f516bb2cccf2064bf3a137a4607acecfa5cadeffc99a59"
+    },
+    "max_pairwise_moire": 0.954058054052026,
+    "mean_pairwise_moire": 0.7600473809141579,
+    "median_pairwise_moire": 0.7848278971834104,
+    "min_pairwise_moire": 0.5046256614980804,
+    "pairwise_moire": {
+      "planck_100__planck_143": 0.7547875309604488,
+      "planck_100__planck_217": 0.6434269149969843,
+      "planck_100__wmap_V": 0.8269063314172772,
+      "planck_100__wmap_W": 0.8885895955339517,
+      "planck_143__planck_217": 0.954058054052026,
+      "planck_143__wmap_V": 0.8833943691369435,
+      "planck_143__wmap_W": 0.6037622946541287,
+      "planck_217__wmap_V": 0.8148682634063719,
+      "planck_217__wmap_W": 0.5046256614980804,
+      "wmap_V__wmap_W": 0.7260547934853673
+    },
+    "ra_deg": 107.576646,
+    "std_pairwise_moire": 0.13464841186703758
+  },
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "8faedb47-ad57-49bf-8a3e-0ec5ce1601fe",
+    "runtime_script_commit": "9d9881153d4c55289a00f040a0b4a99cdb56ce1c"
+  }
+}
