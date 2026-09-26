@@ -1,0 +1,85 @@
+name: Fetch PBH CMB cutouts
+
+on:
+  push:
+    branches: [fits-proxy-cmb-pbh]
+    paths:
+      - ".github/workflows/fetch-cmb-cutouts.yml"
+      - "analysis/phase_markers.py"
+      - "manifests/cmb_sources_v0_1.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-and-analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install FITS analysis dependencies
+        run: python -m pip install --disable-pip-version-check numpy astropy
+
+      - name: Fetch official fixed-coordinate cutouts
+        shell: python
+        run: |
+          import pathlib
+          import urllib.parse
+          import urllib.request
+
+          root = pathlib.Path("cmb-cutouts")
+          root.mkdir(exist_ok=True)
+          base = "https://irsa.ipac.caltech.edu/cgi-bin/Heal2Tan/nph-heal2tan"
+          target = "107.576646 -25.907579 Equ J2000"
+          jobs = [
+              ("planck_100", "planck", "100"),
+              ("planck_143", "planck", "143"),
+              ("planck_217", "planck", "217"),
+              ("wmap_V", "wmap", "V"),
+              ("wmap_W", "wmap", "W"),
+          ]
+          for name, mission, freq in jobs:
+              params = {
+                  "locstr": target,
+                  "size": "120",
+                  "pixsize": "6",
+                  "version": "release3",
+                  "hmap": "I",
+                  "mission": mission,
+                  "planckfreq": freq if mission == "planck" else "",
+                  "wmapfreq": freq if mission == "wmap" else "",
+                  "submit": "",
+              }
+              url = base + "?" + urllib.parse.urlencode(params)
+              req = urllib.request.Request(
+                  url,
+                  headers={"User-Agent": "PBH-CMB-provenance/0.1 read-only"},
+              )
+              with urllib.request.urlopen(req, timeout=120) as response:
+                  data = response.read()
+              if not data.startswith(b"SIMPLE"):
+                  head = data[:240].decode("latin1", "replace")
+                  raise RuntimeError(f"{name}: non-FITS response: {head}")
+              path = root / f"{name}.fits"
+              path.write_bytes(data)
+              print(name, len(data), url)
+
+      - name: Compute phase markers
+        run: python analysis/phase_markers.py cmb-cutouts/*.fits --output receipts/cmb_cutout_phase_markers.json
+
+      - name: Upload FITS proxy bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: pbh-cmb-cutouts-v0-1
+          path: |
+            cmb-cutouts/*.fits
+            receipts/cmb_cutout_phase_markers.json
+            manifests/cmb_sources_v0_1.json
+          if-no-files-found: error
+          retention-days: 30
