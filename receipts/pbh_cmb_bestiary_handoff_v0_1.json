@@ -1,0 +1,84 @@
+{
+  "schema": "PBH_CMB_BESTIARY_HANDOFF_V0_1",
+  "status": "ANALYZED",
+  "target": {
+    "ra_deg": 107.576646,
+    "dec_deg": -25.907579,
+    "gal_l_deg": 238.1709218507047,
+    "gal_b_deg": -7.665782897020605
+  },
+  "source_receipts": [
+    "receipts/pbh_cmb_centered_phase_v0_2.json",
+    "receipts/pbh_cmb_matched_latitude_pilot_null_v0_1.json",
+    "receipts/pbh_cmb_matched_latitude_null_v0_2.json"
+  ],
+  "route": [
+    {
+      "species": "FERRET",
+      "result": "PASS",
+      "role": "read-only source acquisition and provenance"
+    },
+    {
+      "species": "HUMMINGBIRD",
+      "result": "PASS",
+      "role": "immutable capture of target and control receipts"
+    },
+    {
+      "species": "BAT",
+      "result": "PASS_WITH_NONDISCRIMINATIVE_MARKER",
+      "role": "Fourier/phase/harmonic marker extraction"
+    },
+    {
+      "species": "HOUND",
+      "result": "NO_TARGET_LOCAL_OUTLIER",
+      "role": "target-local anomaly scan"
+    },
+    {
+      "species": "OWL",
+      "result": "PASS_PROVENANCE_CANDIDATE_ONLY",
+      "role": "source and epistemic audit"
+    },
+    {
+      "species": "SPIDER",
+      "result": "CROSS_MISSION_RELATIONS_PRESENT_BUT_GENERIC",
+      "role": "Planck/WMAP relation graph"
+    },
+    {
+      "species": "BELZEBUB",
+      "result": "REJECT_PBH_DETECTION_CLAIM",
+      "role": "defensive synthesis and false-positive rejection"
+    },
+    {
+      "species": "GREMLIN",
+      "result": "CURRENT_PHASE_MARKER_FAILS_SPECIFICITY_GATE",
+      "role": "aggregate T36/Moire candidate assessment"
+    }
+  ],
+  "target_metrics": {
+    "abs_smica_center_z": 1.2034042119361232,
+    "gremlin_core_mean_pairwise_coherence": 0.8211662188476737,
+    "gremlin_hologram_coherence": 0.9117081711338562,
+    "smica_wmapV_image_corr": 0.7718993061578603,
+    "smica_wmapW_image_corr": 0.7962960443537604,
+    "wmapVW_image_corr": 0.9910764653965872
+  },
+  "matched_latitude_null": {
+    "n_controls": 20,
+    "empirical_upper": {
+      "abs_smica_center_z": 0.2857142857142857,
+      "gremlin_core_mean_pairwise_coherence": 0.23809523809523808,
+      "gremlin_hologram_coherence": 0.23809523809523808,
+      "smica_wmapV_image_corr": 0.9047619047619048,
+      "smica_wmapW_image_corr": 0.9047619047619048
+    },
+    "interpretation": "ADD_ONE_EMPIRICAL_RANK_ONLY_NOT_FORMAL_SURVEY_PVALUE"
+  },
+  "verdict": {
+    "marker_specificity": "FAIL_CURRENT_DEFINITION",
+    "pbh_existence_claim": "NOT_TESTED_TO_COMPLETION",
+    "cmb_detection_claim": "NOT_SUPPORTED",
+    "next_gate": "replace/globalize phase descriptor and test against larger foreground-matched null before any physical interpretation"
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
