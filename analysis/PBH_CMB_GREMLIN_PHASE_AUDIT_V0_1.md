@@ -235,3 +235,56 @@ The next clean gate is to freeze one scalar before looking at any further positi
 `S = mean(T36_353,545,857) - mean(T36_100,143,217)`,
 
 with the sign and aperture/beam fixed in advance, followed by a fresh blind longitude set not used in either existing control pass.
+
+
+## Fresh-grid validation of the frozen high-minus-mid statistic
+
+After the previous post-hoc spectral pass, one scalar was frozen before looking at a new sky grid:
+
+```text
+S = mean(M353, M545, M857) - mean(M100, M143, M217)
+tail = upper
+beam = 60 arcmin
+field = 8 deg
+analysis center = 4 deg
+T36 layout = fixed radial6 x angular6
+```
+
+A new control grid was offset by 7.5 degrees from every longitude used in the earlier 15-degree grids. The same Galactic latitude and 30-degree exclusion around the PBH longitude were retained.
+
+Target:
+
+```text
+S_target = 0.08808196166
+```
+
+Fresh controls:
+
+```text
+n = 20
+mean = -0.2068328290
+median = -0.2791850283
+std(sample) = 0.2366903398
+range = -0.7018729428 .. +0.2895963083
+```
+
+Validation result:
+
+```text
+standardized target vs control mean = +1.24599
+upper add-one rank                  = 0.190476
+```
+
+The positive high-minus-mid contrast therefore **did not replicate as an extreme marker** on the fresh control grid. It remains a real measured property of the target cutout, but not a distinctive sky-location discriminator at the present resolution and statistic.
+
+This closes the main exploratory T36 CMB branch with a negative discrimination result:
+
+```text
+centered intensity anomaly          NOT SEEN
+broad T36 coherence anomaly         NOT SEEN
+70 GHz resonance                    NOT ESTABLISHED
+high-minus-mid contrast             DOES NOT VALIDATE AS EXTREME
+CMB phase evidence for PBH          NOT ESTABLISHED
+```
+
+The orbital PBH candidate remains logically separate from this negative CMB marker result.
