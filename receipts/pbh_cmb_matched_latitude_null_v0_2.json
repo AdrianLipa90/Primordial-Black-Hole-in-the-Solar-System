@@ -1,0 +1,330 @@
+{
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false,
+  "control_definition": {
+    "common_beam_fwhm_arcmin": 40,
+    "exclusion_from_target_deg": 30,
+    "fov_deg": 6,
+    "gal_b_deg": -7.665782897020605,
+    "height": 128,
+    "longitude_grid_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345
+    ],
+    "width": 128
+  },
+  "controls_summary": [
+    {
+      "dec_deg": -32.706563848959156,
+      "gremlin_core_mean_pairwise_coherence": 0.6303421225661366,
+      "gremlin_hologram_coherence": 0.8008635731560886,
+      "l_deg": 0,
+      "ra_deg": 274.18158782641365,
+      "smica_center_z": 0.6321548202878169,
+      "smica_wmapV_image_corr": 0.8420064719074993,
+      "smica_wmapW_image_corr": 0.8770932870623185
+    },
+    {
+      "dec_deg": -19.41404731900735,
+      "gremlin_core_mean_pairwise_coherence": 0.675985990167376,
+      "gremlin_hologram_coherence": 0.8375676011175418,
+      "l_deg": 15,
+      "ra_deg": 281.61902808741206,
+      "smica_center_z": 0.2966504698726126,
+      "smica_wmapV_image_corr": 0.8498766699754922,
+      "smica_wmapW_image_corr": 0.8668739372791123
+    },
+    {
+      "dec_deg": -6.0813960282806905,
+      "gremlin_core_mean_pairwise_coherence": 0.6620636696671708,
+      "gremlin_hologram_coherence": 0.8181080941518434,
+      "l_deg": 30,
+      "ra_deg": 288.3767362800083,
+      "smica_center_z": -0.044743768903134994,
+      "smica_wmapV_image_corr": 0.874294228946639,
+      "smica_wmapW_image_corr": 0.840482459113376
+    },
+    {
+      "dec_deg": 7.0990207092194115,
+      "gremlin_core_mean_pairwise_coherence": 0.7959339453701749,
+      "gremlin_hologram_coherence": 0.9021538831476378,
+      "l_deg": 45,
+      "ra_deg": 295.26612441518625,
+      "smica_center_z": 0.037091679219554655,
+      "smica_wmapV_image_corr": 0.973699935105843,
+      "smica_wmapW_image_corr": 0.9468931827606147
+    },
+    {
+      "dec_deg": 19.90995919362978,
+      "gremlin_core_mean_pairwise_coherence": 0.829865276453472,
+      "gremlin_hologram_coherence": 0.9159618549284781,
+      "l_deg": 60,
+      "ra_deg": 303.04003403728365,
+      "smica_center_z": -0.8375123908329623,
+      "smica_wmapV_image_corr": 0.9490172481853658,
+      "smica_wmapW_image_corr": 0.9205684229763547
+    },
+    {
+      "dec_deg": 32.01551238378711,
+      "gremlin_core_mean_pairwise_coherence": 0.7324184145217009,
+      "gremlin_hologram_coherence": 0.8568760370254908,
+      "l_deg": 75,
+      "ra_deg": 312.66863718473945,
+      "smica_center_z": 0.03148361582803432,
+      "smica_wmapV_image_corr": 0.8792400194571743,
+      "smica_wmapW_image_corr": 0.885832554977323
+    },
+    {
+      "dec_deg": 42.80308201471466,
+      "gremlin_core_mean_pairwise_coherence": 0.7390414675915463,
+      "gremlin_hologram_coherence": 0.8651933541184902,
+      "l_deg": 90,
+      "ra_deg": 325.6076167677638,
+      "smica_center_z": 0.21486614836961357,
+      "smica_wmapV_image_corr": 0.9409387948621633,
+      "smica_wmapW_image_corr": 0.9386791366083869
+    },
+    {
+      "dec_deg": 51.110848636973,
+      "gremlin_core_mean_pairwise_coherence": 0.7848249670014386,
+      "gremlin_hologram_coherence": 0.8865901216498727,
+      "l_deg": 105,
+      "ra_deg": 343.7797129108635,
+      "smica_center_z": -0.5837854586660941,
+      "smica_wmapV_image_corr": 0.9656504856693591,
+      "smica_wmapW_image_corr": 0.9518625263878019
+    },
+    {
+      "dec_deg": 55.09020426970179,
+      "gremlin_core_mean_pairwise_coherence": 0.7064271860823411,
+      "gremlin_hologram_coherence": 0.812565030005817,
+      "l_deg": 120,
+      "ra_deg": 7.777637737496034,
+      "smica_center_z": -0.39991538804696913,
+      "smica_wmapV_image_corr": 0.9119561217481481,
+      "smica_wmapW_image_corr": 0.9300852861567572
+    },
+    {
+      "dec_deg": 53.294239826820345,
+      "gremlin_core_mean_pairwise_coherence": 0.8226386726424858,
+      "gremlin_hologram_coherence": 0.9121744729627351,
+      "l_deg": 135,
+      "ra_deg": 33.14310422403707,
+      "smica_center_z": 0.8590798574519225,
+      "smica_wmapV_image_corr": 0.976355120045716,
+      "smica_wmapW_image_corr": 0.9684808774389144
+    },
+    {
+      "dec_deg": 46.43527618200146,
+      "gremlin_core_mean_pairwise_coherence": 0.7372531928143015,
+      "gremlin_hologram_coherence": 0.8669114433701466,
+      "l_deg": 150,
+      "ra_deg": 53.732206295748576,
+      "smica_center_z": 1.5423057172737287,
+      "smica_wmapV_image_corr": 0.9512119142616458,
+      "smica_wmapW_image_corr": 0.8954786750762347
+    },
+    {
+      "dec_deg": 36.437948424805796,
+      "gremlin_core_mean_pairwise_coherence": 0.6305235630782775,
+      "gremlin_hologram_coherence": 0.7303394410929503,
+      "l_deg": 165,
+      "ra_deg": 68.48733584035033,
+      "smica_center_z": 0.11068718134750269,
+      "smica_wmapV_image_corr": 0.9487191263530774,
+      "smica_wmapW_image_corr": 0.9209742801845184
+    },
+    {
+      "dec_deg": 24.75161886196295,
+      "gremlin_core_mean_pairwise_coherence": 0.48427472754826195,
+      "gremlin_hologram_coherence": 0.6855043501345813,
+      "l_deg": 180,
+      "ra_deg": 79.20255971009804,
+      "smica_center_z": 3.7186042848516285,
+      "smica_wmapV_image_corr": 0.8280155187894882,
+      "smica_wmapW_image_corr": 0.7056701631621403
+    },
+    {
+      "dec_deg": 12.165783138355556,
+      "gremlin_core_mean_pairwise_coherence": 0.7795088726838606,
+      "gremlin_hologram_coherence": 0.8880763804901551,
+      "l_deg": 195,
+      "ra_deg": 87.56499950669222,
+      "smica_center_z": -0.3439118504095051,
+      "smica_wmapV_image_corr": 0.6456361937282048,
+      "smica_wmapW_image_corr": 0.8975822627435259
+    },
+    {
+      "dec_deg": -53.238345967243895,
+      "gremlin_core_mean_pairwise_coherence": 0.6712687318021887,
+      "gremlin_hologram_coherence": 0.838162753488572,
+      "l_deg": 270,
+      "ra_deg": 128.66957116897316,
+      "smica_center_z": 2.7196171125887627,
+      "smica_wmapV_image_corr": 0.48216053628374644,
+      "smica_wmapW_image_corr": 0.47796188720265365
+    },
+    {
+      "dec_deg": -64.1598234664686,
+      "gremlin_core_mean_pairwise_coherence": 0.9199586565431566,
+      "gremlin_hologram_coherence": 0.9641701825320609,
+      "l_deg": 285,
+      "ra_deg": 148.4266547158052,
+      "smica_center_z": -1.6759653603473343,
+      "smica_wmapV_image_corr": 0.8617691346388513,
+      "smica_wmapW_image_corr": 0.898336368086294
+    },
+    {
+      "dec_deg": -70.3399519297607,
+      "gremlin_core_mean_pairwise_coherence": 0.8016836343168798,
+      "gremlin_hologram_coherence": 0.9031468348961281,
+      "l_deg": 300,
+      "ra_deg": 184.1935356861699,
+      "smica_center_z": -0.9969494883233654,
+      "smica_wmapV_image_corr": 0.9482297515166722,
+      "smica_wmapW_image_corr": 0.9529780913195546
+    },
+    {
+      "dec_deg": -67.42336927251765,
+      "gremlin_core_mean_pairwise_coherence": 0.8325812939077479,
+      "gremlin_hologram_coherence": 0.9181102765869069,
+      "l_deg": 315,
+      "ra_deg": 225.52345572756275,
+      "smica_center_z": 0.671541481075545,
+      "smica_wmapV_image_corr": 0.9170778143335386,
+      "smica_wmapW_image_corr": 0.8969590837583522
+    },
+    {
+      "dec_deg": -57.80585733274613,
+      "gremlin_core_mean_pairwise_coherence": 0.6658410687581077,
+      "gremlin_hologram_coherence": 0.8226814151128811,
+      "l_deg": 330,
+      "ra_deg": 250.6875394661236,
+      "smica_center_z": -1.6029453001634777,
+      "smica_wmapV_image_corr": 0.8943298235376216,
+      "smica_wmapW_image_corr": 0.9252748776670591
+    },
+    {
+      "dec_deg": -45.69265396406309,
+      "gremlin_core_mean_pairwise_coherence": 0.7780771664831614,
+      "gremlin_hologram_coherence": 0.8844225100990474,
+      "l_deg": 345,
+      "ra_deg": 264.78147726450686,
+      "smica_center_z": 1.0783648826387764,
+      "smica_wmapV_image_corr": 0.8044315557135528,
+      "smica_wmapW_image_corr": 0.8833476027106495
+    }
+  ],
+  "empirical": {
+    "abs_smica_center_z": 0.2857142857142857,
+    "gremlin_core_mean_pairwise_coherence_upper": 0.23809523809523808,
+    "gremlin_hologram_coherence_upper": 0.23809523809523808,
+    "smica_wmapV_image_corr_upper": 0.9047619047619048,
+    "smica_wmapW_image_corr_upper": 0.9047619047619048
+  },
+  "interpretation": "MATCHED_GALACTIC_LATITUDE_EMPIRICAL_NULL_NOT_FORMAL_SURVEY_PVALUE",
+  "n_controls": 20,
+  "schema": "PBH_CMB_MATCHED_LATITUDE_NULL_V0_2",
+  "status": "ANALYZED",
+  "target": {
+    "b_deg": -7.665782897020605,
+    "center_z": {
+      "planck_100": -0.8473316471636486,
+      "planck_143": -0.6580424711397682,
+      "planck_217": -0.0026289724683426978,
+      "planck_smica": -1.2034042119361232,
+      "wmap_V": -0.8555019920006754,
+      "wmap_W": -0.8831407506535749
+    },
+    "dec_deg": -25.907579,
+    "gremlin_core_mean_pairwise_coherence": 0.8211662188476737,
+    "gremlin_hologram_coherence": 0.9117081711338562,
+    "hashes": {
+      "planck_100": "35f1f5b0c6ea935ae8d3df1802b0022cf528fb2bffe331c71b0ae8bca0b5122f",
+      "planck_143": "e1c58269435aad3793a82455678a3e078545cccd0d371c902667d5e7153b9cf5",
+      "planck_217": "e43ddf787511353c7f427f49917e6c439252b0cbe1f7f3c094910f794c74bed9",
+      "planck_smica": "b9bff5f2130d96a1c8f20a31b6e78e802f1e6435f13d0268ad6c19bd516e555a",
+      "wmap_V": "0c52b2274e9f3b7f4aa7b826ae048b0b28a1fe9a790229fe5cf59e1244df5996",
+      "wmap_W": "f16db5180fb5d06d2d534ad2109c2fe07fac199c8de50ceebe2717b52e3a18b9"
+    },
+    "l_deg": 238.1709218507047,
+    "marker": {
+      "planck_100": {
+        "A1": 0.4824497038336525,
+        "A2": 0.1556075980367039,
+        "A3": 0.3146585344198969,
+        "A6": 0.21334972772223645,
+        "phase_coherence": 0.04403211897444625,
+        "phase_entropy": 0.8663051311009549
+      },
+      "planck_143": {
+        "A1": 0.4832378802197453,
+        "A2": 0.2216753370914896,
+        "A3": 0.3010716505378967,
+        "A6": 0.20645126795107216,
+        "phase_coherence": 0.046206881821298056,
+        "phase_entropy": 0.8645710734962824
+      },
+      "planck_217": {
+        "A1": 0.5493316530259196,
+        "A2": 0.3472677162438718,
+        "A3": 0.37207390795859396,
+        "A6": 0.10624307244444302,
+        "phase_coherence": 0.060391607552415925,
+        "phase_entropy": 0.9058298504367077
+      },
+      "planck_smica": {
+        "A1": 0.49277432238699126,
+        "A2": 0.09483286816371267,
+        "A3": 0.3318817281270651,
+        "A6": 0.19477871702872201,
+        "phase_coherence": 0.043340295004596026,
+        "phase_entropy": 0.8367042705884746
+      },
+      "wmap_V": {
+        "A1": 0.480232347453976,
+        "A2": 0.13565141602955402,
+        "A3": 0.31910775985831485,
+        "A6": 0.21557756758398233,
+        "phase_coherence": 0.04642612125169598,
+        "phase_entropy": 0.8393232957192275
+      },
+      "wmap_W": {
+        "A1": 0.48105865164674577,
+        "A2": 0.16143017728977932,
+        "A3": 0.3495259820342204,
+        "A6": 0.23497280875809912,
+        "phase_coherence": 0.04807116960538772,
+        "phase_entropy": 0.8325708161842812
+      }
+    },
+    "ra_deg": 107.576646,
+    "smica_wmapV_image_corr": 0.7718993061578603,
+    "smica_wmapW_image_corr": 0.7962960443537604,
+    "wmapVW_image_corr": 0.9910764653965872
+  },
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "276d2b6b-c137-49d7-98c9-52d574fba68f",
+    "script_commit": "ec7afa9cbcf9b269445dc4f952b5b0bbb081eb70"
+  }
+}
