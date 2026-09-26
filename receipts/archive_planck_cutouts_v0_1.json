@@ -1,0 +1,53 @@
+{
+  "schema": "PBH_ARCHIVE_PLANCK_CUTOUT_PROVENANCE_V0_1",
+  "status": "RECOVERED_FROM_USER_ARCHIVE",
+  "archive": {
+    "file_name": "CIEL-Omega-ApokalypOS-codex-ciel-sync-2026-05-12.zip",
+    "size_bytes": 390677779,
+    "sha256": "fef25a4cb20380483fec5b3e84ad8a2d1465e6a53ecf6dfd9ec42ec67d82e9ef",
+    "base_path": "src/ciel-omega-demo-main/docs/Studies/Metatime-main/data/"
+  },
+  "cutouts": [
+    {
+      "file":"107_-26_Equ_J2000_planck_100Rel3.fits",
+      "bytes":2563200,
+      "sha256":"1bef9697e314ad212d8aa2d1eec606968e189ead61a2d07e3d9eebec691409c5",
+      "zip_crc32":"c9b10c86",
+      "bunit":"Kcmb",
+      "wcs":{"ctype1":"GLON-TAN","ctype2":"GLAT-TAN","crval1":238.02198,"crval2":-8.17126,"crpix1":400.5,"crpix2":400.5,"cdelt1":-0.025,"cdelt2":0.025}
+    },
+    {
+      "file":"107_-26_Equ_J2000_planck_143Rel1.fits",
+      "bytes":2563200,
+      "sha256":"893e21091e6c9b770c9acc17a88ae874bc57ccef8a0e3dd35c5bce5552de1f8b",
+      "zip_crc32":"190c0c06",
+      "bunit":"K_CMB"
+    },
+    {
+      "file":"107_-26_Equ_J2000_planck_143Rel2.fits",
+      "bytes":2563200,
+      "sha256":"63ebab928422961985d69b537744785d8321e5f023dfe523bb6586be524f1748",
+      "zip_crc32":"a65d4f21",
+      "bunit":"K_CMB"
+    },
+    {
+      "file":"107_-26_Equ_J2000_planck_143Rel3.fits",
+      "bytes":2563200,
+      "sha256":"61770ad10ac6eb20b85a6587da21149b5e46d69b33273ff9f5eea93ed09d44a1",
+      "zip_crc32":"de5c79fb",
+      "bunit":"Kcmb",
+      "wcs":{"ctype1":"GLON-TAN","ctype2":"GLAT-TAN","crval1":238.02198,"crval2":-8.17126,"crpix1":400.5,"crpix2":400.5,"cdelt1":-0.025,"cdelt2":0.025}
+    },
+    {
+      "file":"107_-26_Equ_J2000_planck_217Rel3.fits",
+      "bytes":2563200,
+      "sha256":"ba03fb5d2aaedfc56de6079529cd6bdc22ef875dd5019d6d2abcb7c5c0e7cd1a",
+      "zip_crc32":"a337317e",
+      "bunit":"Kcmb",
+      "wcs":{"ctype1":"GLON-TAN","ctype2":"GLAT-TAN","crval1":238.02198,"crval2":-8.17126,"crpix1":400.5,"crpix2":400.5,"cdelt1":-0.025,"cdelt2":0.025}
+    }
+  ],
+  "provenance_limit": "The archive proves possession and byte identity of these historical cutouts. It does not by itself re-attest the original network retrieval endpoint; official IRSA/Planck metadata must be used for product-class verification.",
+  "authority":"PROVENANCE_ONLY",
+  "canon_allowed":false
+}
