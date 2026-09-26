@@ -169,10 +169,15 @@ def main():
                 data=np.asarray(hdul[0].data,dtype=float)
                 while data.ndim>2: data=data[0]
             data=finite_image(data)
+            entry["shape"]=[int(data.shape[0]),int(data.shape[1])]
+            entry["header"]={k:h.get(k) for k in (
+              "SURVEY","TELESCOP","INSTRUME","BUNIT","CTYPE1","CTYPE2",
+              "CRVAL1","CRVAL2","CRPIX1","CRPIX2","CDELT1","CDELT2",
+              "CD1_1","CD1_2","CD2_1","CD2_2","RADESYS","RADECSYS","EQUINOX",
+              "NAXIS1","NAXIS2"
+            ) if k in h}
             patch,pix,bounds,pixscale=target_patch(data,h)
             entry.update({
-              "shape":[int(data.shape[0]),int(data.shape[1])],
-              "header":{k:h.get(k) for k in ("SURVEY","TELESCOP","INSTRUME","BUNIT","CTYPE1","CTYPE2","CRVAL1","CRVAL2","CDELT1","CDELT2","NAXIS1","NAXIS2") if k in h},
               "target_pixel":[pix[0],pix[1]],"target_patch_bounds":list(bounds),"pixel_scale_deg":pixscale,
               "center_stats":center_stats(data,h),
               "phase_markers_target_4deg":phase_markers(patch),
