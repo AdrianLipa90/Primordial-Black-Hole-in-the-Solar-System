@@ -303,10 +303,20 @@ def fetch_cutout(source: dict[str, Any]) -> tuple[bytes, str]:
         "format": "fits",
     }
     url = HIPS2FITS + "?" + urlencode(params)
+    print("FERRET_FETCH_START=" + source["hips"], flush=True)
     response = requests.get(
         url,
-        timeout=120,
+        timeout=30,
         headers={"User-Agent": "GREMLIN-FERRET-PBH-CMB/0.3 read-only"},
+    )
+    print(
+        "FERRET_FETCH_DONE="
+        + source["hips"]
+        + " status="
+        + str(response.status_code)
+        + " bytes="
+        + str(len(response.content)),
+        flush=True,
     )
     if response.status_code != 200:
         raise RuntimeError(f"HTTP {response.status_code}")
