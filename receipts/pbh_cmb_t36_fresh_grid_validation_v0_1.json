@@ -418,6 +418,6 @@
     "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
     "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
     "railway_deployment_id": "7758a1b1-206f-429a-9d76-fde44e1617a7",
-    "preregistration_commit": "d2da211091fc5f4933174b07690208500f2dda9e"
+    "runtime_script_commit": "d2da211091fc5f4933174b07690208500f2dda9e"
   }
 }
