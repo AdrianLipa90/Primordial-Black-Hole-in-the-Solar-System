@@ -121,6 +121,125 @@ def phase_markers(image: np.ndarray) -> dict[str, Any]:
     return out
 
 
+GREMLIN_SOURCE = {
+    "repository": "AdrianLipa90/GREMLIN",
+    "commit": "9fdc42e507d5fe54c13dda975c297173ba0e4eb6",
+    "artifact": "gremlin_mcp/holographic_orbital_memory.py",
+    "algebra": [
+        "36D phase cell",
+        "phase_rms_distance",
+        "moire_overlap",
+        "project_hologram",
+    ],
+    "authority": "CANDIDATE_ONLY",
+}
+
+
+def phase36_sector_cell(image: np.ndarray) -> dict[str, Any]:
+    """Measurement-derived T^36 cell: 6 radial x 6 angular Fourier sectors.
+
+    No semantic meanings are assigned to the 36 coordinates. Each coordinate is
+    the amplitude-weighted circular mean Fourier phase of one fixed sector.
+    """
+    a = finite_image(image)
+    ny, nx = a.shape
+    centered = a - float(np.median(a))
+    window = np.outer(np.hanning(ny), np.hanning(nx))
+    fourier = np.fft.fftshift(np.fft.fft2(centered * window))
+    amp = np.abs(fourier)
+    phase = np.angle(fourier)
+
+    yy, xx = np.indices(a.shape)
+    cy, cx = (ny - 1) / 2.0, (nx - 1) / 2.0
+    kx = (xx - cx) / nx
+    ky = (yy - cy) / ny
+    kr = np.hypot(kx, ky)
+    theta = np.arctan2(ky, kx)
+
+    r_edges = np.linspace(0.02, 0.20, 7)
+    a_edges = np.linspace(-math.pi, math.pi, 7)
+    phases: list[float] = []
+    amplitudes: list[float] = []
+    counts: list[int] = []
+
+    total_amp = float(np.sum(amp[(kr >= 0.02) & (kr < 0.20)]))
+    for ri in range(6):
+        for ai in range(6):
+            mask = (
+                (kr >= r_edges[ri])
+                & (kr < r_edges[ri + 1])
+                & (theta >= a_edges[ai])
+                & (theta < a_edges[ai + 1])
+            )
+            w = amp[mask]
+            p = phase[mask]
+            counts.append(int(np.count_nonzero(mask)))
+            if w.size == 0 or float(np.sum(w)) <= 1e-18:
+                phases.append(0.0)
+                amplitudes.append(0.0)
+                continue
+            z = np.sum(w * np.exp(1j * p))
+            phases.append(float(np.angle(z) % (2.0 * math.pi)))
+            amplitudes.append(float(abs(z) / np.sum(w)))
+
+    if len(phases) != 36:
+        raise RuntimeError("phase36 sectorizer did not produce exactly 36 coordinates")
+
+    return {
+        "phase36": phases,
+        "sector_coherence36": amplitudes,
+        "sector_counts36": counts,
+        "global_sector_coherence": float(np.mean(amplitudes)),
+        "fft_band_total_amplitude": total_amp,
+        "layout": "RADIAL6_X_ANGULAR6_ROW_MAJOR",
+        "radial_range_cycles_per_pixel": [0.02, 0.20],
+        "authority": "MEASUREMENT_DERIVED_CANDIDATE",
+        "semantic_axis_assignment": False,
+    }
+
+
+def circular_delta(left: float, right: float) -> float:
+    return math.atan2(math.sin(left - right), math.cos(left - right))
+
+
+def phase_rms_distance(left: list[float], right: list[float]) -> float:
+    if len(left) != 36 or len(right) != 36:
+        raise ValueError("GREMLIN phase distance requires exact 36D cells")
+    return math.sqrt(
+        sum(circular_delta(x, y) ** 2 for x, y in zip(left, right)) / 36.0
+    )
+
+
+def moire_overlap(left: list[float], right: list[float]) -> float:
+    if len(left) != 36 or len(right) != 36:
+        raise ValueError("GREMLIN moire overlap requires exact 36D cells")
+    z = sum(
+        np.exp(1j * circular_delta(x, y))
+        for x, y in zip(left, right)
+    ) / 36.0
+    return float(abs(z))
+
+
+def project_hologram(cells: list[list[float]]) -> dict[str, Any]:
+    if not cells:
+        raise ValueError("project_hologram requires at least one 36D cell")
+    if any(len(cell) != 36 for cell in cells):
+        raise ValueError("all hologram cells must be exact 36D")
+    phases: list[float] = []
+    amplitudes: list[float] = []
+    for j in range(36):
+        z = sum(np.exp(1j * cell[j]) for cell in cells)
+        phases.append(float(np.angle(z) % (2.0 * math.pi)) if abs(z) > 1e-15 else 0.0)
+        amplitudes.append(float(abs(z) / len(cells)))
+    return {
+        "phase36": phases,
+        "amplitude36": amplitudes,
+        "global_coherence": float(np.mean(amplitudes)),
+        "source_count": len(cells),
+        "authority": "CANDIDATE_ONLY",
+    }
+
+
 def center_stats(image: np.ndarray) -> dict[str, Any]:
     a = finite_image(image)
     ny, nx = a.shape
@@ -213,6 +332,11 @@ def main() -> int:
         "maps": {},
         "raw_pairwise_correlations": {},
         "common_beam_pairwise_correlations": {},
+        "gremlin_source": GREMLIN_SOURCE,
+        "gremlin_phase36_pairwise_common_beam": {},
+        "gremlin_phase36_pairwise_raw": {},
+        "gremlin_hologram_all_common_beam": null,
+        "gremlin_hologram_frequency_common_beam": null,
         "status": "PARTIAL",
         "interpretation": "DESCRIPTIVE_ONLY_NOT_PBH_DETECTION",
         "authority": "CANDIDATE_ONLY",
@@ -221,6 +345,8 @@ def main() -> int:
 
     raw_images: dict[str, np.ndarray] = {}
     smoothed_images: dict[str, np.ndarray] = {}
+    phase36_raw: dict[str, list[float]] = {}
+    phase36_common: dict[str, list[float]] = {}
 
     for name, source in SOURCES.items():
         entry: dict[str, Any] = {
@@ -278,10 +404,20 @@ def main() -> int:
                     "phase_markers_central4deg_common_beam": phase_markers(
                         central_common
                     ),
+                    "gremlin_phase36_central4deg_raw": phase36_sector_cell(
+                        central
+                    ),
+                    "gremlin_phase36_central4deg_common_beam": phase36_sector_cell(
+                        central_common
+                    ),
                 }
             )
             raw_images[name] = data
             smoothed_images[name] = smoothed
+            phase36_raw[name] = entry["gremlin_phase36_central4deg_raw"]["phase36"]
+            phase36_common[name] = entry[
+                "gremlin_phase36_central4deg_common_beam"
+            ]["phase36"]
             receipt["maps"][name] = entry
         except Exception as exc:
             entry["error"] = f"{type(exc).__name__}: {exc}"
@@ -296,6 +432,36 @@ def main() -> int:
             )
             receipt["common_beam_pairwise_correlations"][key] = corr(
                 smoothed_images[left], smoothed_images[right]
+            )
+            receipt["gremlin_phase36_pairwise_raw"][key] = {
+                "moire_overlap": moire_overlap(
+                    phase36_raw[left], phase36_raw[right]
+                ),
+                "phase_rms_distance_rad": phase_rms_distance(
+                    phase36_raw[left], phase36_raw[right]
+                ),
+            }
+            receipt["gremlin_phase36_pairwise_common_beam"][key] = {
+                "moire_overlap": moire_overlap(
+                    phase36_common[left], phase36_common[right]
+                ),
+                "phase_rms_distance_rad": phase_rms_distance(
+                    phase36_common[left], phase36_common[right]
+                ),
+            }
+
+    if phase36_common:
+        receipt["gremlin_hologram_all_common_beam"] = project_hologram(
+            [phase36_common[name] for name in sorted(phase36_common)]
+        )
+        frequency_names = [
+            name
+            for name in sorted(phase36_common)
+            if receipt["maps"][name].get("kind") == "CMB_FREQUENCY"
+        ]
+        if frequency_names:
+            receipt["gremlin_hologram_frequency_common_beam"] = project_hologram(
+                [phase36_common[name] for name in frequency_names]
             )
 
     ok = [k for k, v in receipt["maps"].items() if "error" not in v]
