@@ -4,7 +4,9 @@
   "target": {
     "frame": "ICRS_J2000",
     "ra_deg": 107.576646,
-    "dec_deg": -25.907579
+    "dec_deg": -25.907579,
+    "gal_l_deg": 238.1709218507047,
+    "gal_b_deg": -7.665782897020605
   },
   "cutout": {
     "size_pixels": 120,
@@ -84,5 +86,69 @@
     "storage": "GitHub Actions artifact",
     "retention_days": 30,
     "trigger": "push on proxy branch"
-  }
+  },
+  "hips_target": {
+    "order": 3,
+    "nside": 8,
+    "nested_tile_npix": 488,
+    "dir": "Dir0",
+    "relative_path": "Norder3/Dir0/Npix488.fits",
+    "derivation": "HEALPix NESTED parent tile at order 3 from Galactic target coordinates"
+  },
+  "hips_sources": [
+    {
+      "id": "planck_pr3_100_hips",
+      "base_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_100_R3",
+      "tile_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_100_R3/Norder3/Dir0/Npix488.fits",
+      "frame": "galactic",
+      "order": 3,
+      "tile_width": 256,
+      "format": "fits"
+    },
+    {
+      "id": "planck_pr3_143_hips",
+      "base_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_143_R3",
+      "tile_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_143_R3/Norder3/Dir0/Npix488.fits",
+      "frame": "galactic",
+      "order": 3,
+      "tile_width": 256,
+      "format": "fits"
+    },
+    {
+      "id": "planck_pr3_217_hips",
+      "base_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_217_R3",
+      "tile_url": "https://alasky.cds.unistra.fr/PLANCK/R3/HFI_SkyMap_217_R3/Norder3/Dir0/Npix488.fits",
+      "frame": "galactic",
+      "order": 3,
+      "tile_width": 256,
+      "format": "fits"
+    },
+    {
+      "id": "wmap9_v_hips",
+      "base_url": "https://alasky.cds.unistra.fr/WMAP9yr/WMAPV9yr",
+      "tile_url": "https://alasky.cds.unistra.fr/WMAP9yr/WMAPV9yr/Norder3/Dir0/Npix488.fits",
+      "frame": "galactic",
+      "order": 3,
+      "tile_width": 64,
+      "format": "fits"
+    },
+    {
+      "id": "wmap9_w_hips",
+      "base_url": "https://alasky.cds.unistra.fr/WMAP9yr/WMAPW9yr",
+      "tile_url": "https://alasky.cds.unistra.fr/WMAP9yr/WMAPW9yr/Norder3/Dir0/Npix488.fits",
+      "frame": "galactic",
+      "order": 3,
+      "tile_width": 64,
+      "format": "fits"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "HIPSTILE-001",
+      "previous_value": 490,
+      "corrected_value": 488,
+      "reason": "Initial manual Morton-bit interleave arithmetic was off by +2. Recomputed with the standard HEALPix NESTED ang2pix algorithm and verified parent consistency from NSIDE 512 and 2048.",
+      "status": "CORRECTED_FAIL_LOUD"
+    }
+  ]
 }
