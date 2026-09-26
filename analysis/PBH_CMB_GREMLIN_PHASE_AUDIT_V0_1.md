@@ -148,3 +148,90 @@ canon_allowed = false
 physical_PBH_detection = false
 main_branch_mutation = false
 ```
+
+
+## Planck 30-857 GHz spectral T36 gate
+
+The target-only spectral pass was repeated over the Planck frequency ladder after common smoothing to 60 arcmin.
+
+SMICA-vs-frequency T36 Moire overlaps:
+
+| GHz | T36 Moire |
+|---:|---:|
+| 30 | 0.277730 |
+| 44 | 0.263341 |
+| 70 | 0.527174 |
+| 100 | 0.418707 |
+| 143 | 0.277903 |
+| 217 | 0.222267 |
+| 353 | 0.357637 |
+| 545 | 0.405610 |
+| 857 | 0.419877 |
+
+Band means:
+
+```text
+30-70 GHz   = 0.3560813173
+100-217 GHz = 0.3062925981
+353-857 GHz = 0.3943745598
+```
+
+This profile is non-monotonic. The 70 GHz channel is a local maximum, 217 GHz is a local minimum, and the high-frequency T36 relation rises again. That shape by itself is not a PBH discriminator.
+
+## Matched-latitude spectral null
+
+A follow-up control used 20 positions at the same Galactic latitude and the same 30-degree target-exclusion rule. The statistic was selected after the target-only spectral pass, so all ranks below are explicitly descriptive/post-hoc rather than formal p-values.
+
+Target:
+
+```text
+T36(70 GHz)             = 0.5271735762
+low 30-70 mean          = 0.3560813173
+mid 100-217 mean        = 0.3062925981
+high 353-857 mean       = 0.3943745598
+70 GHz peak margin      = 0.1084664381
+high minus mid          = 0.0880819617
+low minus mid           = 0.0497887192
+```
+
+Matched-latitude control distributions:
+
+```text
+T36(70 GHz) control median      = 0.9295667053
+low-band control median         = 0.7626887685
+mid-band control median         = 0.6166737099
+high-band control median        = 0.4307489616
+70 GHz peak-margin median       = 0.0263674697
+high-minus-mid median           = -0.1756026196
+low-minus-mid median            = 0.0533736215
+```
+
+Descriptive ranks for the target:
+
+```text
+T36(70 GHz):       lower = 0.1429, upper = 0.9048
+low-band mean:     lower = 0.0952, upper = 0.9524
+mid-band mean:     lower = 0.1429, upper = 0.9048
+high-band mean:    lower = 0.2857, upper = 0.7619
+70 GHz margin:     lower = 0.7619, upper = 0.2857
+high minus mid:    lower = 0.9524, upper = 0.0952
+low minus mid:     lower = 0.5238, upper = 0.5238
+```
+
+The result does **not** support an unusually strong 70 GHz phase marker. The most distinctive scalar in this post-hoc pilot is instead the relatively high `high-minus-mid` contrast, produced primarily by a suppressed 100-217 GHz T36 relation at the target. Because that scalar was defined after inspecting the spectral profile, it must be preregistered and retested on a new control set before any inferential use.
+
+Current interpretation is therefore narrower:
+
+```text
+unique PBH phase resonance          NOT ESTABLISHED
+70 GHz-specific anomaly             NOT ESTABLISHED
+broad cross-frequency coherence     BELOW matched-latitude typical values
+mid-band suppression candidate      OBSERVED / POST-HOC
+foreground-independent mechanism    NOT ESTABLISHED
+```
+
+The next clean gate is to freeze one scalar before looking at any further positions. A natural candidate is
+
+`S = mean(T36_353,545,857) - mean(T36_100,143,217)`,
+
+with the sign and aperture/beam fixed in advance, followed by a fresh blind longitude set not used in either existing control pass.
