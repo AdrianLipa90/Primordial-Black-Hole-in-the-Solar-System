@@ -306,7 +306,7 @@ def fetch_cutout(source: dict[str, Any]) -> tuple[bytes, str]:
     response = requests.get(
         url,
         timeout=120,
-        headers={"User-Agent": "GREMLIN-FERRET-PBH-CMB/0.2 read-only"},
+        headers={"User-Agent": "GREMLIN-FERRET-PBH-CMB/0.3 read-only"},
     )
     if response.status_code != 200:
         raise RuntimeError(f"HTTP {response.status_code}")
@@ -318,7 +318,7 @@ def fetch_cutout(source: dict[str, Any]) -> tuple[bytes, str]:
 
 def main() -> int:
     receipt: dict[str, Any] = {
-        "schema": "PBH_CMB_CENTERED_PHASE_RECEIPT_V0_2",
+        "schema": "PBH_CMB_CENTERED_GREMLIN_T36_RECEIPT_V0_3",
         "target": TARGET,
         "cutout": {
             "width": WIDTH,
