@@ -1,0 +1,466 @@
+{
+  "assumption": {
+    "branch_policy": "all four exact Kepler-consistent velocity/orientation branches retained",
+    "dynamics": "Sun-only two-body propagation; Earth position from Astropy builtin ephemeris for observer parallax",
+    "epoch_status": "PROVISIONAL_NOT_RECOVERED_FROM_ORIGINAL_SOURCE",
+    "frame_assumption": "published Cartesian vector interpreted in ICRS-equatorial axes because its direct atan2/asin conversion reproduces the published RA/Dec",
+    "published_cartesian_vector_epoch": "2025-03-07T00:00:00 UTC"
+  },
+  "authority": "CANDIDATE_ONLY",
+  "branches": {
+    "A_INBOUND": {
+      "2025-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9641408795007108,
+          0.21535527299140614,
+          0.09335634445094614
+        ],
+        "geocentric_dec_deg": -25.937132792940158,
+        "geocentric_distance_AU": 582.7326878499082,
+        "geocentric_ra_deg": 107.48326309994886,
+        "heliocentric_dec_deg": -25.907578906023748,
+        "heliocentric_distance_AU": 583.1377550476387,
+        "heliocentric_position_AU": [
+          -158.399,
+          500.044,
+          -254.785
+        ],
+        "heliocentric_ra_deg": 107.57664605896267,
+        "heliocentric_velocity_AU_yr": [
+          -0.09244534800482046,
+          -0.1667969780395646,
+          0.08498738917367973
+        ],
+        "parallax_offset_arcmin": 5.342130799482929
+      },
+      "2026-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.0017265120235468,
+          0.041143471450217704,
+          0.017827009053094627
+        ],
+        "geocentric_dec_deg": -25.894865964468607,
+        "geocentric_distance_AU": 583.1423180686182,
+        "geocentric_ra_deg": 107.70582703915534,
+        "heliocentric_dec_deg": -25.904646885677405,
+        "heliocentric_distance_AU": 582.8965355021419,
+        "heliocentric_position_AU": [
+          -158.5427235336235,
+          499.78449374442596,
+          -254.65277482793826
+        ],
+        "heliocentric_ra_deg": 107.60018158666892,
+        "heliocentric_velocity_AU_yr": [
+          -0.09239625643259891,
+          -0.16695184293056922,
+          0.08506629673229181
+        ],
+        "parallax_offset_arcmin": 5.7321828874950835
+      },
+      "2027-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9618798655645612,
+          0.22321779636152397,
+          0.09676542407198124
+        ],
+        "geocentric_dec_deg": -25.933990809261125,
+        "geocentric_distance_AU": 582.4175676489256,
+        "geocentric_ra_deg": 107.5139911510262,
+        "heliocentric_dec_deg": -25.903809498764453,
+        "heliocentric_distance_AU": 582.8277003553064,
+        "heliocentric_position_AU": [
+          -158.58370110507138,
+          499.7104354889712,
+          -254.6150402248363
+        ],
+        "heliocentric_ra_deg": 107.60689754107247,
+        "heliocentric_velocity_AU_yr": [
+          -0.09238223562362854,
+          -0.16699603264865095,
+          0.08508881250552602
+        ],
+        "parallax_offset_arcmin": 5.330687686075886
+      },
+      "2027-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.002031483779583,
+          0.03703426644021641,
+          0.016046997247489984
+        ],
+        "geocentric_dec_deg": -25.89263641834089,
+        "geocentric_distance_AU": 582.9902642671167,
+        "geocentric_ra_deg": 107.7208746181128,
+        "heliocentric_dec_deg": -25.902759464419397,
+        "heliocentric_distance_AU": 582.7414210187699,
+        "heliocentric_position_AU": [
+          -158.6350407615908,
+          499.6176064236449,
+          -254.56774140698087
+        ],
+        "heliocentric_ra_deg": 107.61531531772822,
+        "heliocentric_velocity_AU_yr": [
+          -0.09236465420632856,
+          -0.1670514190450845,
+          0.08511703326809637
+        ],
+        "parallax_offset_arcmin": 5.729795899079463
+      }
+    },
+    "A_OUTBOUND": {
+      "2025-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9641408795007108,
+          0.21535527299140614,
+          0.09335634445094614
+        ],
+        "geocentric_dec_deg": -25.937132792940158,
+        "geocentric_distance_AU": 582.7326878499082,
+        "geocentric_ra_deg": 107.48326309994886,
+        "heliocentric_dec_deg": -25.907578906023748,
+        "heliocentric_distance_AU": 583.1377550476387,
+        "heliocentric_position_AU": [
+          -158.399,
+          500.044,
+          -254.785
+        ],
+        "heliocentric_ra_deg": 107.57664605896267,
+        "heliocentric_velocity_AU_yr": [
+          -0.1766790385976647,
+          0.09911727381056191,
+          -0.05050261302139609
+        ],
+        "parallax_offset_arcmin": 5.342130799482929
+      },
+      "2026-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.0017265120235468,
+          0.041143471450217704,
+          0.017827009053094627
+        ],
+        "geocentric_dec_deg": -25.8948765161942,
+        "geocentric_distance_AU": 583.6245565154293,
+        "geocentric_ra_deg": 107.70572031060185,
+        "heliocentric_dec_deg": -25.904649310946866,
+        "heliocentric_distance_AU": 583.3787749182932,
+        "heliocentric_position_AU": [
+          -158.67371530347154,
+          500.19801686359364,
+          -254.86347526212842
+        ],
+        "heliocentric_ra_deg": 107.60016213193873,
+        "heliocentric_velocity_AU_yr": [
+          -0.17662998763286702,
+          0.09896253692904365,
+          -0.050423770686837954
+        ],
+        "parallax_offset_arcmin": 5.727446928512695
+      },
+      "2027-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9618798655645612,
+          0.22321779636152397,
+          0.09676542407198124
+        ],
+        "geocentric_dec_deg": -25.93396274722091,
+        "geocentric_distance_AU": 583.0373469229467,
+        "geocentric_ra_deg": 107.5140577692696,
+        "heliocentric_dec_deg": -25.903813506225614,
+        "heliocentric_distance_AU": 583.4474799233876,
+        "heliocentric_position_AU": [
+          -158.7520532212913,
+          500.2419001167403,
+          -254.88583482525922
+        ],
+        "heliocentric_ra_deg": 107.60686540681795,
+        "heliocentric_velocity_AU_yr": [
+          -0.17661599331577332,
+          0.09891843063715737,
+          -0.050401297421349626
+        ],
+        "parallax_offset_arcmin": 5.325022271040336
+      },
+      "2027-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.002031483779583,
+          0.03703426644021641,
+          0.016046997247489984
+        ],
+        "geocentric_dec_deg": -25.892656790295128,
+        "geocentric_distance_AU": 583.7823916648903,
+        "geocentric_ra_deg": 107.72067894055706,
+        "heliocentric_dec_deg": -25.902766013614904,
+        "heliocentric_distance_AU": 583.5335503229782,
+        "heliocentric_position_AU": [
+          -158.85020863950294,
+          500.29686201400966,
+          -254.9138392215321
+        ],
+        "heliocentric_ra_deg": 107.61526282752175,
+        "heliocentric_velocity_AU_yr": [
+          -0.17659845445719172,
+          0.09886317817113216,
+          -0.0503731448996922
+        ],
+        "parallax_offset_arcmin": 5.722022414517599
+      }
+    },
+    "B_INBOUND": {
+      "2025-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9641408795007108,
+          0.21535527299140614,
+          0.09335634445094614
+        ],
+        "geocentric_dec_deg": -25.937132792940158,
+        "geocentric_distance_AU": 582.7326878499082,
+        "geocentric_ra_deg": 107.48326309994886,
+        "heliocentric_dec_deg": -25.907578906023748,
+        "heliocentric_distance_AU": 583.1377550476387,
+        "heliocentric_position_AU": [
+          -158.399,
+          500.044,
+          -254.785
+        ],
+        "heliocentric_ra_deg": 107.57664605896267,
+        "heliocentric_velocity_AU_yr": [
+          -0.08738699593414413,
+          -0.18276550437388026,
+          0.05050261302139604
+        ],
+        "parallax_offset_arcmin": 5.342130799482929
+      },
+      "2026-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.0017265120235468,
+          0.041143471450217704,
+          0.017827009053094627
+        ],
+        "geocentric_dec_deg": -25.900723732694665,
+        "geocentric_distance_AU": 583.142307947416,
+        "geocentric_ra_deg": 107.70583345397216,
+        "heliocentric_dec_deg": -25.91050712665684,
+        "heliocentric_distance_AU": 582.8965355021494,
+        "heliocentric_position_AU": [
+          -158.53485729475858,
+          499.7596611031475,
+          -254.70640207306562
+        ],
+        "heliocentric_ra_deg": 107.60018275597716,
+        "heliocentric_velocity_AU_yr": [
+          -0.08733790558058749,
+          -0.18292036541772563,
+          0.05058152888812927
+        ],
+        "parallax_offset_arcmin": 5.7321980252815905
+      },
+      "2027-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9618798655645612,
+          0.22321779636152397,
+          0.09676542407198124
+        ],
+        "geocentric_dec_deg": -25.94152864842615,
+        "geocentric_distance_AU": 582.4176080284277,
+        "geocentric_ra_deg": 107.51398714599438,
+        "heliocentric_dec_deg": -25.911342035559198,
+        "heliocentric_distance_AU": 582.8277003553114,
+        "heliocentric_position_AU": [
+          -158.57359132677885,
+          499.67852030026404,
+          -254.68396256091003
+        ],
+        "heliocentric_ra_deg": 107.60689947295468,
+        "heliocentric_velocity_AU_yr": [
+          -0.08732388556637988,
+          -0.182964552626851,
+          0.0506040500795715
+        ],
+        "parallax_offset_arcmin": 5.330795657163716
+      },
+      "2027-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.002031483779583,
+          0.03703426644021641,
+          0.016046997247489984
+        ],
+        "geocentric_dec_deg": -25.90226092860289,
+        "geocentric_distance_AU": 582.9902470744005,
+        "geocentric_ra_deg": 107.72088638574374,
+        "heliocentric_dec_deg": -25.912388089968292,
+        "heliocentric_distance_AU": 582.741421018768,
+        "heliocentric_position_AU": [
+          -158.62211963507778,
+          499.5768161927367,
+          -254.6558298099158
+        ],
+        "heliocentric_ra_deg": 107.61531847438036,
+        "heliocentric_velocity_AU_yr": [
+          -0.08730630542554799,
+          -0.18301993499364927,
+          0.050632279544327134
+        ],
+        "parallax_offset_arcmin": 5.729821956859897
+      }
+    },
+    "B_OUTBOUND": {
+      "2025-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9641408795007108,
+          0.21535527299140614,
+          0.09335634445094614
+        ],
+        "geocentric_dec_deg": -25.937132792940158,
+        "geocentric_distance_AU": 582.7326878499082,
+        "geocentric_ra_deg": 107.48326309994886,
+        "heliocentric_dec_deg": -25.907578906023748,
+        "heliocentric_distance_AU": 583.1377550476387,
+        "heliocentric_position_AU": [
+          -158.399,
+          500.044,
+          -254.785
+        ],
+        "heliocentric_ra_deg": 107.57664605896267,
+        "heliocentric_velocity_AU_yr": [
+          -0.1716206865269884,
+          0.08314874747624625,
+          -0.08498738917367979
+        ],
+        "parallax_offset_arcmin": 5.342130799482929
+      },
+      "2026-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.0017265120235468,
+          0.041143471450217704,
+          0.017827009053094627
+        ],
+        "geocentric_dec_deg": -25.900729444257696,
+        "geocentric_distance_AU": 583.624546402583,
+        "geocentric_ra_deg": 107.70572671482347,
+        "heliocentric_dec_deg": -25.910504707666167,
+        "heliocentric_distance_AU": 583.3787749182934,
+        "heliocentric_position_AU": [
+          -158.66584906460704,
+          500.1731842223037,
+          -254.91710250726138
+        ],
+        "heliocentric_ra_deg": 107.600163299315,
+        "heliocentric_velocity_AU_yr": [
+          -0.17157163677884166,
+          0.08299401443553008,
+          -0.08490853854473049
+        ],
+        "parallax_offset_arcmin": 5.727462041475619
+      },
+      "2027-03-07T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          -0.9618798655645612,
+          0.22321779636152397,
+          0.09676542407198124
+        ],
+        "geocentric_dec_deg": -25.941492573533385,
+        "geocentric_distance_AU": 583.0373872595204,
+        "geocentric_ra_deg": 107.51405377275051,
+        "heliocentric_dec_deg": -25.911338041425008,
+        "heliocentric_distance_AU": 583.4474799233883,
+        "heliocentric_position_AU": [
+          -158.74194344299647,
+          500.20998492801766,
+          -254.9547571613549
+        ],
+        "heliocentric_ra_deg": 107.60686733459825,
+        "heliocentric_velocity_AU_yr": [
+          -0.17155764325424885,
+          0.08294991064546131,
+          -0.08488605987645105
+        ],
+        "parallax_offset_arcmin": 5.325130012541619
+      },
+      "2027-09-26T00:00:00": {
+        "earth_heliocentric_icrs_AU": [
+          1.002031483779583,
+          0.03703426644021641,
+          0.016046997247489984
+        ],
+        "geocentric_dec_deg": -25.90226824119424,
+        "geocentric_distance_AU": 583.782374495498,
+        "geocentric_ra_deg": 107.72069067627798,
+        "heliocentric_dec_deg": -25.91238156859941,
+        "heliocentric_distance_AU": 583.5335503229717,
+        "heliocentric_position_AU": [
+          -158.83728751298406,
+          500.2560717830751,
+          -255.00192762451158
+        ],
+        "heliocentric_ra_deg": 107.61526597560984,
+        "heliocentric_velocity_AU_yr": [
+          -0.17154010566748534,
+          0.0828946621943906,
+          -0.08485789868431257
+        ],
+        "parallax_offset_arcmin": 5.722048401072727
+      }
+    }
+  },
+  "canon_allowed": false,
+  "envelope": {
+    "2025-03-07T00:00:00": {
+      "dec_deg_max": -25.937132792940158,
+      "dec_deg_min": -25.937132792940158,
+      "max_branch_pair_separation_arcmin": 0,
+      "max_separation_pair": null,
+      "ra_deg_max": 107.48326309994886,
+      "ra_deg_min": 107.48326309994886
+    },
+    "2026-09-26T00:00:00": {
+      "dec_deg_max": -25.894865964468607,
+      "dec_deg_min": -25.900729444257696,
+      "max_branch_pair_separation_arcmin": 0.3518504614497917,
+      "max_separation_pair": [
+        "A_INBOUND",
+        "B_OUTBOUND"
+      ],
+      "ra_deg_max": 107.70583345397216,
+      "ra_deg_min": 107.70572031060185
+    },
+    "2027-03-07T00:00:00": {
+      "dec_deg_max": -25.93396274722091,
+      "dec_deg_min": -25.94152864842615,
+      "max_branch_pair_separation_arcmin": 0.45397006689441394,
+      "max_separation_pair": [
+        "A_OUTBOUND",
+        "B_INBOUND"
+      ],
+      "ra_deg_max": 107.5140577692696,
+      "ra_deg_min": 107.51398714599438
+    },
+    "2027-09-26T00:00:00": {
+      "dec_deg_max": -25.89263641834089,
+      "dec_deg_min": -25.90226824119424,
+      "max_branch_pair_separation_arcmin": 0.5779946437155101,
+      "max_separation_pair": [
+        "A_INBOUND",
+        "B_OUTBOUND"
+      ],
+      "ra_deg_max": 107.72088638574374,
+      "ra_deg_min": 107.72067894055706
+    }
+  },
+  "hard_stop": "Do not call any row a current PBH position unless the original simulation epoch/state provenance is recovered or independently justified.",
+  "interpretation": "CONDITIONAL_SEARCH_CORRIDOR_ONLY",
+  "schema": "PBH_CONDITIONAL_SKY_CORRIDOR_V0_1",
+  "status": "ANALYZED",
+  "provenance": {
+    "noema_tether": "ACTIVE_FRESH_GUARD",
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "cf2845b6-65c9-4d7f-b7e0-a184438247f2",
+    "orbital_audit": "receipts/pbh_orbital_reconstruction_audit_v0_1.json"
+  },
+  "bestiary": {
+    "OWL": "The paper date is used only as a provisional epoch; it is not recovered simulation provenance.",
+    "HOUND": "All four exact Kepler-consistent branches remain alive.",
+    "SPIDER": "Earth-parallax and branch dynamics are propagated into a time-indexed sky corridor.",
+    "BELZEBUB": "No branch is promoted to the true PBH state.",
+    "GREMLIN": "CONDITIONAL_2026_CORRIDOR_NARROW_UNDER_EPOCH_ASSUMPTION_BUT_NOT_CANONICAL"
+  }
+}
