@@ -288,3 +288,46 @@ CMB phase evidence for PBH          NOT ESTABLISHED
 ```
 
 The orbital PBH candidate remains logically separate from this negative CMB marker result.
+
+
+## Fresh-grid validation of frozen high-minus-mid statistic
+
+After the post-hoc spectral pass, one scalar was frozen before opening a new control grid:
+
+```text
+S = mean(M353, M545, M857) - mean(M100, M143, M217)
+tail = upper
+common beam = 60 arcmin
+central analysis field = 4 deg
+T36 layout = 6 radial x 6 angular Fourier sectors
+```
+
+A fresh longitude grid was offset by 7.5 degrees from the prior 15-degree control grid, at the same Galactic latitude and with the same 30-degree target exclusion.
+
+Result:
+
+```text
+target S                 = +0.0880819617
+N controls               = 20
+control mean             = -0.2068328290
+control median           = -0.2791850283
+control std (sample)     = 0.2366903398
+control range            = -0.7018729428 .. +0.2895963083
+standardized target      = +1.2459942001 sigma
+upper add-one rank       = 0.1904761905
+```
+
+This new grid does not reproduce a strong tail event. The target is above the control mean, but it is not rare enough in this validation to support a detection claim. The proper status of `S` is therefore:
+
+```text
+directional contrast     REPRODUCED
+strong anomaly           NOT REPRODUCED
+formal significance      NOT ESTABLISHED
+PBH interpretation       NOT ESTABLISHED
+```
+
+This validation is stronger than the original post-hoc rank because the scalar and tail were frozen before the fresh control grid was evaluated, but it is still an internal sky-control validation on the same public Planck products rather than an independent experiment.
+
+## Source identity check
+
+The CDS HiPS product used as the CMB component map, `CDS/P/PLANCK/R3/CMB`, is generated from the Planck R3 SMICA file `COM_CMB_IQU-smica_2048_R3.00_full.fits`. Therefore the internal label `planck_smica` is provenance-consistent and is retained.
