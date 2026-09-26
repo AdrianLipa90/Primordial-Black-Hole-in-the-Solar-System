@@ -74,6 +74,36 @@ GREMLIN: the current 36D sector/Moire descriptor **fails the specificity gate**.
 
 This is a negative result for the **current marker definition**, not a proof against the orbital PBH hypothesis.
 
+
+## Foreground gate
+
+A separate same-latitude control gate was run against Planck 353 GHz (dust-sensitive) and Planck 30 GHz (low-frequency foreground-sensitive) after convolution to the same 40 arcmin beam.
+
+At the fixed PBH coordinate:
+
+```text
+SMICA-353 image correlation       = 0.059883
+SMICA-353 T36 Moire overlap       = 0.281245
+SMICA-30 image correlation        = 0.303161
+SMICA-30 T36 Moire overlap        = 0.555859
+```
+
+Matched-latitude empirical upper-tail ranks:
+
+```text
+|SMICA-353 image correlation|     p_emp = 0.809524
+SMICA-353 T36 Moire overlap       p_emp = 0.761905
+|SMICA-30 image correlation|      p_emp = 0.666667
+SMICA-30 T36 Moire overlap        p_emp = 0.142857
+```
+
+The target marker is therefore **not unusually dust-like** under this control. Its 30 GHz T36 overlap is somewhat elevated relative to the 20-position null, but is not rare enough to pass the current specificity gate. This foreground test does not rescue the PBH interpretation, but it does rule out the simplest explanation that the present phase coherence is merely an unusually strong 353 GHz dust match at the target.
+
+Receipt:
+
+- `receipts/pbh_cmb_foreground_gate_v0_1.json`
+
+
 ## Next gate
 
 Do not tune the target location. Keep the coordinate fixed. Improve only the statistic:
