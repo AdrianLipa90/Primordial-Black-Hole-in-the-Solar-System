@@ -106,7 +106,10 @@ def main():
 
             entry.update({
               "wcs":{"CTYPE1":h.get("CTYPE1"),"CTYPE2":h.get("CTYPE2"),"CRVAL1":h.get("CRVAL1"),"CRVAL2":h.get("CRVAL2"),"CDELT1":h.get("CDELT1"),"CDELT2":h.get("CDELT2"),"BUNIT":h.get("BUNIT")},
-              "historical_untransformed_target_pixel_origin1":[float(wrong_x),float(wrong_y)],
+              "historical_untransformed_target_pixel_origin1":[
+                  float(wrong_x) if np.isfinite(wrong_x) else None,
+                  float(wrong_y) if np.isfinite(wrong_y) else None
+              ],
               "historical_target_pixel_is_finite":bool(np.isfinite(wrong_x) and np.isfinite(wrong_y)),
               "correct_galactic_target_pixel_origin1":[float(right_x),float(right_y)],
               "sigma_clipped":{"mean":float(mean),"median":float(median),"std":float(std),"threshold_5sigma":float(5.0*std)},
@@ -129,7 +132,7 @@ def main():
       "BELZEBUB":"A 5-pixel proximity alert cannot be promoted to PBH evidence without a calibrated null model and an observable tied to lensing/astrometry.",
       "GREMLIN":"HISTORICAL_POINT_SOURCE_TEST_REPLAYED_WITH_WCS_FIREWALL"
     }
-    print("PBH_DAO_REPLAY="+json.dumps(receipt,sort_keys=True,separators=(",",":")),flush=True)
+    print("PBH_DAO_REPLAY="+json.dumps(receipt,sort_keys=True,separators=(",",":"),allow_nan=False),flush=True)
 
 if __name__=="__main__":
     main()
