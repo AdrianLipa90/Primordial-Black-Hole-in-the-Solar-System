@@ -1,0 +1,66 @@
+{
+  "schema": "PBH_MICROLENSING_OBSERVATION_GATE_V0_1",
+  "status": "ANALYZED",
+  "geometry": {
+    "lens_distance_AU": 583.1377550476387,
+    "assumed_background_source_distance_pc": 1000,
+    "annual_parallax_semi_amplitude_arcmin": 5.8952596122511505,
+    "approx_max_parallax_track_speed_arcsec_day": 6.085216681911638,
+    "kepler_branch_transverse_proper_motion_arcsec_yr": 49.45626473669753
+  },
+  "mass_scenarios": {
+    "origins_5_earth_mass": {
+      "mass_Earth": 5,
+      "schwarzschild_radius_m": 0.04435051435923049,
+      "schwarzschild_diameter_m": 0.08870102871846099,
+      "theta_E_mas_at_1kpc_source": 6.577198805218979,
+      "max_astrometric_centroid_shift_mas": 2.325390938191199,
+      "physical_Einstein_radius_km": 2781.710954080987,
+      "tE_minutes_at_30km_s": 1.545394974489437,
+      "tE_hours_at_0p9897km_s": 0.7807167046778204
+    },
+    "narrative_10_earth_mass": {
+      "mass_Earth": 10,
+      "schwarzschild_radius_m": 0.08870102871846099,
+      "schwarzschild_diameter_m": 0.17740205743692197,
+      "theta_E_mas_at_1kpc_source": 9.301563752764798,
+      "max_astrometric_centroid_shift_mas": 3.2885994026094894,
+      "physical_Einstein_radius_km": 3933.933357863133,
+      "tE_minutes_at_30km_s": 2.185518532146185,
+      "tE_hours_at_0p9897km_s": 1.1041001521266038
+    },
+    "published_5e_5_Msun": {
+      "mass_Earth": 16.6477177589498,
+      "schwarzschild_radius_m": 0.14766328513718405,
+      "schwarzschild_diameter_m": 0.2953265702743681,
+      "theta_E_mas_at_1kpc_source": 12.001438921619068,
+      "max_astrometric_centroid_shift_mas": 4.243149422736504,
+      "physical_Einstein_radius_km": 5075.798238987573,
+      "tE_minutes_at_30km_s": 2.819887910548652,
+      "tE_hours_at_0p9897km_s": 1.4245766509055098
+    }
+  },
+  "corrections": [
+    "The historical statement that 5 Earth masses has a Schwarzschild radius of about 4.4 mm is off by a factor of 10; the correct radius is about 4.44 cm.",
+    "For 5e-5 solar masses the mass is about 16.65 Earth masses and the Schwarzschild radius is about 14.8 cm.",
+    "At about 583 AU, annual parallax has a semi-amplitude of about 5.90 arcmin, so any apparent sky position must be epoch- and observer-bound.",
+    "A 1-3 day cadence is too slow for the strongest point-lens photometric event if Earth-relative transverse motion dominates; characteristic t_E is minutes, not days."
+  ],
+  "formulae": {
+    "theta_E": "sqrt[(4GM/c^2) * D_ls/(D_l D_s)]",
+    "R_E": "D_l * theta_E",
+    "t_E": "R_E / v_perp",
+    "delta_theta_max": "theta_E/(2 sqrt(2))",
+    "annual_parallax": "asin(1 AU / D_l)"
+  },
+  "bestiary": {
+    "OWL": "Separates three inconsistent historical mass conventions instead of blending them.",
+    "HOUND": "Repairs the factor-10 Schwarzschild-radius error and the 5e-5 Msun to Earth-mass mismatch.",
+    "SPIDER": "Converts distance plus mass hypotheses into a testable parallax/lensing observation graph.",
+    "BELZEBUB": "Rejects the old 1-3 day microlensing cadence as incapable of resolving minute-scale point-lens crossings if Earth motion dominates.",
+    "GREMLIN": "NEXT_GATE_IS_EPOCH_BOUND_ASTROMETRIC_OR_HIGH_CADENCE_LENSING_TRACK"
+  },
+  "epistemic_boundary": "Conditional prediction only; not evidence that the candidate exists or is a PBH.",
+  "authority": "OBSERVATION_DESIGN",
+  "canon_allowed": false
+}

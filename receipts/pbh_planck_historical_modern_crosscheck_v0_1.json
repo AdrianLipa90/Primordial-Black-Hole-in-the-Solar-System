@@ -1,0 +1,49 @@
+{
+  "schema": "PBH_PLANCK_HISTORICAL_MODERN_CROSSCHECK_V0_1",
+  "status": "PASS_REPRODUCIBLE_LOCAL_STRUCTURE",
+  "target": {
+    "dec_deg": -25.907578906023748,
+    "gal_b_deg": -7.665782897020605,
+    "gal_l_deg": 238.1709218507047,
+    "ra_deg": 107.57664605896267
+  },
+  "comparisons": {
+    "planck_100_R3__planck_100": {
+      "historical_center_z": -0.6726071661751483,
+      "modern_center_z": -0.689693362923611,
+      "delta_center_z": -0.01708619674846279,
+      "historical_phase_coherence": 0.006463403746751914,
+      "modern_phase_coherence": 0.029665192426558507,
+      "delta_phase_coherence": 0.023201788679806594,
+      "historical_phase_entropy": 0.9903018488902805,
+      "modern_phase_entropy": 0.9928991550531031,
+      "delta_phase_entropy": 0.00259730616282261
+    },
+    "planck_143_R3__planck_143": {
+      "historical_center_z": -0.49630516808520314,
+      "modern_center_z": -0.5224843284728858,
+      "delta_center_z": -0.0261791603876827,
+      "historical_phase_coherence": 0.0062696074177755745,
+      "modern_phase_coherence": 0.03007663659628471,
+      "delta_phase_coherence": 0.023807029178509135,
+      "historical_phase_entropy": 0.9922735122462998,
+      "modern_phase_entropy": 0.9926321122426197,
+      "delta_phase_entropy": 0.00035859999631993045
+    },
+    "planck_217_R3__planck_217": {
+      "historical_center_z": 0.0783147230194194,
+      "modern_center_z": 0.05552491144682545,
+      "delta_center_z": -0.02278981157259395,
+      "historical_phase_coherence": 0.003702739583328052,
+      "modern_phase_coherence": 0.018923368189782973,
+      "delta_phase_coherence": 0.015220628606454921,
+      "historical_phase_entropy": 0.9965076077232683,
+      "modern_phase_entropy": 0.9935852236419207,
+      "delta_phase_entropy": -0.0029223840813475954
+    }
+  },
+  "conclusion": "Independent retrieval paths reproduce the same qualitative local result: no strong target-centered outlier and near-maximal Fourier-phase entropy. Small numerical differences arise from cutout geometry/pixel grid and estimator details.",
+  "inference_boundary": "This validates data provenance/retrieval consistency, not the PBH hypothesis.",
+  "authority": "PROVENANCE_ONLY",
+  "canon_allowed": false
+}

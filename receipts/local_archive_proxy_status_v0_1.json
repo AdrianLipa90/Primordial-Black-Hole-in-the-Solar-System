@@ -1,0 +1,16 @@
+{
+  "schema":"PBH_LOCAL_ARCHIVE_PROXY_STATUS_V0_1",
+  "status":"PARTIAL_OR_TRUNCATED_LOCAL_PROXY",
+  "local_file":"CIEL-Omega-ApokalypOS-codex-ciel-sync-2026-05-12.zip",
+  "local_size_bytes":218103808,
+  "local_sha256":"b11afc526b6adc00eadafcbaea8d0cd415e689bfe51c48412948562a9b951902",
+  "zip_local_header_present":true,
+  "zip_central_directory_readable":false,
+  "previous_full_archive_receipt":{
+    "size_bytes":390677779,
+    "sha256":"fef25a4cb20380483fec5b3e84ad8a2d1465e6a53ecf6dfd9ec42ec67d82e9ef"
+  },
+  "assessment":"The current local proxy copy does not match the previously recorded full archive receipt and cannot be treated as the complete archive. The five already-extracted Planck FITS files remain independently byte-identified by their SHA-256 values and are not invalidated by this transport truncation.",
+  "authority":"PROVENANCE_ONLY",
+  "canon_allowed":false
+}

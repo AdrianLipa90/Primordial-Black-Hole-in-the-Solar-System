@@ -1,0 +1,124 @@
+{
+  "schema": "PBH_HISTORICAL_DAOSTARFINDER_REPLAY_V0_1",
+  "status": "ANALYZED",
+  "source_script": "AdrianLipa90/Metatime@aa9fe46d2ca0a93e804e78ea843bbc296aeb591d/simulations/PBH/primordialblackhole.py",
+  "replay_runner": "runtime/historical_daofinder_replay.py",
+  "provenance": {
+    "noema_tether": "ACTIVE_FRESH_GUARD",
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "1fdd9e31-8f13-4d08-a4aa-dd422c255a71"
+  },
+  "target": {
+    "ra_deg": 107.57664605896267,
+    "dec_deg": -25.907578906023748
+  },
+  "algorithm": {
+    "sigma_clip": 3,
+    "dao_fwhm_pixels": 3,
+    "dao_threshold_sigma": 5,
+    "proximity_pixels": 5
+  },
+  "maps": {
+    "planck_100_R3": {
+      "sha256_match": true,
+      "historical_untransformed_target_pixel_origin1": [
+        null,
+        null
+      ],
+      "historical_target_pixel_is_finite": false,
+      "correct_galactic_target_pixel_origin1": [
+        394.5950986839763,
+        420.71861500048766
+      ],
+      "dao_source_count": 0,
+      "nearest_source_distance_pixels_correct_target": null,
+      "sources_within_5px_correct_target": 0,
+      "historical_alert_if_literal_code": false,
+      "corrected_alert_if_same_5px_rule": false
+    },
+    "planck_143_R1": {
+      "sha256_match": true,
+      "historical_untransformed_target_pixel_origin1": [
+        null,
+        null
+      ],
+      "historical_target_pixel_is_finite": false,
+      "correct_galactic_target_pixel_origin1": [
+        394.5950986839763,
+        420.71861500048766
+      ],
+      "dao_source_count": 0,
+      "nearest_source_distance_pixels_correct_target": null,
+      "sources_within_5px_correct_target": 0,
+      "historical_alert_if_literal_code": false,
+      "corrected_alert_if_same_5px_rule": false
+    },
+    "planck_143_R2": {
+      "sha256_match": true,
+      "historical_untransformed_target_pixel_origin1": [
+        null,
+        null
+      ],
+      "historical_target_pixel_is_finite": false,
+      "correct_galactic_target_pixel_origin1": [
+        394.5950986839763,
+        420.71861500048766
+      ],
+      "dao_source_count": 0,
+      "nearest_source_distance_pixels_correct_target": null,
+      "sources_within_5px_correct_target": 0,
+      "historical_alert_if_literal_code": false,
+      "corrected_alert_if_same_5px_rule": false
+    },
+    "planck_143_R3": {
+      "sha256_match": true,
+      "historical_untransformed_target_pixel_origin1": [
+        null,
+        null
+      ],
+      "historical_target_pixel_is_finite": false,
+      "correct_galactic_target_pixel_origin1": [
+        394.5950986839763,
+        420.71861500048766
+      ],
+      "dao_source_count": 0,
+      "nearest_source_distance_pixels_correct_target": null,
+      "sources_within_5px_correct_target": 0,
+      "historical_alert_if_literal_code": false,
+      "corrected_alert_if_same_5px_rule": false
+    },
+    "planck_217_R3": {
+      "sha256_match": true,
+      "historical_untransformed_target_pixel_origin1": [
+        null,
+        null
+      ],
+      "historical_target_pixel_is_finite": false,
+      "correct_galactic_target_pixel_origin1": [
+        394.5950986839763,
+        420.71861500048766
+      ],
+      "dao_source_count": 2,
+      "nearest_source_distance_pixels_correct_target": 331.4251716474002,
+      "sources_within_5px_correct_target": 0,
+      "historical_alert_if_literal_code": false,
+      "corrected_alert_if_same_5px_rule": false
+    }
+  },
+  "findings": [
+    "The historical code passed ICRS RA/Dec values directly into FITS WCS whose axes are Galactic GLON/GLAT, yielding non-finite target pixels.",
+    "With the target correctly transformed to Galactic coordinates, no DAOStarFinder 5-sigma source lies within 5 pixels in any of the five historical Planck maps.",
+    "The 217 GHz map contains two 5-sigma DAO detections globally in the cutout, but the nearest is about 331.4 pixels from the corrected target."
+  ],
+  "bestiary": {
+    "OWL": "WCS/frame mismatch is a hard historical implementation defect.",
+    "HOUND": "Corrected replay yields no target-coincident 5-sigma point source.",
+    "BAT": "DAOStarFinder on diffuse CMB maps is not a PBH-specific observable.",
+    "BELZEBUB": "Historical point-source alert logic cannot support PBH evidence.",
+    "GREMLIN": "HISTORICAL_POINT_SOURCE_TEST_FAILS_AFTER_WCS_CORRECTION"
+  },
+  "inference_boundary": "This invalidates the historical Planck point-source alert path; it does not by itself falsify an independently motivated Solar-System PBH.",
+  "authority": "AUDIT",
+  "canon_allowed": false
+}

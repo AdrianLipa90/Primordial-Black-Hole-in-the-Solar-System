@@ -1,0 +1,108 @@
+{
+  "schema": "PBH_CMB_PHASE36D_FOREGROUND_GATE_V0_4",
+  "status": "PASS_NULL_GATE_NO_FIXED_COORDINATE_ANOMALY",
+  "target": {
+    "ra_deg": 107.576646,
+    "dec_deg": -25.907579,
+    "center_shift_allowed": false
+  },
+  "method": {
+    "maps": [
+      "Planck 100 GHz R3",
+      "Planck 143 GHz R3",
+      "Planck 217 GHz R3"
+    ],
+    "foreground": "IRAS 100 micron linear template projected to Planck TAN grid",
+    "patch_pixels": 128,
+    "pixel_scale_deg": 0.025,
+    "phase_bands_cycles_per_pixel": {
+      "low": [
+        0.015,
+        0.07
+      ],
+      "mid": [
+        0.07,
+        0.15
+      ]
+    },
+    "marker_vector": "12 descriptors per frequency x 3 frequencies = 36D",
+    "per_band_descriptors": [
+      "H_low",
+      "A1_low",
+      "A2_low",
+      "A3_low",
+      "A6_low",
+      "H_mid",
+      "A1_mid",
+      "A2_mid",
+      "A3_mid",
+      "A6_mid",
+      "rot180_corr",
+      "center_robust_z"
+    ],
+    "null_controls": 335,
+    "null_note": "within-field overlapping controls; empirical descriptive percentiles, not independent-sample p-values",
+    "covariance": "feature-standardized covariance with 0.25 identity shrinkage"
+  },
+  "result": {
+    "shrinkage_mahalanobis_sq": 18.645387418345074,
+    "empirical_percentile": 34.32835820895522,
+    "diagonal_rms_z": 0.7666347228588336,
+    "max_abs_feature_z": 1.4683392565919535,
+    "cross_phase": {
+      "100-143-low": {
+        "coherence": 0.9893514970040759,
+        "percentile": 76.11940298507463
+      },
+      "100-217-low": {
+        "coherence": 0.9134690125335408,
+        "percentile": 47.16417910447761
+      },
+      "143-217-low": {
+        "coherence": 0.9387621562336278,
+        "percentile": 48.35820895522388
+      },
+      "100-143-mid": {
+        "coherence": 0.531230305303156,
+        "percentile": 39.701492537313435
+      },
+      "100-217-mid": {
+        "coherence": 0.3782777903421068,
+        "percentile": 40
+      },
+      "143-217-mid": {
+        "coherence": 0.6736366256102517,
+        "percentile": 42.08955223880597
+      }
+    }
+  },
+  "gremlin_live": {
+    "source_event_id": "gremlin:whisper:sha256:4027c61de271d8c5e738af9c6c179e4078060f7dfeffc3aa8e62dbf300ce535f",
+    "route_species": [
+      "OWL",
+      "SPIDER",
+      "HOUND"
+    ],
+    "phase_R": [
+      0.19786869270322788,
+      0.041441851223647574,
+      0.23425026779523372,
+      0.20042083814332085
+    ],
+    "phase_attention_index": 2,
+    "terminal_receipt_sha256": "c31650047be5d54fbf04a0aae4546359d3249d62855bc74ff680730bf1e44703",
+    "trace_sha256": "1a9612cb81571702370a92694c536b3cab6769d5f54c2dfa4fb8bb78c59e00c5",
+    "note": "GREMLIN PhaseNav R values are internal routing/attention quantities, not astrophysical probabilities or sigma."
+  },
+  "verdict": {
+    "fixed_coordinate_phase36d_anomaly": false,
+    "physical_detection_claim": false,
+    "next_independent_gate": [
+      "Planck component-separated half-mission HM1/HM2",
+      "WMAP 9-year V/W",
+      "astrometric or microlensing test"
+    ]
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}

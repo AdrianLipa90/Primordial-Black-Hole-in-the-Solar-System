@@ -1,0 +1,32 @@
+{
+  "schema": "PBH_CONTROL_PHASE_MARKER_RECEIPT_V0_1",
+  "status": "ANALYZED_LOCAL_CONTROLS",
+  "target": {"ra_deg": 107.576646, "dec_deg": -25.907579},
+  "controls": {
+    "IRAS_100_MICRON": {
+      "file":"skv9235549985919.fits",
+      "sha256":"6762667fb175d515b11db1080344ea4947ef35ec9df1282c2cd8433cc990815a",
+      "phase_coherence":0.003575810805684344,
+      "phase_entropy":0.9978098439851103,
+      "A1":0.1001540336668663,
+      "A2":0.0603833929959586,
+      "A3":0.002108620156218628,
+      "A6":0.07590291703469026,
+      "classification":"FOREGROUND_CONTROL_AT_TARGET"
+    },
+    "HEAO1_A2": {
+      "file":"skv9235134611008.fits",
+      "sha256":"e9abb91108e1bf25107166b7f19a04edf396554f06b8b9c3f8137d91b49c0b5f",
+      "phase_coherence":0.0014249154906202848,
+      "phase_entropy":0.9987754182549021,
+      "A1":0.02147532637800863,
+      "A2":0.20358438060342945,
+      "A3":0.007796365926056144,
+      "A6":0.0633006706294348,
+      "classification":"XRAY_CONTROL_OFF_TARGET"
+    }
+  },
+  "interpretation":"CONTROL_ONLY_NO_STRONG_GLOBAL_PHASE_COHERENCE",
+  "authority":"CANDIDATE_ONLY",
+  "canon_allowed":false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "PBH_HF_ROW_SLICE_PROXY_V0_1",
+  "status": "SECONDARY_SOURCE_FAITHFUL_PROXY",
+  "authority_note": "IRSA/LAMBDA remain authoritative. Hugging Face mirrors are used only as source-faithful row-addressable transport proxies with preserved NESTED row order.",
+  "target": {
+    "icrs_deg": {"ra": 107.576646, "dec": -25.907579},
+    "galactic_deg": {"l": 238.1709218507047, "b": -7.665782897020605},
+    "order3_parent": 488
+  },
+  "analysis_block": {
+    "parent_order": 6,
+    "parent_nside": 64,
+    "parent_pixel": 31236,
+    "angular_scale_note": "One order-6 parent gives one contiguous NESTED descendant block per map; this is a local target-cell test, not a full-sky significance estimate."
+  },
+  "planck_pr3_hfi": {
+    "dataset": "astro-legacy-archive/planck-frequency-maps-pr3",
+    "split": "train",
+    "nside": 2048,
+    "order": 11,
+    "block_start": 31985664,
+    "block_length": 1024,
+    "target_row": 31986046,
+    "target_offset_in_block": 382,
+    "field": "I_STOKES",
+    "signal_unit": "Kcmb",
+    "configs": [
+      "HFI_SkyMap_100_2048_R3.01_full",
+      "HFI_SkyMap_143_2048_R3.01_full",
+      "HFI_SkyMap_217_2048_R3.01_full"
+    ]
+  },
+  "wmap9": {
+    "dataset": "astro-legacy-archive/wmap-band-maps-9yr",
+    "split": "train",
+    "nside": 512,
+    "order": 9,
+    "block_start": 1999104,
+    "block_length": 64,
+    "target_row": 1999127,
+    "target_offset_in_block": 23,
+    "field": "TEMPERATURE",
+    "signal_unit": "mK,thermodynamic",
+    "configs": [
+      "wmap_band_iqumap_r9_9yr_V_v5__Stokes Maps",
+      "wmap_band_iqumap_r9_9yr_W_v5__Stokes Maps"
+    ]
+  },
+  "dataset_viewer": {
+    "base_url": "https://datasets-server.huggingface.co/rows",
+    "max_rows_per_request": 100
+  },
+  "interpretation_boundary": "Rows are a transport representation of the released HEALPix tables. No PBH inference is permitted until cross-frequency, cross-mission, foreground, mask, and null-position tests are complete.",
+  "canon_allowed": false
+}

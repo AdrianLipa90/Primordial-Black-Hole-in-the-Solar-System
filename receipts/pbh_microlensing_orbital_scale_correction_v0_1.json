@@ -1,0 +1,48 @@
+{
+  "schema": "PBH_MICROLENSING_AND_ORBITAL_SCALE_CORRECTION_V0_1",
+  "status": "FAIL_LOUD_CORRECTION",
+  "historical_claims": {
+    "lens_distance_AU": 576,
+    "mass_text": "5e-5 M_sun (~10 Earth masses)",
+    "theta_E_mas": 0.31,
+    "t_E_hours": 1.19,
+    "rebound_state": {
+      "x_AU": 576,
+      "vy_AU_per_yr": 0.001
+    },
+    "orbital_elements_text": {
+      "a_AU": 430,
+      "e": 0.78,
+      "i_deg": 27
+    }
+  },
+  "corrected_checks": {
+    "mass_5e_5_Msun_in_Earth_masses": 16.6477,
+    "theta_E_mas": {
+      "mass_10_Earth": 9.359,
+      "mass_5e_5_Msun": 12.0756
+    },
+    "max_astrometric_centroid_shift_mas": {
+      "mass_10_Earth": 3.3089,
+      "mass_5e_5_Msun": 4.2694
+    },
+    "physical_Einstein_radius_km": {
+      "mass_10_Earth": 3909.79,
+      "mass_5e_5_Msun": 5044.65
+    },
+    "expected_bound_orbit_speed_at_576AU_for_a430_m_per_s": 1008.59,
+    "expected_bound_orbit_speed_at_576AU_for_a430_AU_per_yr": 0.212761,
+    "historical_vy_0_001_AU_per_yr_m_per_s": 4.74047,
+    "annual_parallax_amplitude_arcmin_at_576AU": 5.96831,
+    "orbital_angular_motion_arcmin_per_year_order": 1.27
+  },
+  "implications": [
+    "Historical theta_E=0.31 mas is inconsistent with standard point-mass lensing for the stated mass and distance.",
+    "Historical mass equivalence 5e-5 M_sun ~= 10 M_Earth is incorrect; it is ~=16.65 M_Earth.",
+    "Historical REBOUND vy=0.001 AU/yr is far below the vis-viva speed implied by a=430 AU at r~576 AU.",
+    "A current astrometric search must propagate annual parallax and orbital motion; a fixed 2025 RA/Dec is not a current-epoch lens track."
+  ],
+  "authority": "STANDARD_PHYSICS_CHECK",
+  "pbh_existence_claim": "NOT_DECIDED",
+  "canon_allowed": false
+}

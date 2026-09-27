@@ -1,0 +1,19 @@
+{
+  "schema": "PBH_PROVENANCE_CORRECTION_V0_1",
+  "id": "HIPSTILE-001",
+  "status": "CORRECTED_FAIL_LOUD",
+  "previous_claim": {"order": 3, "npix": 490},
+  "corrected": {
+    "order": 3,
+    "npix": 488,
+    "nside512_pixel": 1999127,
+    "nside2048_pixel": 31986046
+  },
+  "target_galactic_deg": {
+    "l": 238.1709218507047,
+    "b": -7.665782897020605
+  },
+  "reason": "Manual Morton-bit interleave arithmetic was off by +2. Recomputed using the standard HEALPix NESTED ang2pix construction and cross-checked by NESTED parent shifts from NSIDE 512 and 2048.",
+  "authority": "PROVENANCE_ONLY",
+  "canon_allowed": false
+}

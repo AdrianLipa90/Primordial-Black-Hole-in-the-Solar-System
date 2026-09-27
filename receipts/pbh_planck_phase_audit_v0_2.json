@@ -1,0 +1,215 @@
+{
+  "schema": "PBH_PLANCK_PHASE_AUDIT_V0_2",
+  "status": "PASS_ANALYSIS_WITH_FOREGROUND_WARNING",
+  "target": {
+    "icrs_deg": {
+      "ra": 107.576646,
+      "dec": -25.907579
+    },
+    "galactic_deg": {
+      "l": 238.1709218507047,
+      "b": -7.665782897020605
+    },
+    "planck_pixel_zero_based": {
+      "x": 393.59532676203605,
+      "y": 419.71858490019673
+    },
+    "planck_pixel_fits_one_based": {
+      "x": 394.59532676203605,
+      "y": 420.71858490019673
+    }
+  },
+  "inputs": {
+    "planck_100_R3": {
+      "file": "107_-26_Equ_J2000_planck_100Rel3.fits",
+      "sha256": "1bef9697e314ad212d8aa2d1eec606968e189ead61a2d07e3d9eebec691409c5",
+      "bunit": "Kcmb"
+    },
+    "planck_143_R1": {
+      "file": "107_-26_Equ_J2000_planck_143Rel1.fits",
+      "sha256": "893e21091e6c9b770c9acc17a88ae874bc57ccef8a0e3dd35c5bce5552de1f8b",
+      "bunit": "K_CMB"
+    },
+    "planck_143_R2": {
+      "file": "107_-26_Equ_J2000_planck_143Rel2.fits",
+      "sha256": "63ebab928422961985d69b537744785d8321e5f023dfe523bb6586be524f1748",
+      "bunit": "K_CMB"
+    },
+    "planck_143_R3": {
+      "file": "107_-26_Equ_J2000_planck_143Rel3.fits",
+      "sha256": "61770ad10ac6eb20b85a6587da21149b5e46d69b33273ff9f5eea93ed09d44a1",
+      "bunit": "Kcmb"
+    },
+    "planck_217_R3": {
+      "file": "107_-26_Equ_J2000_planck_217Rel3.fits",
+      "sha256": "ba03fb5d2aaedfc56de6079529cd6bdc22ef875dd5019d6d2abcb7c5c0e7cd1a",
+      "bunit": "Kcmb"
+    },
+    "iras_100um": {
+      "file": "skv9235549985919.fits",
+      "sha256": "6762667fb175d515b11db1080344ea4947ef35ec9df1282c2cd8433cc990815a",
+      "bunit": "MJY/SR"
+    }
+  },
+  "target_aperture": {
+    "geometry": {
+      "aperture_radius_deg": 0.2,
+      "annulus_inner_deg": 0.5,
+      "annulus_outer_deg": 1,
+      "pixel_scale_deg": 0.025
+    },
+    "planck_100_R3": {
+      "exact_pixel_Kcmb": 0.00013804908808973915,
+      "contrast_Kcmb": 0.00000765941540385708,
+      "robust_z": 0.06484183718287778,
+      "band_control_contrast_percentile": 0.5436666666666666
+    },
+    "planck_143_R3": {
+      "exact_pixel_Kcmb": 0.00024430246479598155,
+      "contrast_Kcmb": 0.000015431717217700617,
+      "robust_z": 0.11496011311676982,
+      "band_control_contrast_percentile": 0.57
+    },
+    "planck_217_R3": {
+      "exact_pixel_Kcmb": 0.0007990375397659943,
+      "contrast_Kcmb": 0.00009799590383526588,
+      "robust_z": 0.46590777568790454,
+      "band_control_contrast_percentile": 0.777
+    }
+  },
+  "phase_markers_256px": {
+    "planck_100_R3": {
+      "phase_coherence": 0.010305438231655067,
+      "phase_entropy": 0.9951409525047364,
+      "A1": 0.2998932348783253,
+      "A2": 0.18003936952854954,
+      "A3": 0.11762680423430388,
+      "A6": 0.16876369891893186,
+      "local_band_percentiles": {
+        "phase_coherence": 0.915,
+        "phase_entropy": 0.03,
+        "A1": 0.985,
+        "A2": 0.74,
+        "A3": 0.8,
+        "A6": 0.975
+      }
+    },
+    "planck_143_R3": {
+      "phase_coherence": 0.010118652929132823,
+      "phase_entropy": 0.9961757758873384,
+      "A1": 0.2678860536078475,
+      "A2": 0.20063361677437122,
+      "A3": 0.11883489531676744,
+      "A6": 0.18359786810209278,
+      "local_band_percentiles": {
+        "phase_coherence": 0.755,
+        "phase_entropy": 0.285,
+        "A1": 0.9,
+        "A2": 0.83,
+        "A3": 0.785,
+        "A6": 0.99
+      }
+    },
+    "planck_217_R3": {
+      "phase_coherence": 0.0007818412111814662,
+      "phase_entropy": 0.9977602607664522,
+      "A1": 0.15939394512802504,
+      "A2": 0.18545101567497338,
+      "A3": 0.08394739097484066,
+      "A6": 0.13036817233791528,
+      "local_band_percentiles": {
+        "phase_coherence": 0.04,
+        "phase_entropy": 0.32,
+        "A1": 0.8,
+        "A2": 0.885,
+        "A3": 0.765,
+        "A6": 0.92
+      }
+    }
+  },
+  "cross_frequency_phase_256px": {
+    "100_143": {
+      "phase_plv": 0.6350180664271755,
+      "fourier_complex_coherence": 0.9601009260483956,
+      "detrended_pixel_corr": 0.9472024826774198,
+      "local_null_plv_percentile": 0.4266666666666667
+    },
+    "143_217": {
+      "phase_plv": 0.6697367051040877,
+      "fourier_complex_coherence": 0.8165974844990612,
+      "detrended_pixel_corr": 0.8296484800789425,
+      "local_null_plv_percentile": 0.35333333333333333
+    },
+    "100_217": {
+      "phase_plv": 0.46935947909774683,
+      "fourier_complex_coherence": 0.7062794101347821,
+      "detrended_pixel_corr": 0.7622210897608609,
+      "local_null_plv_percentile": 0.3
+    }
+  },
+  "foreground_IRAS": {
+    "detrended_correlations": {
+      "planck_100_R3": 0.54559244529348,
+      "planck_143_R3": 0.6441820740012303,
+      "planck_217_R3": 0.8486257938259553
+    },
+    "correlations_after_common_30arcmin_smoothing": {
+      "planck_100_R3": 0.6218476580118292,
+      "planck_143_R3": 0.7370619049041007,
+      "planck_217_R3": 0.91540528928301
+    },
+    "target_robust_z_after_linear_IRAS_plus_plane_regression": {
+      "planck_100_R3": -0.18006715223089276,
+      "planck_143_R3": -0.16031905893605372,
+      "planck_217_R3": -0.25883048903797196
+    },
+    "interpretation": "The strong frequency-dependent correlation with IRAS, especially at 217 GHz, is evidence that large-scale phase structure in this field is substantially foreground-linked. The simple regression is a control, not a component-separation replacement."
+  },
+  "release_stability_143": {
+    "R1_R2": {
+      "full_corr": 0.9996416729329333,
+      "rms_diff_Kcmb": 0.000009406945693879859
+    },
+    "R1_R3": {
+      "full_corr": 0.9996424227697487,
+      "rms_diff_Kcmb": 0.000010481191144350475
+    },
+    "R2_R3": {
+      "full_corr": 0.99999844762958,
+      "rms_diff_Kcmb": 0.0000018837475377061905
+    }
+  },
+  "gremlin_live": {
+    "tether_guard": "ACTIVE",
+    "user_task_event_id": "gremlin:whisper:sha256:3ff77c8a19a86a89c665d7cf5b31461ed8ec2189bfb1f2ffd4dd94784ee179aa",
+    "fused_event_id": "gremlin:whisper:sha256:714c74ae78311718b0a51afd5201c8bcfbe7b964dd102e998ee9c70ed07e1129",
+    "terminal_receipt_sha256": "02f86918afc0685de986803cea12304003826ff73ebab3e640714d623fbddf21",
+    "phase_R": [
+      0.04302679689483031,
+      0.21928764279269464,
+      0.21989820838329763,
+      0.10191892236080324
+    ],
+    "internal_audit_event_id": "gremlin:whisper:sha256:bd5611bc448496499d9b89e62cd052839dd6bc61531bd24d27709ea1c0f711ee",
+    "routed_species": [
+      "OWL",
+      "SPIDER",
+      "HOUND"
+    ],
+    "authority": "CANDIDATE_ONLY"
+  },
+  "verdict": {
+    "direct_target_anomaly": "NOT_SUPPORTED_BY_THESE_PLANCK_FREQUENCY_CUTOUTS",
+    "strong_global_phase_marker": "NOT_ESTABLISHED",
+    "noteworthy_structure": "Large-scale A1/A6 anisotropy is high in 100/143 GHz at 256 px, but cross-frequency phase PLV is not unusual against local controls and the field is strongly correlated with IRAS foreground.",
+    "next_required": [
+      "independent WMAP V/W cutouts",
+      "Planck SMICA/NILC/Commander or half-mission component maps",
+      "mask/foreground-aware null positions",
+      "look-elsewhere controlled statistic"
+    ],
+    "pbhdetection_claim": false
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
