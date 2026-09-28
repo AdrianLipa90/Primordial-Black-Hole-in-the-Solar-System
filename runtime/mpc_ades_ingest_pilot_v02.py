@@ -54,7 +54,7 @@ def ingest_one(desig):
     canonical = json.dumps(rows, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
     keys = sorted({str(k) for row in rows for k in row.keys()})
 
-    times = sorted(str(r.get("obsTime")) for r in rows if r.get("obsTime"))
+    times = sorted(str(r.get("obstime")) for r in rows if r.get("obstime"))
     receipt = {
         "designation": desig,
         "status": "INGESTED",
@@ -65,9 +65,9 @@ def ingest_one(desig):
         "last_obsTime": times[-1] if times else None,
         "top_stations": counts(rows, "stn"),
         "top_modes": counts(rows, "mode"),
-        "top_catalogs": counts(rows, "astCat"),
-        "sigRA": numeric_summary(rows, "sigRA"),
-        "sigDec": numeric_summary(rows, "sigDec"),
+        "top_catalogs": counts(rows, "astcat"),
+        "rmsra": numeric_summary(rows, "rmsra"),
+        "rmsdec": numeric_summary(rows, "rmsdec"),
         "rmsRA": numeric_summary(rows, "rmsRA"),
         "rmsDec": numeric_summary(rows, "rmsDec"),
         "ra": numeric_summary(rows, "ra"),
