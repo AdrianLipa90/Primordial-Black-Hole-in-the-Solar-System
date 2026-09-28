@@ -1,0 +1,656 @@
+{
+  "authority": "CANDIDATE_ONLY",
+  "baseline": {
+    "max_delta_R": -0.004652104430403647,
+    "mean_bound_final": 20,
+    "mean_delta_R": -0.004652104430403647,
+    "min_delta_R": -0.004652104430403647,
+    "min_q_final_au": 36.06360257606868
+  },
+  "best_candidate": {
+    "a_au": 290,
+    "delta_R_over_baseline": -0.00023406899580713514,
+    "e": 0.3,
+    "m_earth": 5.697042025544606,
+    "max_delta_R": -0.004739609862873584,
+    "mean_bound_final": 20,
+    "mean_delta_R": -0.0048861734262107825,
+    "min_delta_R": -0.005166842950771411,
+    "min_q_final_au": 36.154529660626146,
+    "runs": [
+      {
+        "R_final": 0.5262406777301897,
+        "R_initial": 0.5314075206809611,
+        "bound_final": 20,
+        "delta_R": -0.005166842950771411,
+        "m_earth": 5.697042025544606,
+        "mean_varpi_final_deg": 62.56595357373301,
+        "mean_varpi_initial_deg": 62.54530385601195,
+        "min_q_final_au": 36.99847117055451,
+        "phase_deg": 0
+      },
+      {
+        "R_final": 0.5267686550734092,
+        "R_initial": 0.5315082649362828,
+        "bound_final": 20,
+        "delta_R": -0.004739609862873584,
+        "m_earth": 5.697042025544606,
+        "mean_varpi_final_deg": 62.56042847712768,
+        "mean_varpi_initial_deg": 62.53313189927201,
+        "min_q_final_au": 36.865755349334286,
+        "phase_deg": 120
+      },
+      {
+        "R_final": 0.5267032314551328,
+        "R_initial": 0.5314552989201201,
+        "bound_final": 20,
+        "delta_R": -0.004752067464987353,
+        "m_earth": 5.697042025544606,
+        "mean_varpi_final_deg": 62.49913990687462,
+        "mean_varpi_initial_deg": 62.53531840629508,
+        "min_q_final_au": 36.154529660626146,
+        "phase_deg": 240
+      }
+    ],
+    "score": -0.00023406899580713514
+  },
+  "candidates": [
+    {
+      "a_au": 290,
+      "delta_R_over_baseline": -0.00023406899580713514,
+      "e": 0.3,
+      "m_earth": 5.697042025544606,
+      "max_delta_R": -0.004739609862873584,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.0048861734262107825,
+      "min_delta_R": -0.005166842950771411,
+      "min_q_final_au": 36.154529660626146,
+      "runs": [
+        {
+          "R_final": 0.5262406777301897,
+          "R_initial": 0.5314075206809611,
+          "bound_final": 20,
+          "delta_R": -0.005166842950771411,
+          "m_earth": 5.697042025544606,
+          "mean_varpi_final_deg": 62.56595357373301,
+          "mean_varpi_initial_deg": 62.54530385601195,
+          "min_q_final_au": 36.99847117055451,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5267686550734092,
+          "R_initial": 0.5315082649362828,
+          "bound_final": 20,
+          "delta_R": -0.004739609862873584,
+          "m_earth": 5.697042025544606,
+          "mean_varpi_final_deg": 62.56042847712768,
+          "mean_varpi_initial_deg": 62.53313189927201,
+          "min_q_final_au": 36.865755349334286,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5267032314551328,
+          "R_initial": 0.5314552989201201,
+          "bound_final": 20,
+          "delta_R": -0.004752067464987353,
+          "m_earth": 5.697042025544606,
+          "mean_varpi_final_deg": 62.49913990687462,
+          "mean_varpi_initial_deg": 62.53531840629508,
+          "min_q_final_au": 36.154529660626146,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.00023406899580713514
+    },
+    {
+      "a_au": 250,
+      "delta_R_over_baseline": -0.000485697189803032,
+      "e": 0.1,
+      "m_earth": 4.141580993091367,
+      "max_delta_R": -0.004953792538088142,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005137801620206679,
+      "min_delta_R": -0.00535071504417961,
+      "min_q_final_au": 36.99466528295472,
+      "runs": [
+        {
+          "R_final": 0.5260653116342109,
+          "R_initial": 0.5314160266783905,
+          "bound_final": 20,
+          "delta_R": -0.00535071504417961,
+          "m_earth": 4.141580993091367,
+          "mean_varpi_final_deg": 62.60225383274097,
+          "mean_varpi_initial_deg": 62.544411754676815,
+          "min_q_final_au": 36.99466528295472,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5263722741678363,
+          "R_initial": 0.5314811714461886,
+          "bound_final": 20,
+          "delta_R": -0.005108897278352287,
+          "m_earth": 4.141580993091367,
+          "mean_varpi_final_deg": 62.591519652499585,
+          "mean_varpi_initial_deg": 62.53683237203737,
+          "min_q_final_au": 37.059228411896505,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5264880410929751,
+          "R_initial": 0.5314418336310632,
+          "bound_final": 20,
+          "delta_R": -0.004953792538088142,
+          "m_earth": 4.141580993091367,
+          "mean_varpi_final_deg": 62.59027245020263,
+          "mean_varpi_initial_deg": 62.53892663219411,
+          "min_q_final_au": 37.24551611238128,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.000485697189803032
+    },
+    {
+      "a_au": 250,
+      "delta_R_over_baseline": -0.0005867493008261766,
+      "e": 0.5,
+      "m_earth": 2.730896633439456,
+      "max_delta_R": -0.004967546396990041,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005238853731229824,
+      "min_delta_R": -0.005612962209339156,
+      "min_q_final_au": 37.116207794886215,
+      "runs": [
+        {
+          "R_final": 0.525812742978377,
+          "R_initial": 0.5314257051877161,
+          "bound_final": 20,
+          "delta_R": -0.005612962209339156,
+          "m_earth": 2.730896633439456,
+          "mean_varpi_final_deg": 62.63038504647465,
+          "mean_varpi_initial_deg": 62.542211835315406,
+          "min_q_final_au": 37.375450017055,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5263342851283503,
+          "R_initial": 0.5314703377157106,
+          "bound_final": 20,
+          "delta_R": -0.005136052587360274,
+          "m_earth": 2.730896633439456,
+          "mean_varpi_final_deg": 62.60912649706153,
+          "mean_varpi_initial_deg": 62.53693031991977,
+          "min_q_final_au": 37.116207794886215,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5264848498748247,
+          "R_initial": 0.5314523962718147,
+          "bound_final": 20,
+          "delta_R": -0.004967546396990041,
+          "m_earth": 2.730896633439456,
+          "mean_varpi_final_deg": 62.67004064584879,
+          "mean_varpi_initial_deg": 62.53779159910233,
+          "min_q_final_au": 37.23993374103995,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0005867493008261766
+    },
+    {
+      "a_au": 250,
+      "delta_R_over_baseline": -0.00062369951897782,
+      "e": 0.3,
+      "m_earth": 3.649853690152711,
+      "max_delta_R": -0.004878716694637131,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.0052758039493814675,
+      "min_delta_R": -0.005532990785384162,
+      "min_q_final_au": 36.93732583040037,
+      "runs": [
+        {
+          "R_final": 0.525887343542796,
+          "R_initial": 0.5314203343281801,
+          "bound_final": 20,
+          "delta_R": -0.005532990785384162,
+          "m_earth": 3.649853690152711,
+          "mean_varpi_final_deg": 62.63037096686473,
+          "mean_varpi_initial_deg": 62.54332184534245,
+          "min_q_final_au": 36.93732583040037,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5260633899463362,
+          "R_initial": 0.5314790943144593,
+          "bound_final": 20,
+          "delta_R": -0.005415704368123109,
+          "m_earth": 3.649853690152711,
+          "mean_varpi_final_deg": 62.597193864292485,
+          "mean_varpi_initial_deg": 62.536415681875404,
+          "min_q_final_au": 37.36944231568167,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5265707895670553,
+          "R_initial": 0.5314495062616924,
+          "bound_final": 20,
+          "delta_R": -0.004878716694637131,
+          "m_earth": 3.649853690152711,
+          "mean_varpi_final_deg": 62.685878614771006,
+          "mean_varpi_initial_deg": 62.53788099266504,
+          "min_q_final_au": 37.39758148605928,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.00062369951897782
+    },
+    {
+      "a_au": 330,
+      "delta_R_over_baseline": -0.0006369415703243453,
+      "e": 0.5,
+      "m_earth": 6.280974868218478,
+      "max_delta_R": -0.005004944419353841,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005289046000727993,
+      "min_delta_R": -0.005562259374002565,
+      "min_q_final_au": 37.17421666295518,
+      "runs": [
+        {
+          "R_final": 0.5261055760569732,
+          "R_initial": 0.5314055102658007,
+          "bound_final": 20,
+          "delta_R": -0.0052999342088275725,
+          "m_earth": 6.280974868218478,
+          "mean_varpi_final_deg": 62.5825386929964,
+          "mean_varpi_initial_deg": 62.54490067825054,
+          "min_q_final_au": 37.18761950233017,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5265222727211248,
+          "R_initial": 0.5315272171404787,
+          "bound_final": 20,
+          "delta_R": -0.005004944419353841,
+          "m_earth": 6.280974868218478,
+          "mean_varpi_final_deg": 62.61626615346393,
+          "mean_varpi_initial_deg": 62.529504759339254,
+          "min_q_final_au": 37.17421666295518,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5259115067637172,
+          "R_initial": 0.5314737661377198,
+          "bound_final": 20,
+          "delta_R": -0.005562259374002565,
+          "m_earth": 6.280974868218478,
+          "mean_varpi_final_deg": 62.59901426942732,
+          "mean_varpi_initial_deg": 62.53133808003977,
+          "min_q_final_au": 37.20772041929841,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0006369415703243453
+    },
+    {
+      "a_au": 290,
+      "delta_R_over_baseline": -0.0006487231920094816,
+      "e": 0.1,
+      "m_earth": 6.464577205792342,
+      "max_delta_R": -0.005179720388114206,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005300827622413129,
+      "min_delta_R": -0.005371825517787587,
+      "min_q_final_au": 37.061388672064204,
+      "runs": [
+        {
+          "R_final": 0.5260483702870412,
+          "R_initial": 0.5313993072483788,
+          "bound_final": 20,
+          "delta_R": -0.0053509369613375934,
+          "m_earth": 6.464577205792342,
+          "mean_varpi_final_deg": 62.605615177384024,
+          "mean_varpi_initial_deg": 62.54728931197456,
+          "min_q_final_au": 37.35112822102832,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.526139755934924,
+          "R_initial": 0.5315115814527116,
+          "bound_final": 20,
+          "delta_R": -0.005371825517787587,
+          "m_earth": 6.464577205792342,
+          "mean_varpi_final_deg": 62.5900122239104,
+          "mean_varpi_initial_deg": 62.53399944379091,
+          "min_q_final_au": 37.3362568308804,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5262615103085455,
+          "R_initial": 0.5314412306966597,
+          "bound_final": 20,
+          "delta_R": -0.005179720388114206,
+          "m_earth": 6.464577205792342,
+          "mean_varpi_final_deg": 62.572173532211345,
+          "mean_varpi_initial_deg": 62.53711787806347,
+          "min_q_final_au": 37.061388672064204,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0006487231920094816
+    },
+    {
+      "a_au": 290,
+      "delta_R_over_baseline": -0.0006906587009845406,
+      "e": 0.5,
+      "m_earth": 4.262645631549113,
+      "max_delta_R": -0.004479350819239225,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005342763131388188,
+      "min_delta_R": -0.006418058326325027,
+      "min_q_final_au": 36.015088020175526,
+      "runs": [
+        {
+          "R_final": 0.5249992034120855,
+          "R_initial": 0.5314172617384105,
+          "bound_final": 20,
+          "delta_R": -0.006418058326325027,
+          "m_earth": 4.262645631549113,
+          "mean_varpi_final_deg": 62.69158015692133,
+          "mean_varpi_initial_deg": 62.54328586579989,
+          "min_q_final_au": 36.015088020175526,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5263623743766381,
+          "R_initial": 0.5314932546252384,
+          "bound_final": 20,
+          "delta_R": -0.005130880248600311,
+          "m_earth": 4.262645631549113,
+          "mean_varpi_final_deg": 62.608894729192606,
+          "mean_varpi_initial_deg": 62.53394584649832,
+          "min_q_final_au": 37.23117650418582,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5269817734928435,
+          "R_initial": 0.5314611243120827,
+          "bound_final": 20,
+          "delta_R": -0.004479350819239225,
+          "m_earth": 4.262645631549113,
+          "mean_varpi_final_deg": 62.564190763444934,
+          "mean_varpi_initial_deg": 62.53523229202921,
+          "min_q_final_au": 36.94007897948239,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0006906587009845406
+    },
+    {
+      "a_au": 380,
+      "delta_R_over_baseline": -0.0009038689629253067,
+      "e": 0.5,
+      "m_earth": 9.59038464448575,
+      "max_delta_R": -0.005255741147075721,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005555973393328954,
+      "min_delta_R": -0.00584347764401838,
+      "min_q_final_au": 37.151589235875385,
+      "runs": [
+        {
+          "R_final": 0.5255414583769482,
+          "R_initial": 0.5313849360209666,
+          "bound_final": 20,
+          "delta_R": -0.00584347764401838,
+          "m_earth": 9.59038464448575,
+          "mean_varpi_final_deg": 62.59001356060629,
+          "mean_varpi_initial_deg": 62.54792314027447,
+          "min_q_final_au": 37.151589235875385,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5260212618096184,
+          "R_initial": 0.5315899631985112,
+          "bound_final": 20,
+          "delta_R": -0.0055687013888927606,
+          "m_earth": 9.59038464448575,
+          "mean_varpi_final_deg": 62.6707566224992,
+          "mean_varpi_initial_deg": 62.521270834485925,
+          "min_q_final_au": 37.25615397312374,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5262409123141312,
+          "R_initial": 0.5314966534612069,
+          "bound_final": 20,
+          "delta_R": -0.005255741147075721,
+          "m_earth": 9.59038464448575,
+          "mean_varpi_final_deg": 62.54867238281387,
+          "mean_varpi_initial_deg": 62.52398593339724,
+          "min_q_final_au": 37.41196327676843,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0009038689629253067
+    },
+    {
+      "a_au": 330,
+      "delta_R_over_baseline": -0.0009077637874254085,
+      "e": 0.3,
+      "m_earth": 8.39454669203315,
+      "max_delta_R": -0.005247839502596552,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005559868217829056,
+      "min_delta_R": -0.005891293928617869,
+      "min_q_final_au": 37.140200957365174,
+      "runs": [
+        {
+          "R_final": 0.525848669086319,
+          "R_initial": 0.5313891403085917,
+          "bound_final": 20,
+          "delta_R": -0.005540471222272747,
+          "m_earth": 8.39454669203315,
+          "mean_varpi_final_deg": 62.54462956081395,
+          "mean_varpi_initial_deg": 62.548295169858115,
+          "min_q_final_au": 37.16193647962947,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5263035259280564,
+          "R_initial": 0.531551365430653,
+          "bound_final": 20,
+          "delta_R": -0.005247839502596552,
+          "m_earth": 8.39454669203315,
+          "mean_varpi_final_deg": 62.628238343725755,
+          "mean_varpi_initial_deg": 62.528280781993395,
+          "min_q_final_au": 37.363073915215985,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5255719850295385,
+          "R_initial": 0.5314632789581564,
+          "bound_final": 20,
+          "delta_R": -0.005891293928617869,
+          "m_earth": 8.39454669203315,
+          "mean_varpi_final_deg": 62.57846488445911,
+          "mean_varpi_initial_deg": 62.53139370069203,
+          "min_q_final_au": 37.140200957365174,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0009077637874254085
+    },
+    {
+      "a_au": 330,
+      "delta_R_over_baseline": -0.0009386535559931701,
+      "e": 0.1,
+      "m_earth": 9.525503753518365,
+      "max_delta_R": -0.005343140157373694,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.0055907579863968175,
+      "min_delta_R": -0.005758238648612912,
+      "min_q_final_au": 35.73880965213094,
+      "runs": [
+        {
+          "R_final": 0.5260317289016331,
+          "R_initial": 0.5313748690590068,
+          "bound_final": 20,
+          "delta_R": -0.005343140157373694,
+          "m_earth": 9.525503753518365,
+          "mean_varpi_final_deg": 62.52266378947232,
+          "mean_varpi_initial_deg": 62.55163934902107,
+          "min_q_final_au": 35.73880965213094,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5258854942614941,
+          "R_initial": 0.531556389414698,
+          "bound_final": 20,
+          "delta_R": -0.005670895153203848,
+          "m_earth": 9.525503753518365,
+          "mean_varpi_final_deg": 62.56210852103006,
+          "mean_varpi_initial_deg": 62.52986960906493,
+          "min_q_final_au": 37.01900389493023,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5256812334371158,
+          "R_initial": 0.5314394720857287,
+          "bound_final": 20,
+          "delta_R": -0.005758238648612912,
+          "m_earth": 9.525503753518365,
+          "mean_varpi_final_deg": 62.53445387941232,
+          "mean_varpi_initial_deg": 62.53430002308352,
+          "min_q_final_au": 36.982533242930366,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0009386535559931701
+    },
+    {
+      "a_au": 380,
+      "delta_R_over_baseline": -0.0013043295636319856,
+      "e": 0.3,
+      "m_earth": 12.817585387907812,
+      "max_delta_R": -0.00508599669080767,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.005956433994035633,
+      "min_delta_R": -0.006708004495567965,
+      "min_q_final_au": 37.056250230050374,
+      "runs": [
+        {
+          "R_final": 0.5246480632711316,
+          "R_initial": 0.5313560677666995,
+          "bound_final": 20,
+          "delta_R": -0.006708004495567965,
+          "m_earth": 12.817585387907812,
+          "mean_varpi_final_deg": 62.56448603783906,
+          "mean_varpi_initial_deg": 62.5539107906759,
+          "min_q_final_au": 37.36490286474853,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5255554878593978,
+          "R_initial": 0.531630788655129,
+          "bound_final": 20,
+          "delta_R": -0.006075300795731264,
+          "m_earth": 12.817585387907812,
+          "mean_varpi_final_deg": 62.66748097744077,
+          "mean_varpi_initial_deg": 62.519341615047615,
+          "min_q_final_au": 37.056250230050374,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5263910612891118,
+          "R_initial": 0.5314770579799195,
+          "bound_final": 20,
+          "delta_R": -0.00508599669080767,
+          "m_earth": 12.817585387907812,
+          "mean_varpi_final_deg": 62.604311835569256,
+          "mean_varpi_initial_deg": 62.52394607232229,
+          "min_q_final_au": 37.4266377747718,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0013043295636319856
+    },
+    {
+      "a_au": 380,
+      "delta_R_over_baseline": -0.0013769666623160886,
+      "e": 0.1,
+      "m_earth": 14.544437264186207,
+      "max_delta_R": -0.0058581208142785,
+      "mean_bound_final": 20,
+      "mean_delta_R": -0.006029071092719736,
+      "min_delta_R": -0.00628508282397422,
+      "min_q_final_au": 35.45646494326005,
+      "runs": [
+        {
+          "R_final": 0.5250450945976547,
+          "R_initial": 0.5313301774216289,
+          "bound_final": 20,
+          "delta_R": -0.00628508282397422,
+          "m_earth": 14.544437264186207,
+          "mean_varpi_final_deg": 62.69209068621306,
+          "mean_varpi_initial_deg": 62.55981628686817,
+          "min_q_final_au": 35.45646494326005,
+          "phase_deg": 0
+        },
+        {
+          "R_final": 0.5257806408261507,
+          "R_initial": 0.5316387616404292,
+          "bound_final": 20,
+          "delta_R": -0.0058581208142785,
+          "m_earth": 14.544437264186207,
+          "mean_varpi_final_deg": 62.677434462364104,
+          "mean_varpi_initial_deg": 62.52234543865822,
+          "min_q_final_au": 37.34740267811571,
+          "phase_deg": 120
+        },
+        {
+          "R_final": 0.5254908309145168,
+          "R_initial": 0.5314348405544232,
+          "bound_final": 20,
+          "delta_R": -0.005944009639906489,
+          "m_earth": 14.544437264186207,
+          "mean_varpi_final_deg": 62.56119516774451,
+          "mean_varpi_initial_deg": 62.52888206160573,
+          "min_q_final_au": 37.420063926415786,
+          "phase_deg": 240
+        }
+      ],
+      "score": -0.0013769666623160886
+    }
+  ],
+  "canon_allowed": false,
+  "fixed_relations": {
+    "mu_rel_mearth_per_au3": 2.690873867e-7,
+    "varpi_p_deg": 242.1877460640173
+  },
+  "integration": {
+    "dt_yr": 1,
+    "duration_yr": 200000,
+    "integrator": "WHFast",
+    "phase_samples_deg": [
+      0,
+      120,
+      240
+    ]
+  },
+  "method_boundary": [
+    "pilot tests short-term preservation/contraction of observed apsidal order, not formation from an unbiased primordial disk",
+    "giant planets are circular/coplanar approximations",
+    "candidate inclination fixed to zero in v0.1",
+    "200 kyr is much shorter than published Gyr-scale stability experiments",
+    "result is a ranking diagnostic, not a posterior or detection"
+  ],
+  "n_tnos": 20,
+  "schema": "PBH_REBOUND_RELATIONAL_STABILITY_PILOT_V0_1",
+  "source_url": "https://ssd-api.jpl.nasa.gov/sbdb_query.api?fields=full_name%2Cepoch%2Ca%2Ce%2Cq%2Ci%2Com%2Cw%2Cma%2Ccondition_code%2Cdata_arc%2Cn_obs_used&sb-class=TNO&sb-cdata=%7B%22AND%22%3A%5B%22a%7CGT%7C150%22%2C%22q%7CGT%7C30%22%5D%7D&limit=500&full-prec=true",
+  "status": "ANALYZED",
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "c5744eb1-4eed-4ec5-9e5d-acccf303abca",
+    "script_commit": "7f04c8fa080f9d727c3c24c2574bc2e8281a5bf6",
+    "rebound_version": "5.2.0"
+  }
+}
