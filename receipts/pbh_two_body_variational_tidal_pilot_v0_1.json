@@ -1,0 +1,117 @@
+{
+  "schema": "PBH_TWO_BODY_VARIATIONAL_TIDAL_PILOT_V0_1",
+  "status": "RELATIONAL_TENSOR_ONLY",
+  "raw_rows_sha256": "78492d3031d0e3fd41c883a14117c79c66e5c165d072b2c0293749c12d9ebbf3",
+  "nightly_rows_sha256": "802abdd923b6c0d8e22263dddb7a4d25ebfa932cb8904dd9b973ad5df6946844",
+  "data": {
+    "raw_rows": 736,
+    "nightly_equations": 552
+  },
+  "objects": {
+    "2012 VP113": {
+      "n_nights": 24,
+      "Bp_rank": 5,
+      "Bp_condition": 223.73502272212755,
+      "tide_information_fraction": [
+        0.00177274809719407,
+        0.0030289872337303445,
+        0.0020818379567473233,
+        0.001847626386999487,
+        0.0021512498800697623
+      ]
+    },
+    "2015 TG387": {
+      "n_nights": 27,
+      "Bp_rank": 5,
+      "Bp_condition": 832.3512395632297,
+      "tide_information_fraction": [
+        0.0013191644628964107,
+        0.0002331437360323001,
+        0.0011566588518135792,
+        0.0014538382360051664,
+        0.0003240381105118626
+      ]
+    },
+    "Sedna": {
+      "n_nights": 225,
+      "Bp_rank": 5,
+      "Bp_condition": 153.5054754833378,
+      "tide_information_fraction": [
+        0.0015116732469894292,
+        0.0059661683511550495,
+        0.01316522083850275,
+        0.006015753948006063,
+        0.014385442018633721
+      ]
+    }
+  },
+  "common": {
+    "rank": 5,
+    "condition": 40.72747270555672,
+    "singular_values_yr2": [
+      84.20344541254303,
+      18.922598145916766,
+      12.601606069851885,
+      4.02120964105701,
+      2.0674851597421755
+    ],
+    "nuisance_profiled_rms_arcsec": 0.2413911813214178,
+    "post_tide_rms_arcsec": 0.23595029724434988,
+    "explained_fraction": 0.044571355991210426,
+    "tensor_3x3_yr2": [
+      [
+        4.660704601762517e-7,
+        1.8977779750684831e-7,
+        -1.89200594896412e-7
+      ],
+      [
+        1.8977779750684831e-7,
+        3.130397563731461e-7,
+        2.784796267713916e-7
+      ],
+      [
+        -1.89200594896412e-7,
+        2.784796267713916e-7,
+        -7.791102165493977e-7
+      ]
+    ],
+    "eigenvalues_yr2": [
+      -8.850446594654695e-7,
+      2.908665044191864e-7,
+      5.941781550462835e-7
+    ],
+    "diagnostic_axis_ra_deg": 213.97738555082157,
+    "diagnostic_axis_dec_deg": 0.05271326464517954,
+    "point_mass_shape_residual": 0.7525054981997202,
+    "transverse_split_over_mu": 3.9581097147304507
+  },
+  "gremlin_v02": {
+    "module_blob_sha": "e6e0083f6c1cae4797642c00551c3ae12d747797",
+    "schema": "GREMLIN_PBH_RELATIONAL_TIDAL_V0_2",
+    "status": "RELATIONAL_TENSOR_ONLY",
+    "gates": {
+      "finite": true,
+      "symmetric": true,
+      "trace_free_compatible": true,
+      "positive_mu": true,
+      "point_mass_shape": false,
+      "transverse_degeneracy": false,
+      "all": false
+    },
+    "thresholds": {
+      "max_point_mass_shape_residual": 0.2,
+      "max_transverse_split_over_mu": 0.4
+    }
+  },
+  "boundary": {
+    "two_body_sun_only": true,
+    "no_planetary_gradient": true,
+    "no_light_time_derivative": true,
+    "equal_nightly_weight": true,
+    "current_JPL_not_independent_of_MPC": true,
+    "diagnostic_axis_is_not_source_coordinate": true,
+    "PBH_not_inferred": true
+  },
+  "next_gate": "major-planet N-body finite-difference A/B design on the same frozen O-C dataset",
+  "canon_allowed": false
+}
