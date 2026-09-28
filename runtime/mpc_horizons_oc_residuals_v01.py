@@ -83,8 +83,9 @@ def parse_horizons_result(result: str):
             continue
         cal = vals[0]
         jd = as_float(vals[1])
-        ra = as_float(vals[-2])
-        dec = as_float(vals[-1])
+        # QUANTITIES=1 CSV: CAL, JD, solar-marker, lunar-marker, RA, DEC, trailing-empty.
+        ra = as_float(vals[4])
+        dec = as_float(vals[5])
         if jd is None or ra is None or dec is None:
             raise RuntimeError(f"unparseable Horizons row: {vals!r}")
         rows.append({"cal": cal, "jd_ut": jd, "ra_pred_deg": ra, "dec_pred_deg": dec})
@@ -291,6 +292,7 @@ def main():
     canonical = json.dumps(all_rows, sort_keys=True, separators=(",", ":")).encode()
     receipt = {
         "schema": "PBH_MPC_HORIZONS_OC_RESIDUALS_V0_1",
+        "script_revision": "parser-ra-dec-fixed-r2",
         "status": (
             "PASS" if object_receipts and not failures
             and all(v["n_station_failures"] == 0 for v in object_receipts.values())
