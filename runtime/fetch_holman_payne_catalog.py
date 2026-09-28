@@ -8,7 +8,7 @@ import json
 from collections import Counter, defaultdict
 from datetime import datetime
 
-import requests
+import urllib.request
 
 CATALOG = "J/AJ/152/80/obs"
 URL = (
@@ -29,13 +29,13 @@ def parse_date(text: str) -> float:
 
 
 def main() -> int:
-    r = requests.get(
+    req = urllib.request.Request(
         URL,
-        timeout=180,
         headers={"User-Agent": "GREMLIN-FERRET-PBH-ORBITAL/0.1 read-only"},
     )
-    r.raise_for_status()
-    payload = r.content
+    with urllib.request.urlopen(req, timeout=180) as response:
+        http_status = int(response.status)
+        payload = response.read()
     text = payload.decode("utf-8", "replace")
     lines = text.splitlines()
 
@@ -102,7 +102,7 @@ def main() -> int:
         "status": "INGESTED",
         "catalog": CATALOG,
         "source_url": URL,
-        "http_status": r.status_code,
+        "http_status": http_status,
         "bytes": len(payload),
         "sha256": hashlib.sha256(payload).hexdigest(),
         "parsed_rows": len(rows),
