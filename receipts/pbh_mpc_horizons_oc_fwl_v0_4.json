@@ -1,0 +1,58 @@
+{
+  "schema": "PBH_MPC_HORIZONS_OC_FWL_SUMMARY_V0_4",
+  "status": "PASS",
+  "source_rows_sha256": "78492d3031d0e3fd41c883a14117c79c66e5c165d072b2c0293749c12d9ebbf3",
+  "n_rows": 736,
+  "objects": {
+    "2012 VP113": {
+      "n": 55,
+      "raw_vector_norm_arcsec_yr2": 0.00860184545473287,
+      "fwl_vector_arcsec_yr2": [
+        -0.019235206679518214,
+        0.024493227606923934
+      ],
+      "fwl_vector_norm_arcsec_yr2": 0.03114340017737888,
+      "naive_se_second_arcsec_yr2": [
+        0.034651216935927515,
+        0.026103688486404073
+      ],
+      "quadratic_identifiability_fraction": 0.006183141828129092
+    },
+    "2015 TG387": {
+      "n": 51,
+      "raw_vector_norm_arcsec_yr2": 0.006354896122438677,
+      "fwl_vector_arcsec_yr2": [
+        -0.01633731182406265,
+        -0.015093419363568852
+      ],
+      "fwl_vector_norm_arcsec_yr2": 0.022242281036827415,
+      "naive_se_second_arcsec_yr2": [
+        0.02210454723893172,
+        0.026810595250712055
+      ],
+      "quadratic_identifiability_fraction": 0.0013488784644700863
+    },
+    "Sedna": {
+      "n": 630,
+      "raw_vector_norm_arcsec_yr2": 0.0012209170249535973,
+      "fwl_vector_arcsec_yr2": [
+        0.0014262200558690426,
+        -0.00405995143559034
+      ],
+      "fwl_vector_norm_arcsec_yr2": 0.0043031743291569256,
+      "naive_se_second_arcsec_yr2": [
+        0.001896059331239783,
+        0.0018514192602539833
+      ],
+      "quadratic_identifiability_fraction": 0.030351117609644363
+    }
+  },
+  "interpretation": {
+    "estimator_status": "WEAKLY_IDENTIFIED_AFTER_STATION_CATALOG_PROFILING",
+    "build_tidal_tensor_from_polynomial_coefficients": false,
+    "iid_ols_se_is_not_significance": true,
+    "current_Horizons_not_independent_of_MPC_astrometry": true,
+    "next_required_layer": "physical variational design B(t) with local 6D state profiled jointly"
+  },
+  "canon_allowed": false
+}
