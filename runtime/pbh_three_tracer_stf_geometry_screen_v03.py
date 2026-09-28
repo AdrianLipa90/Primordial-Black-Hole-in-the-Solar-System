@@ -439,7 +439,7 @@ def fit_stf(entries):
             ("delta",e["curvature_dec_rad_per_year2"],e["curvature_dec_se_rad_per_year2"]),
         ]:
             tangent=e["e_alpha"] if basis_name=="alpha" else e["e_delta"]
-            rows.append(design_row(tangent,e["n"]))
+            rows.append(design_row(tangent,e["n_vec"]))
             ys.append(c)
             floor=max(abs(c)*0.05,1e-18)
             ws.append(1.0/max(se*se,floor*floor))
