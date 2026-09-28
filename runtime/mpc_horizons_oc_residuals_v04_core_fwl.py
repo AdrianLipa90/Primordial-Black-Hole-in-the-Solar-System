@@ -488,8 +488,7 @@ def main():
             "fwl_ddec_se_naive":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["ddec"]["naive_ols_se_second_arcsec_per_year2"],
             "quadratic_identifiability_dra":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["dra"]["quadratic_identifiability_fraction_after_nuisance"],
             "quadratic_identifiability_ddec":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["ddec"]["quadratic_identifiability_fraction_after_nuisance"],
-            "leave_one_station_norm_range":o["leave_one_station"]["norm_range"],
-            "leave_one_catalog_norm_range":o["leave_one_catalog"]["norm_range"],
+            "stability_layer":"DEFERRED_TO_OPTIMIZED_LOSO",
         }
     print("PBH_OC_V04_SUMMARY="+json.dumps(compact,sort_keys=True),flush=True)
     print("PBH_OC_V04_RECEIPT=" + json.dumps(receipt, sort_keys=True), flush=True)
