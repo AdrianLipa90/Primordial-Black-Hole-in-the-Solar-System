@@ -1,0 +1,23 @@
+{
+  "schema": "PBH_GREMLIN_RELATIONAL_MATCH_RECEIPT_V0_1",
+  "status": "PASS_LIVE_RUNTIME",
+  "source_event_id": "gremlin:whisper:sha256:b2efc75ecd171ce09e8988f596a92e3af7b50c12403999e4588fae16c8a9856a",
+  "terminal36d_event_id": "gremlin:whisper:sha256:14e223a053f9fac61cb430b94a7eb0c12c419e2640a39bb1f67d45e4279f502e",
+  "gremlin_fused_event_id": "gremlin:whisper:sha256:69a80e8f2228aee9f271166a0d134da37e0007d03b559d8e1b7b6cccb9730922",
+  "phase_shape": [
+    6,
+    36
+  ],
+  "phase_attention_R": [
+    0.034109253918788975,
+    0.1846660361972388,
+    0.09463825909114176,
+    0.06031703619951934,
+    0.08885008409535947,
+    0.09274369664540481
+  ],
+  "phase_state_consumed": true,
+  "interpretation": "Runtime routing/attention state only; not physical likelihood or sigma.",
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
