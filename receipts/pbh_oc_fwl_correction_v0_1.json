@@ -1,0 +1,18 @@
+{
+  "schema": "PBH_OC_FWL_CORRECTION_V0_1",
+  "status": "CORRECTION_ACTIVE",
+  "invalidates": [
+    "PBH_MPC_HORIZONS_OC_RESIDUALS_V0_2.objects[*].station_catalog_profiled_curvature",
+    "PBH_MPC_HORIZONS_OC_RESIDUALS_V0_2 leave-one-group curvature derived from y-only demeaning",
+    "PBH_OC_TO_STF_TIDAL_SCREEN_V0_1"
+  ],
+  "preserves": [
+    "raw MPC ADES observations",
+    "exact-station exact-time Horizons matches",
+    "raw O-C rows and group offsets"
+  ],
+  "replacement_script": "runtime/mpc_horizons_oc_residuals_v03_fwl.py",
+  "replacement_method": "Frisch-Waugh-Lovell projection of both y and t^2 through Z=[1,t,station,catalog]",
+  "authority": "METHODOLOGY_CORRECTION",
+  "canon_allowed": false
+}
