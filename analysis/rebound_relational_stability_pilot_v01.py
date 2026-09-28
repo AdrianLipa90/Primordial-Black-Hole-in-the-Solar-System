@@ -2,7 +2,12 @@
 from __future__ import annotations
 
 import json, math, urllib.parse, urllib.request
-import rebound
+try:
+    import rebound
+except ModuleNotFoundError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--no-cache-dir', 'rebound'])
+    import rebound
 
 MU_REL = 2.690873867e-7  # Earth masses / AU^3 from a_crit=170 AU leading-order balance
 M_EARTH_PER_MSUN = 332946.0
