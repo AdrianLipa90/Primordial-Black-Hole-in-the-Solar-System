@@ -109,8 +109,7 @@ def make_sim(tnos,a_p,e_p,m_earth,M_p_deg):
         m=m_earth/M_EARTH_PER_MSUN,
         a=a_p,e=e_p,inc=0.0,Omega=0.0,
         omega=math.radians(VARPI_P_DEG),
-        M=math.radians(M_p_deg),
-        hash="PBH_LATENT"
+        M=math.radians(M_p_deg)
     )
     start_idx=len(sim.particles)
     for row in tnos:
@@ -119,8 +118,7 @@ def make_sim(tnos,a_p,e_p,m_earth,M_p_deg):
             inc=math.radians(row["i"]),
             Omega=math.radians(row["Omega"]),
             omega=math.radians(row["omega"]),
-            M=math.radians(row["M"]),
-            hash=row["designation"]
+            M=math.radians(row["M"])
         )
     sim.move_to_com()
     sim.integrator="whfast"
