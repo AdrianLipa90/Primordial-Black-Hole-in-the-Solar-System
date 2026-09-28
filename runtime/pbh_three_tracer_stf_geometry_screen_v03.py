@@ -546,11 +546,11 @@ def main():
         "objects":raw,
         "modes":modes,
         "method":{
-            "residual_model":"per coordinate: station×catalog fixed effects + global linear term + 0.5*curvature*t^2",
+            "residual_model":"per coordinate: stationxcatalog fixed effects + global linear term + 0.5*curvature*t^2",
             "geometry":"theta_ddot ~= tangent^T T n",
             "tensor":"generic symmetric trace-free 3x3, 5 parameters",
             "point_mass_test":"eigenshape projection only",
-            "leave_one_group_out":"station×catalog curvature robustness diagnostic",
+            "leave_one_group_out":"stationxcatalog curvature robustness diagnostic",
         },
         "interpretation_boundary":{
             "JPL_orbits_fit_same_MPC_data":True,
