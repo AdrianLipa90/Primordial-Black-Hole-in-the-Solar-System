@@ -101,10 +101,10 @@ def phase_order(sim, start_idx):
 def make_sim(tnos,a_p,e_p,m_earth,M_p_deg):
     sim=rebound.Simulation()
     sim.units=("AU","yr","Msun")
-    sim.add(m=1.0,hash="Sun")
+    sim.add(m=1.0)
     # Circular-coplanar giant-planet secular baseline; mean longitudes staggered.
     for k,(name,m,a) in enumerate(GIANTS):
-        sim.add(m=m,a=a,e=0.0,inc=0.0,Omega=0.0,omega=0.0,M=math.radians((k*90.0)%360),hash=name)
+        sim.add(m=m,a=a,e=0.0,inc=0.0,Omega=0.0,omega=0.0,M=math.radians((k*90.0)%360))
     sim.add(
         m=m_earth/M_EARTH_PER_MSUN,
         a=a_p,e=e_p,inc=0.0,Omega=0.0,
