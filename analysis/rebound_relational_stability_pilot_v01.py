@@ -123,8 +123,6 @@ def make_sim(tnos,a_p,e_p,m_earth,M_p_deg):
     sim.move_to_com()
     sim.integrator="whfast"
     sim.dt=DT_YR
-    sim.ri_whfast.safe_mode=0
-    sim.ri_whfast.corrector=11
     return sim,start_idx
 
 def run_one(tnos,a_p,e_p,Mdeg):
