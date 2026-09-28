@@ -16,11 +16,9 @@ HORIZONS_URL = "https://ssd.jpl.nasa.gov/api/horizons.api"
 
 OBJECTS = [
     {"designation": "Sedna", "command": "90377;"},
-    {"designation": "2012 VP113", "command": "DES=2012 VP113;"},
-    {"designation": "2015 TG387", "command": "541132;"},
 ]
 
-CHUNK = 80
+CHUNK = 20
 
 
 def ffloat(x):
