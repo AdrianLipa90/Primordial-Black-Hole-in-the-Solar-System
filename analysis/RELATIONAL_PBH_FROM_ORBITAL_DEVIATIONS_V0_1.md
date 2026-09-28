@@ -84,3 +84,77 @@ instantaneous RA/Dec: unresolved
 ```
 
 The next gate is to use the observed `varpi(a)` relation and long-term stability to collapse this manifold in `(m,a,e)`, then only afterwards infer current position along the orbit.
+
+
+## Step 4 — short-horizon REBOUND relational pilot
+
+A coarse dynamical grid was evaluated only **after** freezing the orbital relations:
+
+```text
+varpi_p = 242.187746 deg
+mu_rel  = 2.690873867e-7 M_earth / AU^3
+```
+
+Grid:
+
+```text
+a_p = {250, 290, 330, 380} AU
+e_p = {0.10, 0.30, 0.50}
+M_p = {0, 120, 240} deg
+duration = 200 kyr
+integrator = WHFast
+20 observed distant TNOs
+```
+
+For every `(a_p,e_p)`, the mass is not fitted independently; it is obtained from the previously derived relational coupling manifold
+
+```text
+m_p = mu_rel * a_p^3 * (1-e_p^2)^(3/2).
+```
+
+The diagnostic is the change in the eccentricity-weighted apsidal phase-order parameter `R_varpi` relative to the no-perturber baseline.
+
+No-perturber baseline:
+
+```text
+Delta R = -0.0046521044
+20 / 20 TNOs remain bound
+```
+
+Best point **inside the constrained perturber grid**:
+
+```text
+a_p = 290 AU
+e_p = 0.30
+m_p = 5.697 Earth masses
+mean Delta R = -0.0048861734
+Delta R relative to no-perturber = -0.0002340690
+20 / 20 TNOs remain bound
+```
+
+This result has two separate meanings which must not be conflated:
+
+1. the coarse relational candidate ranking selects `(290 AU, 0.30)` as the least-degrading tested point;
+2. the no-perturber control preserves the observed apsidal order slightly better over this 200 kyr pilot.
+
+Therefore this pilot **does not provide evidence for the existence of the perturber**. It only narrows the internal candidate manifold for the next, more discriminating dynamical experiment.
+
+The close location of this coarse optimum to an independently published long-term N-body optimum is retained as an external cross-check only; it was not supplied to this grid as an input.
+
+### Required next gate
+
+The next run must refine the basin around
+
+```text
+a_p ~ 270..310 AU
+e_p ~ 0.20..0.40
+m_p constrained by mu_rel
+```
+
+while preserving:
+
+- a no-perturber control;
+- averaging over perturber orbital phase;
+- longer integration;
+- a fixed scoring function declared before opening the refined grid;
+- no use of the legacy 576 AU / legacy RA-Dec state.
