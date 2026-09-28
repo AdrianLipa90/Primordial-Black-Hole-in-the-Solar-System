@@ -1,0 +1,407 @@
+{
+  "schema": "PBH_RELATIONAL_ORBIT_GRAPH_V0_1",
+  "status": "CANDIDATE",
+  "source_sample": "stable/metastable a>170 AU published TNO sample",
+  "solution": {
+    "eccentricity_weighted_tno_cluster_varpi_deg": 62.187746064017304,
+    "latent_anti_apsidal_varpi_deg": 242.1877460640173,
+    "robust_huber_e_weighted_anti_varpi_deg": 241.93162407734243,
+    "survival_weighted_anti_varpi_deg": 240.4005914990872,
+    "equal_weight_anti_varpi_deg": 241.62720331917086,
+    "stable_only_e_weighted_anti_varpi_deg": 246.153691,
+    "mean_eccentricity_vector_magnitude": 0.44528778468046903,
+    "interpretation": "latent apsidal direction only; not current sky position"
+  },
+  "nodes": [
+    {
+      "id": "PBH_LATENT_AXIS",
+      "type": "LATENT_PERTURBER",
+      "varpi_deg": 242.1877460640173,
+      "authority": "CANDIDATE_ONLY"
+    },
+    {
+      "id": "2016 TP120",
+      "type": "TNO",
+      "a_au": 170.7,
+      "q_au": 40.4,
+      "e": 0.763327475102519,
+      "varpi_deg": 116.9,
+      "survival_pct": 82,
+      "metastable": false
+    },
+    {
+      "id": "2016 QV89",
+      "type": "TNO",
+      "a_au": 177.8,
+      "q_au": 40.1,
+      "e": 0.7744656917885264,
+      "varpi_deg": 93.81,
+      "survival_pct": 98,
+      "metastable": false
+    },
+    {
+      "id": "2015 UN105",
+      "type": "TNO",
+      "a_au": 194.2,
+      "q_au": 41.4,
+      "e": 0.7868177136972194,
+      "varpi_deg": 1.11,
+      "survival_pct": 98,
+      "metastable": false
+    },
+    {
+      "id": "2003 SS422",
+      "type": "TNO",
+      "a_au": 200.7,
+      "q_au": 39.6,
+      "e": 0.8026905829596412,
+      "varpi_deg": 358.14,
+      "survival_pct": 88,
+      "metastable": true
+    },
+    {
+      "id": "2013 UT15",
+      "type": "TNO",
+      "a_au": 208.7,
+      "q_au": 44.1,
+      "e": 0.7886919022520364,
+      "varpi_deg": 83.5,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2000 CR105",
+      "type": "TNO",
+      "a_au": 222.1,
+      "q_au": 43.9,
+      "e": 0.8023412877082395,
+      "varpi_deg": 84.62,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2012 VP113",
+      "type": "TNO",
+      "a_au": 273.9,
+      "q_au": 80.6,
+      "e": 0.705732018985031,
+      "varpi_deg": 24.92,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2013 FT28",
+      "type": "TNO",
+      "a_au": 281.5,
+      "q_au": 43.4,
+      "e": 0.8458259325044405,
+      "varpi_deg": 258.71,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2018 VM35",
+      "type": "TNO",
+      "a_au": 295.3,
+      "q_au": 44.7,
+      "e": 0.8486285133762276,
+      "varpi_deg": 135.6,
+      "survival_pct": 87,
+      "metastable": false
+    },
+    {
+      "id": "2014 WB556",
+      "type": "TNO",
+      "a_au": 301.7,
+      "q_au": 42.8,
+      "e": 0.8581372224063639,
+      "varpi_deg": 350.59,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2014 SR349",
+      "type": "TNO",
+      "a_au": 324.7,
+      "q_au": 47.5,
+      "e": 0.8537111179550354,
+      "varpi_deg": 16.23,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2010 GB174",
+      "type": "TNO",
+      "a_au": 339.3,
+      "q_au": 48.4,
+      "e": 0.8573533745947539,
+      "varpi_deg": 117.49,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2004 VN112",
+      "type": "TNO",
+      "a_au": 355.3,
+      "q_au": 47.3,
+      "e": 0.8668730650154799,
+      "varpi_deg": 33.05,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2016 SD106",
+      "type": "TNO",
+      "a_au": 386.9,
+      "q_au": 42.7,
+      "e": 0.8896355647454123,
+      "varpi_deg": 22.26,
+      "survival_pct": 82,
+      "metastable": true
+    },
+    {
+      "id": "2015 RX245",
+      "type": "TNO",
+      "a_au": 467.2,
+      "q_au": 45.7,
+      "e": 0.9021832191780822,
+      "varpi_deg": 73.26,
+      "survival_pct": 100,
+      "metastable": true
+    },
+    {
+      "id": "2015 BP519",
+      "type": "TNO",
+      "a_au": 484.7,
+      "q_au": 35.4,
+      "e": 0.9269651330720033,
+      "varpi_deg": 122.77,
+      "survival_pct": 84,
+      "metastable": true
+    },
+    {
+      "id": "2013 RA109",
+      "type": "TNO",
+      "a_au": 527.1,
+      "q_au": 46,
+      "e": 0.9127300322519446,
+      "varpi_deg": 7.91,
+      "survival_pct": 100,
+      "metastable": true
+    },
+    {
+      "id": "2003 VB12",
+      "type": "TNO",
+      "a_au": 541.6,
+      "q_au": 76.4,
+      "e": 0.8589364844903988,
+      "varpi_deg": 95.14,
+      "survival_pct": 100,
+      "metastable": false
+    },
+    {
+      "id": "2021 DK18",
+      "type": "TNO",
+      "a_au": 735.2,
+      "q_au": 44.5,
+      "e": 0.9394722524483133,
+      "varpi_deg": 196.98,
+      "survival_pct": 82,
+      "metastable": true
+    },
+    {
+      "id": "2013 SY99",
+      "type": "TNO",
+      "a_au": 884.5,
+      "q_au": 50.1,
+      "e": 0.9433578292820802,
+      "varpi_deg": 61.31,
+      "survival_pct": 100,
+      "metastable": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "2016 TP120",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 54.712253935982744,
+      "base_weight_e": 0.763327475102519,
+      "survival_weight": 0.6259285295840655
+    },
+    {
+      "source": "2016 QV89",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 31.622253935982712,
+      "base_weight_e": 0.7744656917885264,
+      "survival_weight": 0.7589763779527559
+    },
+    {
+      "source": "2015 UN105",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -61.07774606401733,
+      "base_weight_e": 0.7868177136972194,
+      "survival_weight": 0.771081359423275
+    },
+    {
+      "source": "2003 SS422",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -64.0477460640173,
+      "base_weight_e": 0.8026905829596412,
+      "survival_weight": 0.7063677130044843
+    },
+    {
+      "source": "2013 UT15",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 21.312253935982653,
+      "base_weight_e": 0.7886919022520364,
+      "survival_weight": 0.7886919022520363
+    },
+    {
+      "source": "2000 CR105",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 22.43225393598277,
+      "base_weight_e": 0.8023412877082395,
+      "survival_weight": 0.8023412877082395
+    },
+    {
+      "source": "2012 VP113",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -37.267746064017274,
+      "base_weight_e": 0.705732018985031,
+      "survival_weight": 0.705732018985031
+    },
+    {
+      "source": "2013 FT28",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -163.4777460640173,
+      "base_weight_e": 0.8458259325044405,
+      "survival_weight": 0.8458259325044405
+    },
+    {
+      "source": "2018 VM35",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 73.41225393598268,
+      "base_weight_e": 0.8486285133762276,
+      "survival_weight": 0.738306806637318
+    },
+    {
+      "source": "2014 WB556",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -71.59774606401731,
+      "base_weight_e": 0.8581372224063639,
+      "survival_weight": 0.8581372224063639
+    },
+    {
+      "source": "2014 SR349",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -45.95774606401733,
+      "base_weight_e": 0.8537111179550354,
+      "survival_weight": 0.8537111179550354
+    },
+    {
+      "source": "2010 GB174",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 55.30225393598266,
+      "base_weight_e": 0.8573533745947539,
+      "survival_weight": 0.8573533745947539
+    },
+    {
+      "source": "2004 VN112",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -29.13774606401728,
+      "base_weight_e": 0.8668730650154799,
+      "survival_weight": 0.8668730650154799
+    },
+    {
+      "source": "2016 SD106",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -39.9277460640173,
+      "base_weight_e": 0.8896355647454123,
+      "survival_weight": 0.729501163091238
+    },
+    {
+      "source": "2015 RX245",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 11.072253935982644,
+      "base_weight_e": 0.9021832191780822,
+      "survival_weight": 0.9021832191780823
+    },
+    {
+      "source": "2015 BP519",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 60.582253935982635,
+      "base_weight_e": 0.9269651330720033,
+      "survival_weight": 0.7786507117804828
+    },
+    {
+      "source": "2013 RA109",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -54.27774606401732,
+      "base_weight_e": 0.9127300322519446,
+      "survival_weight": 0.9127300322519446
+    },
+    {
+      "source": "2003 VB12",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 32.95225393598275,
+      "base_weight_e": 0.8589364844903988,
+      "survival_weight": 0.8589364844903988
+    },
+    {
+      "source": "2021 DK18",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": 134.79225393598267,
+      "base_weight_e": 0.9394722524483133,
+      "survival_weight": 0.7703672470076169
+    },
+    {
+      "source": "2013 SY99",
+      "target": "PBH_LATENT_AXIS",
+      "relation": "ANTI_APSIDAL",
+      "expected_tno_varpi_deg": 62.187746064017304,
+      "residual_deg": -0.8777460640172876,
+      "base_weight_e": 0.9433578292820802,
+      "survival_weight": 0.9433578292820802
+    }
+  ],
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
