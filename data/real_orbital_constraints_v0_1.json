@@ -1,0 +1,87 @@
+{
+  "schema": "PBH_REAL_ORBITAL_CONSTRAINTS_V0_1",
+  "status": "SOURCE_GROUNDED",
+  "source_primary": {
+    "title": "Primordial Orbital Alignment of Sednoids",
+    "authors": [
+      "Yukun Huang",
+      "Brett Gladman"
+    ],
+    "journal": "The Astrophysical Journal Letters 962:L33",
+    "published": "2024-02-20",
+    "doi": "10.3847/2041-8213/ad2686",
+    "note": "Values below are the barycentric orbital elements reported in Table 1, sourced by the authors from JPL SBDB."
+  },
+  "sednoids": [
+    {
+      "name": "2012 VP113",
+      "a_au": 262,
+      "sigma_a_au": 0.6,
+      "q_au": 80.5,
+      "i_deg": 24.1,
+      "Omega_deg": 90.8,
+      "varpi_deg": 24.7
+    },
+    {
+      "name": "(90377) Sedna",
+      "a_au": 506.4,
+      "sigma_a_au": 0.2,
+      "q_au": 76.2,
+      "i_deg": 11.9,
+      "Omega_deg": 144.4,
+      "varpi_deg": 95.7
+    },
+    {
+      "name": "(541132) Leleakuhonua",
+      "a_au": 1089.6,
+      "sigma_a_au": 185,
+      "q_au": 65,
+      "i_deg": 11.7,
+      "Omega_deg": 301,
+      "varpi_deg": 59
+    }
+  ],
+  "source_interpretation": {
+    "backward_alignment_time_gyr_ago": 4.5,
+    "backward_alignment_varpi_deg": 200,
+    "circular_std_deg_at_alignment": 8,
+    "rayleigh_chance_probability_lt": 0.05,
+    "authors_conclusion": "If confirmed by future sednoids, the primordial alignment is more naturally evidence for an early event and is incompatible with a still-present distant planet as its cause."
+  },
+  "old_work_audit": {
+    "title": "Search for a Primordial Black Hole in the Solar System: Numerical Simulations and Observational Proposal",
+    "author": "Adrian Lipa",
+    "date": "2025-03-07",
+    "issue": "Forward simulation assumed the perturber orbit before integrating synthetic TNOs; it did not infer the perturber from observed orbital residuals.",
+    "assumed_perturber": {
+      "mass_Msun": 0.00005,
+      "a_au": 430,
+      "e": 0.78,
+      "i_deg": 27
+    },
+    "synthetic_tnos": {
+      "count": 10,
+      "a_au": [
+        400,
+        460
+      ],
+      "e": [
+        0.75,
+        0.8
+      ],
+      "i_deg": [
+        20,
+        35
+      ]
+    },
+    "old_output_xyz_au": [
+      -158.399,
+      500.044,
+      -254.785
+    ],
+    "old_output_ra_deg": 107.576646,
+    "old_output_dec_deg": -25.907579
+  },
+  "authority": "INPUT_CONSTRAINTS_ONLY",
+  "canon_allowed": false
+}
