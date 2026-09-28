@@ -26,7 +26,6 @@ def fetch(name: str) -> dict:
             "sstr": name,
             "full-prec": "1",
             "cov": "mat",
-            "soln-epoch": "1",
             "cd-epoch": "1",
         }
     )
