@@ -1,0 +1,484 @@
+{
+  "apsidal": {
+    "bootstrap_axis_sep_deg": {
+      "median": 14.207555858714887,
+      "p68": 20.33104464192836,
+      "p95": 42.205197316290196
+    },
+    "isotropic_orientation_null_add_one_rank": 0.023298835058247088,
+    "mean_axis_ecliptic_lonlat_deg": [
+      27.71602477021153,
+      -9.549507467544153
+    ],
+    "mean_axis_equatorial_radec_deg": [
+      29.14437801015914,
+      1.7322203099782003
+    ],
+    "mean_resultant_length_3d": 0.4593823774046794,
+    "quadrupole_axis_ecliptic_lonlat_deg": [
+      56.105641167230374,
+      -6.464169392925325
+    ],
+    "quadrupole_axis_equatorial_radec_deg": [
+      55.34232721233787,
+      12.99057646179649
+    ],
+    "quadrupole_eigenvalues": [
+      0.2816913312914975,
+      0.027419465142554125,
+      -0.3091107964340515
+    ],
+    "varpi_circular_mean_deg": 26.9778446640963,
+    "varpi_resultant_length": 0.469531897942729
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false,
+  "interpretation_boundary": "ORIENTATION_GEOMETRY_ONLY_NOT_ASTROMETRIC_O_MINUS_C_NOT_PBH_POSITION",
+  "n_selected": 17,
+  "old_2025_candidate_comparison": {
+    "angular_separation_to_antipode_mean_apsidal_axis_deg": 99.61829100040106,
+    "angular_separation_to_mean_apsidal_axis_deg": 80.38170899959894,
+    "angular_separation_to_quadrupole_axis_deg": 63.987351337275,
+    "old_candidate_ra_dec_deg": [
+      107.576646,
+      -25.907579
+    ]
+  },
+  "poles": {
+    "mean_axis_ecliptic_lonlat_deg": [
+      9.588443915796217,
+      83.41153822393456
+    ],
+    "mean_axis_equatorial_radec_deg": [
+      286.6782965672993,
+      66.78397564968616
+    ],
+    "mean_resultant_length_3d": 0.9676199782550731
+  },
+  "quality_cut": {
+    "condition_code_max": 3,
+    "data_arc_min_days": 2000,
+    "n_obs_used_min": 15
+  },
+  "schema": "PBH_RELATIONAL_ORBIT_GEOMETRY_V0_1",
+  "selected": [
+    {
+      "a_au": 205.3661119231157,
+      "argperi_deg": 252.0883273234467,
+      "condition_code": 3,
+      "data_arc_days": 4726,
+      "e": 0.7862323835529171,
+      "full_name": "505478 (2013 UT15)",
+      "i_deg": 10.65007277383749,
+      "n_obs_used": 48,
+      "node_deg": 191.9558838689586,
+      "pdes": "505478",
+      "perihelion_unit_ecliptic": [
+        0.10715653913419196,
+        0.9785669334271618,
+        -0.17585287294708343
+      ],
+      "pole_unit_ecliptic": [
+        -0.0382850217755453,
+        0.18080128510994864,
+        0.9827742123245996
+      ],
+      "q_au": 43.90062424480929,
+      "varpi_deg": 84.04421119240533
+    },
+    {
+      "a_au": 229.2563139415033,
+      "argperi_deg": 317.0408950104643,
+      "condition_code": 3,
+      "data_arc_days": 5547,
+      "e": 0.8073365317057665,
+      "full_name": "148209 (2000 CR105)",
+      "i_deg": 22.70799015441454,
+      "n_obs_used": 57,
+      "node_deg": 128.2037509183512,
+      "pdes": "148209",
+      "perihelion_unit_ecliptic": [
+        0.04139048040449439,
+        0.9638875400176787,
+        -0.26307344664665955
+      ],
+      "pole_unit_ecliptic": [
+        0.30335239353300897,
+        0.23874695334587986,
+        0.9224842641508064
+      ],
+      "q_au": 44.16931657232168,
+      "varpi_deg": 85.24464592881549
+    },
+    {
+      "a_au": 247.4285195857868,
+      "argperi_deg": 198.7037510664639,
+      "condition_code": 3,
+      "data_arc_days": 7323,
+      "e": 0.7335661561347354,
+      "full_name": "(2023 KQ14)",
+      "i_deg": 11.00095782821624,
+      "n_obs_used": 88,
+      "node_deg": 72.07902619292427,
+      "pdes": "2023 KQ14",
+      "perihelion_unit_ecliptic": [
+        0.008054793846205388,
+        -0.9980934549010907,
+        -0.06119293733511654
+      ],
+      "pole_unit_ecliptic": [
+        0.1815669057234441,
+        -0.058717919888848016,
+        0.9816239935076673
+      ],
+      "q_au": 65.92333155513307,
+      "varpi_deg": 270.7827772593882
+    },
+    {
+      "a_au": 253.7267345545375,
+      "argperi_deg": 34.54236488459512,
+      "condition_code": 3,
+      "data_arc_days": 4414,
+      "e": 0.8387486789933155,
+      "full_name": "(2024 FX26)",
+      "i_deg": 15.66536114607291,
+      "n_obs_used": 16,
+      "node_deg": 158.3393597661155,
+      "pdes": "2024 FX26",
+      "perihelion_unit_ecliptic": [
+        -0.9670583051112527,
+        -0.20336473798583354,
+        0.15310459777323657
+      ],
+      "pole_unit_ecliptic": [
+        0.0996660545592139,
+        0.2509514063026111,
+        0.9628551652472669
+      ],
+      "q_au": 40.91377112163156,
+      "varpi_deg": 192.88172465071062
+    },
+    {
+      "a_au": 267.5209861941053,
+      "argperi_deg": 294.2852296107872,
+      "condition_code": 3,
+      "data_arc_days": 6187,
+      "e": 0.6985589359876868,
+      "full_name": "(2012 VP113)",
+      "i_deg": 24.00179208811373,
+      "n_obs_used": 55,
+      "node_deg": 90.8926204194851,
+      "pdes": "2012 VP113",
+      "perihelion_unit_ecliptic": [
+        0.8261854327366794,
+        0.4242016293184575,
+        -0.370770290634608
+      ],
+      "pole_unit_ecliptic": [
+        0.40671585452972253,
+        0.006336806201871141,
+        0.9135327353528813
+      ],
+      "q_au": 80.64181072397446,
+      "varpi_deg": 25.17785003027234
+    },
+    {
+      "a_au": 284.540245113524,
+      "argperi_deg": 235.5262745278416,
+      "condition_code": 3,
+      "data_arc_days": 2567,
+      "e": 0.8496820531772414,
+      "full_name": "(2014 WB556)",
+      "i_deg": 24.14836921080743,
+      "n_obs_used": 32,
+      "node_deg": 115.0075085803447,
+      "pdes": "2014 WB556",
+      "perihelion_unit_ecliptic": [
+        0.9210032380429309,
+        -0.19496343422291396,
+        -0.3372570159840173
+      ],
+      "pole_unit_ecliptic": [
+        0.3707486988551934,
+        0.17294211232238302,
+        0.9124891386107855
+      ],
+      "q_au": 42.77150543390938,
+      "varpi_deg": 350.5337831081863
+    },
+    {
+      "a_au": 288.3328383723681,
+      "argperi_deg": 40.51973899223427,
+      "condition_code": 3,
+      "data_arc_days": 2926,
+      "e": 0.8489322596287296,
+      "full_name": "(2013 FT28)",
+      "i_deg": 17.39338167918143,
+      "n_obs_used": 18,
+      "node_deg": 217.7089516611492,
+      "pdes": "2013 FT28",
+      "perihelion_unit_ecliptic": [
+        -0.2221768262866321,
+        -0.9554667760611559,
+        0.1942181703767709
+      ],
+      "pole_unit_ecliptic": [
+        -0.1828410741924938,
+        0.23649233392280047,
+        0.9542748647972876
+      ],
+      "q_au": 43.55779036774836,
+      "varpi_deg": 258.22869065338347
+    },
+    {
+      "a_au": 304.1122501553101,
+      "argperi_deg": 341.6652578000795,
+      "condition_code": 3,
+      "data_arc_days": 3578,
+      "e": 0.8441642227949993,
+      "full_name": "(2014 SR349)",
+      "i_deg": 17.96288064148971,
+      "n_obs_used": 25,
+      "node_deg": 34.91767085194073,
+      "pdes": "2014 SR349",
+      "perihelion_unit_ecliptic": [
+        0.949630979228112,
+        0.29797562301506175,
+        -0.09701304746807535
+      ],
+      "pole_unit_ecliptic": [
+        0.1765282358510518,
+        -0.2528810487089452,
+        0.9512565149060371
+      ],
+      "q_au": 47.39156886051435,
+      "varpi_deg": 16.5829286520202
+    },
+    {
+      "a_au": 342.1499424203475,
+      "argperi_deg": 327.2807650284388,
+      "condition_code": 3,
+      "data_arc_days": 8737,
+      "e": 0.861547579461181,
+      "full_name": "474640 Alicanto (2004 VN112)",
+      "i_deg": 25.51048085878516,
+      "n_obs_used": 44,
+      "node_deg": 66.03582012284039,
+      "pdes": "474640",
+      "perihelion_unit_ecliptic": [
+        0.7874934967602492,
+        0.5706686149024296,
+        -0.2327903016142592
+      ],
+      "pole_unit_ecliptic": [
+        0.39355171892423196,
+        -0.17492578389402585,
+        0.902506517794106
+      ],
+      "q_au": 47.37148771531466,
+      "varpi_deg": 33.316585151279185
+    },
+    {
+      "a_au": 357.4512922859043,
+      "argperi_deg": 163.0834583663446,
+      "condition_code": 3,
+      "data_arc_days": 2240,
+      "e": 0.8805823053976087,
+      "full_name": "(2016 SD106)",
+      "i_deg": 4.807349998667163,
+      "n_obs_used": 26,
+      "node_deg": 219.4615688665922,
+      "pdes": "2016 SD106",
+      "perihelion_unit_ecliptic": [
+        0.9229279288851873,
+        0.38419965970227776,
+        0.024385642668436833
+      ],
+      "pole_unit_ecliptic": [
+        -0.05326357718961211,
+        0.06470225969528022,
+        0.9964821167162463
+      ],
+      "q_au": 42.68600925742822,
+      "varpi_deg": 22.545027232936775
+    },
+    {
+      "a_au": 446.1027697225768,
+      "argperi_deg": 65.14446717895393,
+      "condition_code": 3,
+      "data_arc_days": 2327,
+      "e": 0.8979881151257578,
+      "full_name": "(2015 RX245)",
+      "i_deg": 12.14272917726061,
+      "n_obs_used": 38,
+      "node_deg": 8.615229195287236,
+      "pdes": "2015 RX245",
+      "perihelion_unit_ecliptic": [
+        0.28270757874311353,
+        0.94002533246591,
+        0.19086329988649386
+      ],
+      "pole_unit_ecliptic": [
+        0.03150969628433353,
+        -0.20797426357972926,
+        0.977626638716713
+      ],
+      "q_au": 45.50778438702007,
+      "varpi_deg": 73.75969637424117
+    },
+    {
+      "a_au": 480.110695243544,
+      "argperi_deg": 263.1143391801041,
+      "condition_code": 3,
+      "data_arc_days": 4002,
+      "e": 0.9040500878543506,
+      "full_name": "765047 (2013 RA109)",
+      "i_deg": 12.39043102080424,
+      "n_obs_used": 26,
+      "node_deg": 104.8978628469475,
+      "pdes": "765047",
+      "perihelion_unit_ecliptic": [
+        0.9678918240357908,
+        0.13343891728393154,
+        -0.21302458148946596
+      ],
+      "pole_unit_ecliptic": [
+        0.20735950882918483,
+        0.05516581713173149,
+        0.9767081277015707
+      ],
+      "q_au": 46.0665790288047,
+      "varpi_deg": 8.012202027051558
+    },
+    {
+      "a_au": 543.7195289104732,
+      "argperi_deg": 311.0987725939751,
+      "condition_code": 1,
+      "data_arc_days": 12939,
+      "e": 0.8598824585187618,
+      "full_name": "90377 Sedna (2003 VB12)",
+      "i_deg": 11.92527582847476,
+      "n_obs_used": 671,
+      "node_deg": 144.5061662673739,
+      "pdes": "90377",
+      "perihelion_unit_ecliptic": [
+        -0.10711167969544932,
+        0.9819773835812369,
+        -0.15571610773381106
+      ],
+      "pole_unit_ecliptic": [
+        0.11997593245619036,
+        0.16823834969990714,
+        0.9784179236509926
+      ],
+      "q_au": 76.18464364627253,
+      "varpi_deg": 95.60493886134907
+    },
+    {
+      "a_au": 812.8891633627173,
+      "argperi_deg": 32.28018312609499,
+      "condition_code": 2,
+      "data_arc_days": 4433,
+      "e": 0.9386067765190018,
+      "full_name": "(2013 SY99)",
+      "i_deg": 4.225557576164326,
+      "n_obs_used": 41,
+      "node_deg": 29.51423694185209,
+      "pdes": "2013 SY99",
+      "perihelion_unit_ecliptic": [
+        0.47335177134057005,
+        0.8799940829133437,
+        0.03935117032882242
+      ],
+      "pole_unit_ecliptic": [
+        0.03629920675417814,
+        -0.06412144957715063,
+        0.997281709093846
+      ],
+      "q_au": 49.90588607160895,
+      "varpi_deg": 61.79442006794708
+    },
+    {
+      "a_au": 823.6371665135111,
+      "argperi_deg": 337.8354310400127,
+      "condition_code": 2,
+      "data_arc_days": 5153,
+      "e": 0.9451884804028103,
+      "full_name": "(2017 OF201)",
+      "i_deg": 16.22096193778697,
+      "n_obs_used": 25,
+      "node_deg": 328.7603498347868,
+      "pdes": "2017 OF201",
+      "perihelion_unit_ecliptic": [
+        0.6039546120445665,
+        -0.7900205102386771,
+        -0.10538700105951168
+      ],
+      "pole_unit_ecliptic": [
+        -0.14487223374374325,
+        -0.23883932037403155,
+        0.9601915511674579
+      ],
+      "q_au": 45.14480469332908,
+      "varpi_deg": 306.5957808747994
+    },
+    {
+      "a_au": 949.034527220025,
+      "argperi_deg": 208.6344902485042,
+      "condition_code": 2,
+      "data_arc_days": 2549,
+      "e": 0.9414098974466317,
+      "full_name": "(2021 RR205)",
+      "i_deg": 7.648955902855366,
+      "n_obs_used": 25,
+      "node_deg": 108.4512252672657,
+      "pdes": "2021 RR205",
+      "perihelion_unit_ecliptic": [
+        0.7283283440487803,
+        -0.6822530293729655,
+        -0.06378579125928438
+      ],
+      "pole_unit_ecliptic": [
+        0.12626089433766444,
+        0.04212682175979186,
+        0.9911021730626323
+      ],
+      "q_au": 55.60403027650864,
+      "varpi_deg": 317.0857155157699
+    },
+    {
+      "a_au": 1345.9746784971,
+      "argperi_deg": 118.2317322688105,
+      "condition_code": 2,
+      "data_arc_days": 7022,
+      "e": 0.9519448010157889,
+      "full_name": "541132 Leleakuhonua (2015 TG387)",
+      "i_deg": 11.67889561905244,
+      "n_obs_used": 44,
+      "node_deg": 301.1346719755806,
+      "pdes": "541132",
+      "perihelion_unit_ecliptic": [
+        0.4939335787726302,
+        0.8510124761970521,
+        0.17834625064133958
+      ],
+      "pole_unit_ecliptic": [
+        -0.17326792405262897,
+        -0.10466495285960124,
+        0.9792974390538299
+      ],
+      "q_au": 64.68108100288764,
+      "varpi_deg": 59.366404244391106
+    }
+  ],
+  "selection_parent_count": 25,
+  "source": "JPL_SBDB_QUERY_API",
+  "source_url": "https://ssd-api.jpl.nasa.gov/sbdb_query.api?fields=spkid%2Cpdes%2Cfull_name%2Cepoch%2Ce%2Ca%2Cq%2Ci%2Com%2Cw%2Cma%2Csigma_i%2Csigma_om%2Csigma_w%2Cdata_arc%2Cn_obs_used%2Ccondition_code%2Csource&sb-kind=a&sb-class=TNO&sb-cdata=%7B%22AND%22%3A%5B%22a%7CGE%7C150%22%2C%22q%7CGE%7C40%22%2C%22e%7CLT%7C1%22%2C%22data_arc%7CGE%7C365%22%2C%22n_obs_used%7CGE%7C5%22%5D%7D&full-prec=true&sort=a",
+  "status": "ANALYZED",
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "3e481202-a705-4216-a028-5f7d1242fed6",
+    "runtime_script_commit": "155ed816b613b9861ae0755f68f924386ebe875a"
+  }
+}
