@@ -1,0 +1,55 @@
+{
+  "schema": "PBH_MPC_HORIZONS_OC_SYSTEMATICS_V0_1",
+  "status": "SYSTEMATICS_LEVERAGE_DOMINATED",
+  "authority": "DIAGNOSTIC_ONLY",
+  "source_rows_sha256": "458ade608adc688e2856ce4c2d928d481495b8d315ce758040c4dc5d08b48bb2",
+  "n_rows": 106,
+  "objects": {
+    "2012 VP113": {
+      "raw_second_arcsec_yr2": [
+        0.002917520311054618,
+        -0.008091960236042443
+      ],
+      "profiled_second_arcsec_yr2": [
+        -0.000011786631749569818,
+        0.00022615152683874275
+      ],
+      "raw_norm": 0.008601845454732858,
+      "profiled_norm": 0.00022645846811169277,
+      "loo_station_norm_range": [
+        0.00021314937686885984,
+        0.004224685650790302
+      ],
+      "loo_catalog_norm_range": [
+        0.00022341143533794543,
+        0.007507027128465265
+      ]
+    },
+    "2015 TG387": {
+      "raw_second_arcsec_yr2": [
+        0.004713538067122055,
+        -0.004262307311395722
+      ],
+      "profiled_second_arcsec_yr2": [
+        -0.00002624769608971157,
+        -0.000012479664796914765
+      ],
+      "raw_norm": 0.006354896122438678,
+      "profiled_norm": 0.000029063440667980343,
+      "loo_station_norm_range": [
+        0.000017837410713336376,
+        0.0007142894232334946
+      ],
+      "loo_catalog_norm_range": [
+        0.00002090382802720874,
+        0.0008012683821651187
+      ]
+    }
+  },
+  "interpretation_boundary": {
+    "current_horizons_not_independent_of_mpc_fit": true,
+    "polynomial_curvature_not_a_tidal_tensor": true,
+    "PBH_not_inferred": true
+  },
+  "canon_allowed": false
+}
