@@ -301,6 +301,7 @@ def leave_one_group(rows, key):
         "dra_range": range_summary([x["dra"] for x in vectors]),
         "ddec_range": range_summary([x["ddec"] for x in vectors]),
         "largest_norm_cases": sorted(vectors, key=lambda x: x["norm"], reverse=True)[:3],
+        "runs": vectors,
     }
 
 
@@ -386,7 +387,7 @@ def main():
     canonical = json.dumps(all_rows, sort_keys=True, separators=(",", ":")).encode()
     receipt = {
         "schema": "PBH_MPC_HORIZONS_OC_RESIDUALS_V0_2",
-        "script_revision": "three-tracer-chunked-fixed-effects-r1",
+        "script_revision": "three-tracer-full-jackknife-r2",
         "status": (
             "PASS" if len(objects) == len(OBJECTS) and not failures
             and all(v["n_station_failures"] == 0 for v in objects.values())
