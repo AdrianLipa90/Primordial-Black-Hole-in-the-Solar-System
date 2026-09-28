@@ -1,0 +1,40 @@
+{
+  "schema": "PBH_RELATIONAL_ORBITAL_INVERSION_BASELINE_V0_1",
+  "status": "BASELINE_ONLY_NO_PBH_INFERENCE",
+  "current_varpi_relation": {
+    "circular_mean_deg": 59.74342407827599,
+    "resultant_R": 0.8760317210386436,
+    "circular_std_deg": 29.47843940515066,
+    "pairwise_3d_perihelion_angles_deg": {
+      "2012 VP113__(90377) Sedna": 67.85533997092638,
+      "2012 VP113__(541132) Leleakuhonua": 45.54966881054121,
+      "(90377) Sedna__(541132) Leleakuhonua": 41.376980948626375
+    },
+    "mean_perihelion_direction_lon_deg": 61.50545937882732,
+    "mean_perihelion_direction_lat_deg": -7.779055317814254
+  },
+  "old_candidate_consistency_audit": {
+    "xyz_norm_distance_au": 583.1377550476387,
+    "paper_stated_distance_au": 576.0,
+    "assumed_mass_Msun": 0.00005,
+    "assumed_mass_Mearth": 16.647302435,
+    "tidal_parameter_Msun_per_AU3": 2.5214857761093585e-13,
+    "tidal_parameter_if_10_Mearth_Msun_per_AU3": 1.5146512691498168e-13,
+    "gomes2023_median_sigma_Mearth_at_candidate_distance": 0.6816417591107825,
+    "nominal_signal_to_median_sigma_if_10_Mearth": 14.670462697363542,
+    "nominal_signal_to_median_sigma_if_assumed_5e-5_Msun": 24.422362938439676
+  },
+  "source_result": {
+    "four_giant_planets_backward_alignment_time_gyr_ago": 4.5,
+    "alignment_varpi_deg": 200.0,
+    "meaning": "The three canonical sednoids do not by themselves provide a present-day residual requiring a current perturber."
+  },
+  "inverse_problem": {
+    "measured_object": "T = (G M / r^3) (3 u u^T - I)",
+    "directly_identifiable": ["tidal axis u up to sign", "tidal amplitude M/r^3"],
+    "not_identifiable_from_tide_alone": ["M and r separately"],
+    "degeneracy_breakers": ["outer-TNO secular response", "time dependence/proper motion", "direct imaging/microlensing"]
+  },
+  "authority": "CANDIDATE_ONLY",
+  "canon_allowed": false
+}
