@@ -1,0 +1,889 @@
+{
+  "authority": "CANDIDATE_ONLY",
+  "bootstrap": {
+    "anti_apsidal_perturber_deg_95_bootstrap": [
+      216.65162623240207,
+      240.27681153270348,
+      263.2327858689826
+    ],
+    "apsidal_cluster_deg_95_bootstrap": [
+      36.65162623240205,
+      60.27681153270347,
+      83.2327858689826
+    ],
+    "draws": 200000,
+    "node_cluster_deg_95_bootstrap": [
+      61.30938959949072,
+      95.73844122941644,
+      127.14708837871757
+    ],
+    "note": "object bootstrap only; does not include discovery-selection bias"
+  },
+  "canon_allowed": false,
+  "geometric_null": {
+    "draws": 5000000,
+    "null": "uniform independent varpi and Omega; measured inclinations held fixed",
+    "observed_joint_product": 0.3805032884896999,
+    "p_add_one_apsidal": 0.005716198856760228,
+    "p_add_one_joint_product": 0.0008075998384800324,
+    "p_add_one_node": 0.03431879313624137,
+    "seed": 20260928,
+    "warning": "bias-unaware geometric null; not a survey-selection-corrected significance"
+  },
+  "inference_boundary": {
+    "what_stage_A_can_identify": [
+      "coherent apsidal phase",
+      "coherent nodal/pole phase",
+      "anti-apsidal orientation anchor for an external perturber"
+    ],
+    "what_stage_A_cannot_identify": [
+      "mass",
+      "semimajor_axis",
+      "eccentricity",
+      "current true anomaly or sky position",
+      "whether the perturber is a PBH rather than a planet"
+    ]
+  },
+  "objects": [
+    {
+      "M": 6.318034542288514,
+      "M_sigma": 0.02909,
+      "Omega": 128.2037509183512,
+      "Omega_sigma": 0.00029856,
+      "a": 229.2563139415033,
+      "a_sigma": 0.68675,
+      "data_arc_days": 5547,
+      "e": 0.8073365317057665,
+      "e_sigma": 0.00057361,
+      "epoch": 2461200.5,
+      "fullname": "148209 (2000 CR105)",
+      "i": 22.70799015441454,
+      "i_sigma": 0.00058393,
+      "n_obs_used": 57,
+      "omega": 317.0408950104643,
+      "omega_sigma": 0.011587,
+      "orbit_id": "5",
+      "q": 44.16931657232168,
+      "q_sigma": 0.0053259,
+      "query": "2000 CR105",
+      "rms": 0.28439,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2000+CR105&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 85.24464592881549
+    },
+    {
+      "M": 358.5956944005428,
+      "M_sigma": 0.0005731,
+      "Omega": 144.5061662673739,
+      "Omega_sigma": 0.00026058,
+      "a": 543.7195289104732,
+      "a_sigma": 0.1459,
+      "data_arc_days": 12939,
+      "e": 0.8598824585187618,
+      "e_sigma": 0.000037251,
+      "epoch": 2461200.5,
+      "fullname": "90377 Sedna (2003 VB12)",
+      "i": 11.92527582847476,
+      "i_sigma": 0.0000033169,
+      "n_obs_used": 671,
+      "omega": 311.0987725939751,
+      "omega_sigma": 0.0019143,
+      "orbit_id": "51",
+      "q": 76.18464364627253,
+      "q_sigma": 0.0011033,
+      "query": "Sedna",
+      "rms": 0.38596,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=Sedna&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 95.60493886134907
+    },
+    {
+      "M": 0.9438834766288601,
+      "M_sigma": 0.0042404,
+      "Omega": 66.03582012284039,
+      "Omega_sigma": 0.00026204,
+      "a": 342.1499424203475,
+      "a_sigma": 1.0146,
+      "data_arc_days": 8737,
+      "e": 0.861547579461181,
+      "e_sigma": 0.00040111,
+      "epoch": 2461200.5,
+      "fullname": "474640 Alicanto (2004 VN112)",
+      "i": 25.51048085878516,
+      "i_sigma": 0.00019023,
+      "n_obs_used": 44,
+      "omega": 327.2807650284388,
+      "omega_sigma": 0.0028648,
+      "orbit_id": "12",
+      "q": 47.37148771531466,
+      "q_sigma": 0.0032345,
+      "query": "2004 VN112",
+      "rms": 0.23209,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2004+VN112&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 33.316585151279185
+    },
+    {
+      "M": 3.923405934315594,
+      "M_sigma": 0.14152,
+      "Omega": 130.5723348507055,
+      "Omega_sigma": 0.0076665,
+      "a": 360.2421125794187,
+      "a_sigma": 8.4681,
+      "data_arc_days": 2130,
+      "e": 0.8653184538815824,
+      "e_sigma": 0.0033578,
+      "epoch": 2461200.5,
+      "fullname": "(2010 GB174)",
+      "i": 21.53976143537371,
+      "i_sigma": 0.0019579,
+      "n_obs_used": 37,
+      "omega": 347.4213270210242,
+      "omega_sigma": 0.075409,
+      "orbit_id": "6",
+      "q": 48.51796469916119,
+      "q_sigma": 0.074573,
+      "query": "2010 GB174",
+      "rms": 0.059861,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2010+GB174&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 117.99366187172967
+    },
+    {
+      "M": 3.834281215098069,
+      "M_sigma": 0.0068036,
+      "Omega": 90.8926204194851,
+      "Omega_sigma": 0.0005882,
+      "a": 267.5209861941053,
+      "a_sigma": 0.27641,
+      "data_arc_days": 6187,
+      "e": 0.6985589359876868,
+      "e_sigma": 0.00029374,
+      "epoch": 2461200.5,
+      "fullname": "(2012 VP113)",
+      "i": 24.00179208811373,
+      "i_sigma": 0.00024748,
+      "n_obs_used": 55,
+      "omega": 294.2852296107872,
+      "omega_sigma": 0.018843,
+      "orbit_id": "11",
+      "q": 80.64181072397446,
+      "q_sigma": 0.0071923,
+      "query": "2012 VP113",
+      "rms": 0.24115,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2012+VP113&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 25.17785003027234
+    },
+    {
+      "M": 357.5319611629894,
+      "M_sigma": 0.020297,
+      "Omega": 217.7089516611492,
+      "Omega_sigma": 0.0019711,
+      "a": 288.3328383723681,
+      "a_sigma": 1.5257,
+      "data_arc_days": 2926,
+      "e": 0.8489322596287296,
+      "e_sigma": 0.0008125,
+      "epoch": 2461200.5,
+      "fullname": "(2013 FT28)",
+      "i": 17.39338167918143,
+      "i_sigma": 0.0014474,
+      "n_obs_used": 18,
+      "omega": 40.51973899223427,
+      "omega_sigma": 0.052428,
+      "orbit_id": "4",
+      "q": 43.55779036774836,
+      "q_sigma": 0.0274,
+      "query": "2013 FT28",
+      "rms": 0.1467,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2013+FT28&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 258.22869065338347
+    },
+    {
+      "M": 0.6436600716687751,
+      "M_sigma": 0.0030696,
+      "Omega": 104.8978628469475,
+      "Omega_sigma": 0.0020145,
+      "a": 480.110695243544,
+      "a_sigma": 1.4652,
+      "data_arc_days": 4002,
+      "e": 0.9040500878543506,
+      "e_sigma": 0.00028688,
+      "epoch": 2461200.5,
+      "fullname": "765047 (2013 RA109)",
+      "i": 12.39043102080424,
+      "i_sigma": 0.000064279,
+      "n_obs_used": 26,
+      "omega": 263.1143391801041,
+      "omega_sigma": 0.010285,
+      "orbit_id": "7",
+      "q": 46.0665790288047,
+      "q_sigma": 0.0031095,
+      "query": "2013 RA109",
+      "rms": 0.17131,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2013+RA109&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 8.012202027051558
+    },
+    {
+      "M": 359.5557717514923,
+      "M_sigma": 0.002447,
+      "Omega": 29.51423694185209,
+      "Omega_sigma": 0.0006202,
+      "a": 812.8891633627173,
+      "a_sigma": 2.958,
+      "data_arc_days": 4433,
+      "e": 0.9386067765190018,
+      "e_sigma": 0.00022255,
+      "epoch": 2461200.5,
+      "fullname": "(2013 SY99)",
+      "i": 4.225557576164326,
+      "i_sigma": 0.00019369,
+      "n_obs_used": 41,
+      "omega": 32.28018312609499,
+      "omega_sigma": 0.010954,
+      "orbit_id": "5",
+      "q": 49.90588607160895,
+      "q_sigma": 0.0050085,
+      "query": "2013 SY99",
+      "rms": 0.2969,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2013+SY99&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 61.79442006794708
+    },
+    {
+      "M": 355.0534358251168,
+      "M_sigma": 0.0073813,
+      "Omega": 191.9558838689586,
+      "Omega_sigma": 0.00016554,
+      "a": 205.3661119231157,
+      "a_sigma": 0.18904,
+      "data_arc_days": 4726,
+      "e": 0.7862323835529171,
+      "e_sigma": 0.00019869,
+      "epoch": 2461200.5,
+      "fullname": "505478 (2013 UT15)",
+      "i": 10.65007277383749,
+      "i_sigma": 0.00044453,
+      "n_obs_used": 48,
+      "omega": 252.0883273234467,
+      "omega_sigma": 0.0071215,
+      "orbit_id": "6",
+      "q": 43.90062424480929,
+      "q_sigma": 0.0040947,
+      "query": "2013 UT15",
+      "rms": 0.20525,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2013+UT15&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 84.04421119240533
+    },
+    {
+      "M": 358.1468160348232,
+      "M_sigma": 0.0098136,
+      "Omega": 34.91767085194073,
+      "Omega_sigma": 0.00084743,
+      "a": 304.1122501553101,
+      "a_sigma": 1.0745,
+      "data_arc_days": 3578,
+      "e": 0.8441642227949993,
+      "e_sigma": 0.00055712,
+      "epoch": 2461200.5,
+      "fullname": "(2014 SR349)",
+      "i": 17.96288064148971,
+      "i_sigma": 0.00015165,
+      "n_obs_used": 25,
+      "omega": 341.6652578000795,
+      "omega_sigma": 0.013708,
+      "orbit_id": "8",
+      "q": 47.39156886051435,
+      "q_sigma": 0.0052248,
+      "query": "2014 SR349",
+      "rms": 0.23937,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2014+SR349&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 16.5829286520202
+    },
+    {
+      "M": 358.4943688239167,
+      "M_sigma": 0.019896,
+      "Omega": 8.615229195287236,
+      "Omega_sigma": 0.00016048,
+      "a": 446.1027697225768,
+      "a_sigma": 3.8866,
+      "data_arc_days": 2327,
+      "e": 0.8979881151257578,
+      "e_sigma": 0.00093968,
+      "epoch": 2461200.5,
+      "fullname": "(2015 RX245)",
+      "i": 12.14272917726061,
+      "i_sigma": 0.0013202,
+      "n_obs_used": 38,
+      "omega": 65.14446717895393,
+      "omega_sigma": 0.033756,
+      "orbit_id": "4",
+      "q": 45.50778438702007,
+      "q_sigma": 0.023797,
+      "query": "2015 RX245",
+      "rms": 0.13611,
+      "source_url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=2015+RX245&full-prec=1&cov=mat&cd-epoch=1",
+      "varpi": 73.75969637424117
+    }
+  ],
+  "relational_graph": {
+    "edges": [
+      {
+        "d_Omega_deg": 16.30241534902271,
+        "d_varpi_deg": 10.360292932533584,
+        "i": 0,
+        "j": 1,
+        "relation_score": 0.9719087770710867
+      },
+      {
+        "d_Omega_deg": 62.16793079551082,
+        "d_varpi_deg": 51.92806077753631,
+        "i": 0,
+        "j": 2,
+        "relation_score": 0.5928587122888497
+      },
+      {
+        "d_Omega_deg": 2.3685839323542837,
+        "d_varpi_deg": 32.749015942914184,
+        "i": 0,
+        "j": 3,
+        "relation_score": 0.9201309229575634
+      },
+      {
+        "d_Omega_deg": 37.311130498866106,
+        "d_varpi_deg": 60.06679589854315,
+        "i": 0,
+        "j": 4,
+        "relation_score": 0.6728050950633575
+      },
+      {
+        "d_Omega_deg": 89.505200742798,
+        "d_varpi_deg": 172.98404472456798,
+        "i": 0,
+        "j": 5,
+        "relation_score": 0.0018881217927139964
+      },
+      {
+        "d_Omega_deg": 23.3058880714037,
+        "d_varpi_deg": 77.23244390176393,
+        "i": 0,
+        "j": 6,
+        "relation_score": 0.5855915647515486
+      },
+      {
+        "d_Omega_deg": 98.68951397649911,
+        "d_varpi_deg": 23.450225860868407,
+        "i": 0,
+        "j": 7,
+        "relation_score": 0.406931147262501
+      },
+      {
+        "d_Omega_deg": 63.752132950607404,
+        "d_varpi_deg": 1.200434736410159,
+        "i": 0,
+        "j": 8,
+        "relation_score": 0.7210485161005015
+      },
+      {
+        "d_Omega_deg": 93.28608006641049,
+        "d_varpi_deg": 68.66171727679529,
+        "i": 0,
+        "j": 9,
+        "relation_score": 0.32142360283480675
+      },
+      {
+        "d_Omega_deg": 119.58852172306396,
+        "d_varpi_deg": 11.484949554574314,
+        "i": 0,
+        "j": 10,
+        "relation_score": 0.2505820989007801
+      },
+      {
+        "d_Omega_deg": 78.47034614453352,
+        "d_varpi_deg": 62.288353710069885,
+        "i": 1,
+        "j": 2,
+        "relation_score": 0.4394608475174517
+      },
+      {
+        "d_Omega_deg": 13.933831416668426,
+        "d_varpi_deg": 22.388723010380602,
+        "i": 1,
+        "j": 3,
+        "relation_score": 0.9481522583211636
+      },
+      {
+        "d_Omega_deg": 53.613545847888815,
+        "d_varpi_deg": 70.42708883107673,
+        "i": 1,
+        "j": 4,
+        "relation_score": 0.531742482328046
+      },
+      {
+        "d_Omega_deg": 73.20278539377529,
+        "d_varpi_deg": 162.6237517920344,
+        "i": 1,
+        "j": 5,
+        "relation_score": 0.014705964168707114
+      },
+      {
+        "d_Omega_deg": 39.60830342042641,
+        "d_varpi_deg": 87.59273683429751,
+        "i": 1,
+        "j": 6,
+        "relation_score": 0.46119565517418515
+      },
+      {
+        "d_Omega_deg": 114.99192932552182,
+        "d_varpi_deg": 33.81051879340199,
+        "i": 1,
+        "j": 7,
+        "relation_score": 0.2643379406418303
+      },
+      {
+        "d_Omega_deg": 47.449717601584695,
+        "d_varpi_deg": 11.56072766894374,
+        "i": 1,
+        "j": 8,
+        "relation_score": 0.8296169685480234
+      },
+      {
+        "d_Omega_deg": 109.58849541543319,
+        "d_varpi_deg": 79.02201020932887,
+        "i": 1,
+        "j": 9,
+        "relation_score": 0.19783120779296887
+      },
+      {
+        "d_Omega_deg": 135.89093707208667,
+        "d_varpi_deg": 21.845242487107896,
+        "i": 1,
+        "j": 10,
+        "relation_score": 0.13592974238365288
+      },
+      {
+        "d_Omega_deg": 64.5365147278651,
+        "d_varpi_deg": 84.67707672045049,
+        "i": 2,
+        "j": 3,
+        "relation_score": 0.3906473601353148
+      },
+      {
+        "d_Omega_deg": 24.85680029664471,
+        "d_varpi_deg": 8.138735121006846,
+        "i": 2,
+        "j": 4,
+        "relation_score": 0.948877951552255
+      },
+      {
+        "d_Omega_deg": 151.67313153830884,
+        "d_varpi_deg": 135.08789449789575,
+        "i": 2,
+        "j": 5,
+        "relation_score": 0.00873568126045725
+      },
+      {
+        "d_Omega_deg": 38.86204272410711,
+        "d_varpi_deg": 25.304383124227627,
+        "i": 2,
+        "j": 6,
+        "relation_score": 0.8466638477860554
+      },
+      {
+        "d_Omega_deg": 36.5215831809883,
+        "d_varpi_deg": 28.477834916667895,
+        "i": 2,
+        "j": 7,
+        "relation_score": 0.8472572157738597
+      },
+      {
+        "d_Omega_deg": 125.92006374611823,
+        "d_varpi_deg": 50.72762604112614,
+        "i": 2,
+        "j": 8,
+        "relation_score": 0.16874848983748222
+      },
+      {
+        "d_Omega_deg": 31.11814927089966,
+        "d_varpi_deg": 16.733656499258984,
+        "i": 2,
+        "j": 9,
+        "relation_score": 0.9084018537723499
+      },
+      {
+        "d_Omega_deg": 57.42059092755316,
+        "d_varpi_deg": 40.44311122296199,
+        "i": 2,
+        "j": 10,
+        "relation_score": 0.677329927093483
+      },
+      {
+        "d_Omega_deg": 39.67971443122039,
+        "d_varpi_deg": 92.81581184145733,
+        "i": 3,
+        "j": 4,
+        "relation_score": 0.4206730203386888
+      },
+      {
+        "d_Omega_deg": 87.13661681044371,
+        "d_varpi_deg": 140.2350287816538,
+        "i": 3,
+        "j": 5,
+        "relation_score": 0.06072026357377775
+      },
+      {
+        "d_Omega_deg": 25.674472003757987,
+        "d_varpi_deg": 109.98145984467813,
+        "i": 3,
+        "j": 6,
+        "relation_score": 0.3128939041133719
+      },
+      {
+        "d_Omega_deg": 101.0580979088534,
+        "d_varpi_deg": 56.1992418037826,
+        "i": 3,
+        "j": 7,
+        "relation_score": 0.3144500907892526
+      },
+      {
+        "d_Omega_deg": 61.38354901825313,
+        "d_varpi_deg": 33.94945067932434,
+        "i": 3,
+        "j": 8,
+        "relation_score": 0.6764432926049191
+      },
+      {
+        "d_Omega_deg": 95.65466399876476,
+        "d_varpi_deg": 101.41073321970947,
+        "i": 3,
+        "j": 9,
+        "relation_score": 0.18078009994303632
+      },
+      {
+        "d_Omega_deg": 121.95710565541825,
+        "d_varpi_deg": 44.23396549748849,
+        "i": 3,
+        "j": 10,
+        "relation_score": 0.2019955761926547
+      },
+      {
+        "d_Omega_deg": 126.81633124166412,
+        "d_varpi_deg": 126.94915937688886,
+        "i": 4,
+        "j": 5,
+        "relation_score": 0.03996399931511566
+      },
+      {
+        "d_Omega_deg": 14.005242427462406,
+        "d_varpi_deg": 17.16564800322078,
+        "i": 4,
+        "j": 6,
+        "relation_score": 0.9631955725349789
+      },
+      {
+        "d_Omega_deg": 61.37838347763301,
+        "d_varpi_deg": 36.61657003767474,
+        "i": 4,
+        "j": 7,
+        "relation_score": 0.6665383895504496
+      },
+      {
+        "d_Omega_deg": 101.06326344947351,
+        "d_varpi_deg": 58.86636116213299,
+        "i": 4,
+        "j": 8,
+        "relation_score": 0.306481940547008
+      },
+      {
+        "d_Omega_deg": 55.97494956754437,
+        "d_varpi_deg": 8.594921378252137,
+        "i": 4,
+        "j": 9,
+        "relation_score": 0.7753990626971689
+      },
+      {
+        "d_Omega_deg": 82.27739122419786,
+        "d_varpi_deg": 48.581846343968834,
+        "i": 4,
+        "j": 10,
+        "relation_score": 0.4712059728769655
+      },
+      {
+        "d_Omega_deg": 112.8110888142017,
+        "d_varpi_deg": 109.78351137366812,
+        "i": 5,
+        "j": 6,
+        "relation_score": 0.10126513615554847
+      },
+      {
+        "d_Omega_deg": 171.80528528070292,
+        "d_varpi_deg": 163.56572941456363,
+        "i": 5,
+        "j": 7,
+        "relation_score": 0.00010428887549804728
+      },
+      {
+        "d_Omega_deg": 25.753067792190592,
+        "d_varpi_deg": 174.18447946097814,
+        "i": 5,
+        "j": 8,
+        "relation_score": 0.002445552048108824
+      },
+      {
+        "d_Omega_deg": 177.20871919079156,
+        "d_varpi_deg": 118.35423799863672,
+        "i": 5,
+        "j": 9,
+        "relation_score": 0.00015574358253081272
+      },
+      {
+        "d_Omega_deg": 150.90627753413807,
+        "d_varpi_deg": 175.53100572085773,
+        "i": 5,
+        "j": 10,
+        "relation_score": 0.00009590378300147016
+      },
+      {
+        "d_Omega_deg": 75.38362590509541,
+        "d_varpi_deg": 53.78221804089552,
+        "i": 6,
+        "j": 7,
+        "relation_score": 0.4980755237137335
+      },
+      {
+        "d_Omega_deg": 87.0580210220111,
+        "d_varpi_deg": 76.03200916535377,
+        "i": 6,
+        "j": 8,
+        "relation_score": 0.32627329555493717
+      },
+      {
+        "d_Omega_deg": 69.98019199500678,
+        "d_varpi_deg": 8.570726624968644,
+        "i": 6,
+        "j": 9,
+        "relation_score": 0.6674248859434484
+      },
+      {
+        "d_Omega_deg": 96.28263365166026,
+        "d_varpi_deg": 65.74749434718962,
+        "i": 6,
+        "j": 10,
+        "relation_score": 0.31409377854411674
+      },
+      {
+        "d_Omega_deg": 162.44164692710652,
+        "d_varpi_deg": 22.24979112445825,
+        "i": 7,
+        "j": 8,
+        "relation_score": 0.022427652156089897
+      },
+      {
+        "d_Omega_deg": 5.403433910088637,
+        "d_varpi_deg": 45.21149141592688,
+        "i": 7,
+        "j": 9,
+        "relation_score": 0.850352388056811
+      },
+      {
+        "d_Omega_deg": 20.899007746564855,
+        "d_varpi_deg": 11.965276306294093,
+        "i": 7,
+        "j": 10,
+        "relation_score": 0.9565993826467217
+      },
+      {
+        "d_Omega_deg": 157.03821301701788,
+        "d_varpi_deg": 67.46128254038513,
+        "i": 8,
+        "j": 9,
+        "relation_score": 0.02740151107848708
+      },
+      {
+        "d_Omega_deg": 176.65934532632866,
+        "d_varpi_deg": 10.284514818164155,
+        "i": 8,
+        "j": 10,
+        "relation_score": 0.0008428144129288467
+      },
+      {
+        "d_Omega_deg": 26.302441656653492,
+        "d_varpi_deg": 57.17676772222098,
+        "i": 9,
+        "j": 10,
+        "relation_score": 0.7311114707994731
+      }
+    ],
+    "node_strength": [
+      {
+        "index": 2,
+        "name": "474640 Alicanto (2004 VN112)",
+        "strength": 5.82898188701756
+      },
+      {
+        "index": 4,
+        "name": "(2012 VP113)",
+        "strength": 5.796883486804033
+      },
+      {
+        "index": 0,
+        "name": "148209 (2000 CR105)",
+        "strength": 5.44516855902371
+      },
+      {
+        "index": 6,
+        "name": "765047 (2013 RA109)",
+        "strength": 5.0766731642719245
+      },
+      {
+        "index": 7,
+        "name": "(2013 SY99)",
+        "strength": 4.827074019466748
+      },
+      {
+        "index": 1,
+        "name": "90377 Sedna (2003 VB12)",
+        "strength": 4.794881843947116
+      },
+      {
+        "index": 9,
+        "name": "(2014 SR349)",
+        "strength": 4.660281826501081
+      },
+      {
+        "index": 3,
+        "name": "(2010 GB174)",
+        "strength": 4.426886788969743
+      },
+      {
+        "index": 10,
+        "name": "(2015 RX245)",
+        "strength": 3.7397866676337777
+      },
+      {
+        "index": 8,
+        "name": "505478 (2013 UT15)",
+        "strength": 3.0817300328884856
+      },
+      {
+        "index": 5,
+        "name": "(2013 FT28)",
+        "strength": 0.2300806545554594
+      }
+    ],
+    "nodes": [
+      {
+        "Omega_deg": 128.2037509183512,
+        "i_deg": 22.70799015441454,
+        "index": 0,
+        "name": "148209 (2000 CR105)",
+        "varpi_deg": 85.24464592881549
+      },
+      {
+        "Omega_deg": 144.5061662673739,
+        "i_deg": 11.92527582847476,
+        "index": 1,
+        "name": "90377 Sedna (2003 VB12)",
+        "varpi_deg": 95.60493886134907
+      },
+      {
+        "Omega_deg": 66.03582012284039,
+        "i_deg": 25.51048085878516,
+        "index": 2,
+        "name": "474640 Alicanto (2004 VN112)",
+        "varpi_deg": 33.316585151279185
+      },
+      {
+        "Omega_deg": 130.5723348507055,
+        "i_deg": 21.53976143537371,
+        "index": 3,
+        "name": "(2010 GB174)",
+        "varpi_deg": 117.99366187172967
+      },
+      {
+        "Omega_deg": 90.8926204194851,
+        "i_deg": 24.00179208811373,
+        "index": 4,
+        "name": "(2012 VP113)",
+        "varpi_deg": 25.17785003027234
+      },
+      {
+        "Omega_deg": 217.7089516611492,
+        "i_deg": 17.39338167918143,
+        "index": 5,
+        "name": "(2013 FT28)",
+        "varpi_deg": 258.22869065338347
+      },
+      {
+        "Omega_deg": 104.8978628469475,
+        "i_deg": 12.39043102080424,
+        "index": 6,
+        "name": "765047 (2013 RA109)",
+        "varpi_deg": 8.012202027051558
+      },
+      {
+        "Omega_deg": 29.51423694185209,
+        "i_deg": 4.225557576164326,
+        "index": 7,
+        "name": "(2013 SY99)",
+        "varpi_deg": 61.79442006794708
+      },
+      {
+        "Omega_deg": 191.9558838689586,
+        "i_deg": 10.65007277383749,
+        "index": 8,
+        "name": "505478 (2013 UT15)",
+        "varpi_deg": 84.04421119240533
+      },
+      {
+        "Omega_deg": 34.91767085194073,
+        "i_deg": 17.96288064148971,
+        "index": 9,
+        "name": "(2014 SR349)",
+        "varpi_deg": 16.5829286520202
+      },
+      {
+        "Omega_deg": 8.615229195287236,
+        "i_deg": 12.14272917726061,
+        "index": 10,
+        "name": "(2015 RX245)",
+        "varpi_deg": 73.75969637424117
+      }
+    ]
+  },
+  "relations": {
+    "all_11": {
+      "anti_apsidal_perturber_phase_deg": 237.825752967533,
+      "apsidal_order": {
+        "R": 0.6585118129245986,
+        "angle_deg": 57.82575296753298
+      },
+      "node_order": {
+        "R": 0.5778230261349443,
+        "angle_deg": 103.7687279516727
+      }
+    },
+    "leave_one_out_robust": {
+      "algorithm": "remove exactly one object whose removal maximizes apsidal resultant R",
+      "anti_apsidal_perturber_phase_deg": 240.26587537199066,
+      "apsidal_order": {
+        "R": 0.8188318726721057,
+        "angle_deg": 60.26587537199067
+      },
+      "node_order": {
+        "R": 0.6902317091928939,
+        "angle_deg": 95.60969673062264
+      },
+      "removed_index": 5,
+      "removed_object": "(2013 FT28)"
+    }
+  },
+  "schema": "PBH_RELATIONAL_ORBITAL_INVERSION_STAGE_A_V0_1",
+  "source": {
+    "authority": "NASA_JPL_SBDB",
+    "sample_origin": "Brown_Batygin_2021_Table_1",
+    "selection": "150<a<1000 AU and q>42 AU; 11-object historical sample, current JPL solutions"
+  },
+  "status": "ANALYZED",
+  "provenance": {
+    "railway_project_id": "58a1174a-9fb6-4eae-b8e9-79235e5d7666",
+    "railway_service_id": "af8c3532-3d2e-4305-9aaf-8eaac8e94bb5",
+    "railway_deployment_id": "bd7b12ac-7f61-44e6-89d8-9167a68151b1",
+    "runtime_script_commit": "7db62ca17054e50a2677f41781fa5e087b716244"
+  }
+}
