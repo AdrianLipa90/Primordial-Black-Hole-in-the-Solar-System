@@ -1,0 +1,144 @@
+{
+  "schema": "PBH_THREE_TRACER_STF_GEOMETRY_SCREEN_RECEIPT_V0_3",
+  "status": "SCREENING_FAIL_POINT_MASS_GATE",
+  "authority": "OBSERVED_MINUS_JPL_GEOMETRY_SCREEN",
+  "provenance": {
+    "branch": "orbital-relational-tidal-v02-20260928",
+    "runtime_script": "runtime/pbh_three_tracer_stf_geometry_screen_v03.py",
+    "runtime_script_commit": "b39fec120c39c8f40cb950c0e92544519e7032f5",
+    "railway_deployment": "686f6190-8525-4650-8c93-1ce06e12698a",
+    "gremlin_branch": "pbh-orbital-relational-v02-20260928",
+    "gremlin_gate_sha": "e6e0083f6c1cae4797642c00551c3ae12d747797"
+  },
+  "data": {
+    "Sedna": {
+      "n": 630,
+      "sha256": "e9563720866e6a3d5a1f4fc442d9300eb3901be94bd282a725eb0070590c1ae4"
+    },
+    "2012 VP113": {
+      "n": 55,
+      "sha256": "2217f5e1b33d6ba27ad8b68f37aa7f3e927d0703de3e6380a420b0c4fc64ddc7"
+    },
+    "2015 TG387": {
+      "n": 51,
+      "sha256": "73fd3bea5457a99c3ec214c49c65a15f3002a6ca7c141596bce2fccbedd0b813"
+    }
+  },
+  "gremlin_point_mass_thresholds": {
+    "max_point_mass_shape_residual": 0.2,
+    "max_transverse_split_over_mu": 0.4
+  },
+  "per_object_curvature_arcsec_per_year2": {
+    "ALL": {
+      "Sedna": {
+        "ra": 0.0013929883973912028,
+        "ra_se": 0.001985999480865503,
+        "dec": -0.002606451409744808,
+        "dec_se": 0.0019145065268706138
+      },
+      "2012 VP113": {
+        "ra": -0.02042617197010113,
+        "ra_se": 0.03472336816771797,
+        "dec": 0.022801261279827047,
+        "dec_se": 0.026300612765021242
+      },
+      "2015 TG387": {
+        "ra": -0.014246807603378148,
+        "ra_se": 0.022378168427457032,
+        "dec": -0.01786280069882539,
+        "dec_se": 0.026760712432822412
+      }
+    },
+    "GAIA": {
+      "Sedna": {
+        "ra": -0.00011903597623722765,
+        "ra_se": 0.001150739071047226,
+        "dec": -0.0026834053521568777,
+        "dec_se": 0.0013496215336016493
+      },
+      "2012 VP113": {
+        "ra": -0.0941910460349455,
+        "ra_se": 0.044093368891843066,
+        "dec": 0.053322700426349734,
+        "dec_se": 0.031428346538672845
+      },
+      "2015 TG387": {
+        "ra": -0.014327871053820048,
+        "ra_se": 0.019367113567259325,
+        "dec": -0.01818884663004745,
+        "dec_se": 0.029163009940109664
+      }
+    }
+  },
+  "tensor": {
+    "ALL": {
+      "tensor_3x3_per_s2": [
+        [
+          3.8557390671397896e-22,
+          -8.184968743647735e-23,
+          1.799210184081923e-22
+        ],
+        [
+          -8.184968743647735e-23,
+          3.674379395050022e-22,
+          3.5549929762357296e-23
+        ],
+        [
+          1.799210184081923e-22,
+          3.5549929762357296e-23,
+          -7.530118462189812e-22
+        ]
+      ],
+      "axis_ra_deg_sign_choice": 322.93648793432277,
+      "axis_dec_deg_sign_choice": 5.703755895295577,
+      "mu_per_s2": 2.3495733232698123e-22,
+      "point_mass_shape_residual": 0.8027232054653639,
+      "transverse_eigenvalue_split_over_mu": 4.662876522082197,
+      "normal_pivot_condition_proxy": 460.37042016457974,
+      "nominal_dof": 1
+    },
+    "GAIA": {
+      "tensor_3x3_per_s2": [
+        [
+          7.548979853181486e-22,
+          -9.987671000082734e-23,
+          4.221138693423496e-22
+        ],
+        [
+          -9.987671000082734e-23,
+          7.516202284613211e-22,
+          8.440509191238359e-23
+        ],
+        [
+          4.221138693423496e-22,
+          8.440509191238359e-23,
+          -1.5065182137794696e-21
+        ]
+      ],
+      "axis_ra_deg_sign_choice": 326.8786725896806,
+      "axis_dec_deg_sign_choice": 7.325115818641657,
+      "mu_per_s2": 4.424245896182555e-22,
+      "point_mass_shape_residual": 0.8309796521884506,
+      "transverse_eigenvalue_split_over_mu": 5.17451628466428,
+      "normal_pivot_condition_proxy": 1328.4862149233477,
+      "nominal_dof": 1
+    }
+  },
+  "verdict": {
+    "point_mass_gate_ALL": "FAIL",
+    "point_mass_gate_GAIA": "FAIL",
+    "common_axis_interpretation": "NOT_ALLOWED",
+    "reason": [
+      "point-mass eigenshape residual far above GREMLIN threshold",
+      "transverse eigenvalue degeneracy fails strongly",
+      "three clustered tracers yield poorly conditioned geometry",
+      "TG387 leave-one-station-catalog curvature has high leverage",
+      "JPL orbit and MPC residuals are not an independent holdout"
+    ]
+  },
+  "holdout": {
+    "historical_PBH_coordinate_used": false,
+    "historical_576_AU_used": false
+  },
+  "canon_allowed": false
+}
