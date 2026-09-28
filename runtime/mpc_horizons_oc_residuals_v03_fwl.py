@@ -424,6 +424,7 @@ def main():
             station_failures = []
             for stn in sorted(by_station):
                 rr = sorted(by_station[stn], key=lambda x: x["time"])
+                print("PBH_OC_V03_PROGRESS="+json.dumps({"object":obj,"station":stn,"n":len(rr)},sort_keys=True),flush=True)
                 try:
                     pp = query_horizons(command, stn, rr)
                     for o, p in zip(rr, pp, strict=True):
@@ -470,6 +471,29 @@ def main():
         },
         "canon_allowed": False,
     }
+    compact={
+        "schema":"PBH_MPC_HORIZONS_OC_FWL_SUMMARY_V0_3",
+        "status":receipt["status"],
+        "rows_sha256":receipt["rows_sha256"],
+        "n_rows":receipt["n_rows"],
+        "objects":{},
+    }
+    for name,o in objects.items():
+        compact["objects"][name]={
+            "n_residuals":o["n_residuals"],
+            "n_station_failures":o["n_station_failures"],
+            "raw_vector_norm":None if o["raw_curvature"] is None else o["raw_curvature"]["vector_norm_arcsec_per_year2"],
+            "fwl_vector_norm":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["vector_norm_arcsec_per_year2"],
+            "fwl_dra_second":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["dra"]["second_derivative_arcsec_per_year2"],
+            "fwl_ddec_second":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["ddec"]["second_derivative_arcsec_per_year2"],
+            "fwl_dra_se_naive":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["dra"]["naive_ols_se_second_arcsec_per_year2"],
+            "fwl_ddec_se_naive":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["ddec"]["naive_ols_se_second_arcsec_per_year2"],
+            "quadratic_identifiability_dra":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["dra"]["quadratic_identifiability_fraction_after_nuisance"],
+            "quadratic_identifiability_ddec":None if o["station_catalog_profiled_curvature"] is None else o["station_catalog_profiled_curvature"]["ddec"]["quadratic_identifiability_fraction_after_nuisance"],
+            "leave_one_station_norm_range":o["leave_one_station"]["norm_range"],
+            "leave_one_catalog_norm_range":o["leave_one_catalog"]["norm_range"],
+        }
+    print("PBH_OC_V03_SUMMARY="+json.dumps(compact,sort_keys=True),flush=True)
     print("PBH_OC_V03_RECEIPT=" + json.dumps(receipt, sort_keys=True), flush=True)
 
 
