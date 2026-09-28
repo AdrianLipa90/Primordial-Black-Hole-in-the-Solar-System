@@ -1,0 +1,130 @@
+{
+  "schema": "PBH_WIDE_SKY_TNO_CONTROL_SELECTION_V0_4",
+  "status": "FROZEN_BEFORE_RESIDUALS",
+  "authority": "JPL_SBDB_SELECTION_ONLY",
+  "provenance": {
+    "selector_script": "runtime/tno_wide_sky_control_selector_v04.py",
+    "selector_commit": "a228297d03eb9be531172670af66e756f21a4de8",
+    "railway_deployment": "6b6621c5-94dc-4482-8b9f-1080ee2b91c6"
+  },
+  "freeze_epoch_jd": 2461311.5,
+  "criteria": {
+    "sb_class": "TNO",
+    "a_gt_au": 30,
+    "q_gt_au": 25,
+    "data_arc_ge_days": 3652.5,
+    "n_obs_used_ge": 100,
+    "condition_code_le": 2,
+    "two_body_rejected": true,
+    "excluded_target_pdes": [
+      "2012 VP113",
+      "541132",
+      "90377"
+    ],
+    "n_controls": 8
+  },
+  "eligible_count": 578,
+  "selection_algorithm": "max-separation pair, then deterministic farthest-point max-min on approximate propagated J2000 sky directions",
+  "selected": [
+    {
+      "pdes": "469514",
+      "full_name": "469514 (2003 QA91)",
+      "approx_ra_deg": 355.00775045301805,
+      "approx_dec_deg": -4.614704022547613,
+      "n_obs_used": 252,
+      "data_arc_days": 8057,
+      "condition_code": 2,
+      "a": 44.37830522017475,
+      "q": 41.21608055973046
+    },
+    {
+      "pdes": "535018",
+      "full_name": "535018 (2014 WA509)",
+      "approx_ra_deg": 175.0568503380362,
+      "approx_dec_deg": 4.763780461991529,
+      "n_obs_used": 168,
+      "data_arc_days": 5743,
+      "condition_code": 2,
+      "a": 44.19796981075287,
+      "q": 41.58267728072934
+    },
+    {
+      "pdes": "229762",
+      "full_name": "229762 G!kun||'homdima (2007 UK126)",
+      "approx_ra_deg": 84.53214736817426,
+      "approx_dec_deg": 5.837033113304546,
+      "n_obs_used": 877,
+      "data_arc_days": 15893,
+      "condition_code": 1,
+      "a": 74.50819049288985,
+      "q": 37.56839849087856
+    },
+    {
+      "pdes": "578833",
+      "full_name": "578833 (2014 GV53)",
+      "approx_ra_deg": 264.69608564763075,
+      "approx_dec_deg": -7.247544242379101,
+      "n_obs_used": 163,
+      "data_arc_days": 3728,
+      "condition_code": 2,
+      "a": 50.22060868189548,
+      "q": 36.38798507767
+    },
+    {
+      "pdes": "55636",
+      "full_name": "55636 (2002 TX300)",
+      "approx_ra_deg": 31.79496561833348,
+      "approx_dec_deg": 40.04601116438712,
+      "n_obs_used": 1719,
+      "data_arc_days": 26120,
+      "condition_code": 0,
+      "a": 43.41282467473518,
+      "q": 38.15647093962142
+    },
+    {
+      "pdes": "230965",
+      "full_name": "230965 (2004 XA192)",
+      "approx_ra_deg": 129.1503980335876,
+      "approx_dec_deg": 39.01611566523418,
+      "n_obs_used": 679,
+      "data_arc_days": 13296,
+      "condition_code": 1,
+      "a": 47.49595414847995,
+      "q": 35.47734051699901
+    },
+    {
+      "pdes": "2010 EL139",
+      "full_name": "(2010 EL139)",
+      "approx_ra_deg": 218.59726563491319,
+      "approx_dec_deg": -38.902827649491535,
+      "n_obs_used": 182,
+      "data_arc_days": 5496,
+      "condition_code": 2,
+      "a": 39.27393020791676,
+      "q": 36.73373867789605
+    },
+    {
+      "pdes": "671593",
+      "full_name": "671593 (2014 NT86)",
+      "approx_ra_deg": 312.17212260274744,
+      "approx_dec_deg": -25.135086490219262,
+      "n_obs_used": 213,
+      "data_arc_days": 4059,
+      "condition_code": 2,
+      "a": 39.31658668974091,
+      "q": 34.28947161698955
+    }
+  ],
+  "pairwise_separation_deg": {
+    "min": 45.90174683850515,
+    "median": 98.5372666479019,
+    "max": 179.8430972592226
+  },
+  "anti_confirmation": {
+    "residuals_seen_before_selection": false,
+    "historical_PBH_coordinate_used": false,
+    "three_tracer_STF_axis_used": false,
+    "historical_576_AU_used": false
+  },
+  "canon_allowed": false
+}
